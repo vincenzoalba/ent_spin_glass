@@ -80,17 +80,18 @@ M\"unchen, D-80333 M\"unchen, Germany}
 
 We investigate the \emph{classical} R\'enyi entropy $S_n$ and the associated mutual 
 information ${\mathcal I}_n$ in the Sherrington-Kirkpatrick (S-K) model, which is the 
-paradigm model of mean-field spin glasses. We use both classical Monte Carlo simulations 
-and analytical tools. First, we investigate the S-K model on the $n$-sheets booklet. This 
-is obtained by gluing together $n$ independent copies of the model, and it is the 
-main ingredient to construct entaglement-related quantities. We find that at low temperature 
+paradigm model of mean-field spin glasses. 
+Using both classical Monte Carlo simulation and analytical tools we investigate the S-K model 
+on a booklet of $n$-sheets.
+This is obtained by gluing together $n$ independent copies of the model, and it is the 
+main ingredient to construct the R\'enyi entaglement-related quantities. We find that at low temperature 
 the S-K model is in a glassy phase, whereas at high temperature it exhibits paramagnetic 
 behavior. Interestingly, the critical temperature of the paramagnetic-glassy transition 
 depends in a non-trivial way on the geometry of the booklet. At high-temperatures we provide 
 the exact solution of the model exploiting the replica symmetry. This is the permutation 
 symmetry among the fictitious replicas that are used in the replica trick to perform disorder 
 averages. In the low-temperature glassy phase the replica symmetry has 
-to be broken. Using a simple generalization of the celebrated Parisi solution, we provide 
+to be broken. Using a generalization of the celebrated Parisi solution, we provide 
 approximated results for thermodynamic quantities and for $S_n$ and ${\mathcal I}_n$. 
 Finally, we show that both $S_n$ and ${\mathcal I}_n$ exhibit a volume law in the whole phase 
 diagram. Their densities $S_n/N$ and ${\mathcal I}_n/N$ are finite and smooth 
@@ -110,8 +111,10 @@ critical point.
 
 
 Besides being ubiquitous in nature, disorder leads to several intriguing 
-physical phenomena. Arguably, \emph{spin glasses} provide one of the most 
-striking examples. While at any finite temperature disorder prevents the 
+physical phenomena. 
+Arguably, \emph{spin glasses} represent one of the most prototypical examples
+of disorder.
+While at any finite temperature disorder prevents the 
 usual magnetic ordering, at low-enough temperatures these systems display a 
 new and exotic type of ``order''. In the past decades an intense theoretical 
 effort has been devoted to characterizing this spin glass order, the nature of 
@@ -158,7 +161,7 @@ R\'enyi entropy $S_n(A)$ (with $n\in\mathbb{N}$) is defined as
 %
 \begin{equation}
 S_n(A)\equiv \frac{1}{1-n}\log\Big(\sum\limits_{i_A\in{\mathcal C}_A} p^n_{i_A}
-\Big).i 
+\Big)
 \label{renyi-intro}
 \end{equation}
 %
@@ -207,7 +210,8 @@ research area~\cite{refael-2009}. However, the behavior of entanglement-related 
 in glassy phases, and at glassy critical points, has not been explored yet. Here we investigate 
 both the classical R\'enyi entropy $S_n(A)$ and the mutual information ${\mathcal I}_n$ 
 in the S-K model, using classical Monte Carlo simulations and analytical tools. We often 
-restrict ourselves to the case with $n=2$. As usual in disordered system, we 
+restrict ourselves to the case with $n=2$, as this is where numerical simulation is most
+efficient . As usual in disordered system, we 
 focus on disorder-averaged quantities, considering $[S_n]$ and $[{\mathcal I}_n]$, 
 with the brackets $[\cdot]$ denoting the average over different realizations of 
 $J_{ij}$ in Eq.~\eqref{SK-intro}.
@@ -239,7 +243,7 @@ sherrington-1978}. This discrepancy becomes larger upon lowering the temperature
  to form the booklet. The spins in part $B$ of the booklet pages are at inverse 
  temperature $\beta$. The spins in part $A$ are identified  (see Eq.~\eqref{book-constraint}). 
  As a consequence, the effective temperature in part $A$ is $n\beta$. 
- $Z(\omega,n,\beta)$ denotes the partition function of the S-K model on 
+ $Z(A,n,\beta)$ denotes the partition function of the S-K model on 
  the booklet. 
 }
 \label{cartoon}
@@ -262,7 +266,7 @@ $\beta\lesssim 3$, whereas the RS approximation fails already at $\beta\approx 1
 This suggests that the $1$-RSB ansatz captures correctly some aspects of the 
 replica symmetry breaking. 
 
-This scenario, and, in particular, the effects of the replica symmetry breaking, are 
+In this scenario the effects of the replica symmetry breaking are 
 reflected in the behavior of $[S_2]$ and $[{\mathcal I}_2]$. First, since $[S_2]$ exhibits 
 the volume law behavior $[S_2]\propto N$, we consider its density $[S_2]/N$. For finite-size 
 systems, and for any $\omega$, we find that $[S_2]/N$ exhibits a maximum at infinite 
@@ -292,7 +296,7 @@ paramagnetic-glassy transition. Finally, at high temperature $[{\mathcal I}_2]/N
 described analytically within the replica symmetric approximation, whereas at low temperatures 
 one has to include  the effects of the replica symmetry breaking. Similar to $[S_2]$, we observe 
 that the $1$-RSB approximation for $[{\mathcal I})_2]/N$, is in good agreement with the Monte Carlo 
-data for $\beta\approx 3$.
+data for $\beta \lesssim 3$.
 
 The Article is organized as follows. In section~\ref{booklet} we introduce the classical 
 R\'enyi entropy and the mutual information, reviewing their representation in terms of 
@@ -316,7 +320,8 @@ we conclude in section~\ref{conclusions}.
 \label{booklet}
 
 Given a generic \emph{classical} spin model at inverse temperature $\beta$, 
-the R\'enyi mutual information ${\mathcal I}_n(A,B,\beta)$ (with $n\in\mathbb{N}$) 
+the R\'enyi mutual information ${\mathcal I}_n(A,B,\beta)$ (with $n\in\mathbb{N}$
+and $A \cup B$ is the entire system)) 
 is defined as~\cite{jaconis-2013,stephan-2014} 
 %
 \begin{equation}
@@ -336,7 +341,7 @@ booklet. The spins in part $A$ of different sheets are identified (cf.
 Figure~\ref{cartoon} (b)). Notice that a similar construction~\cite{guerra-2002} 
 plays an important role in the mathematical proof of the Parisi ansats. While spins 
 in $B$ are at inverse temperature $\beta$, the ones in $A$ are at the effective 
-temperature $n\beta$. The definition of $Z(B,n\beta)$ is obtained by exchanging 
+temperature $n\beta$. The definition of $Z(B,n,\beta)$ is obtained by exchanging 
 $A$ and $B$. Alternatively, ${\mathcal I}_n$ can be rewritten as 
 %
 \begin{equation}
@@ -351,8 +356,8 @@ S_n(X)\equiv \frac{1}{1-n}\log\left(\frac{Z(X,n,\beta)}{Z^n(\beta)}\right).
 \end{equation}
 %
 Notice that $S_n(X)$ corresponds to $S_n(X)\equiv1/(n-1)\log(F(X,n,\beta))
--n\log(F(\beta))$, where $F(X,n,\beta)\equiv\log(Z(\beta))$ and $F(\beta)
-\equiv\log(Z(X,n,\beta))$ are related (apart from a factor $\beta$) to the 
+-n\log(F(\beta))$, where $F(X,n,\beta)\equiv\log(Z(X,n\beta))$ and $F(\beta)
+\equiv\log(Z(\beta))$ are related (apart from a factor $\beta$) to the 
 free energy of the model on the booklet and on the plane, respectively.
 Since here we focus on the effects of the disorder, we consider 
 the disorder-averaged mutual information $[{\mathcal I}_n]$ 
@@ -436,9 +441,9 @@ S_i^{(r)}=S_{i}^{(r')}\quad\forall\, r,r'.
 \label{book-constraint}
 \end{equation}
 %
-Since in each sheet all spins interact with each other, there is no notion of distance. 
+Since in each sheet all spins interact with each other, there is no notion of distance 
 between different spins. Thus, physical observables should depend on the booklet geometry 
-only through the ratio $\omega\equiv N_A/N_B$. 
+only through the ratio $\omega\equiv N_A/N$. 
 
 In Eq.~\eqref{SK-ham} the couplings $J_{ij}\in\mathbb{R}$ are uncorrelated quenched 
 random variables. $J_{ij}$ are the same in all the sheets of the booklet. Specifically, 
@@ -597,7 +602,7 @@ freedom, and it is given as
 %
 \begin{multline}
 {\mathcal L}_i(\{q,m\})
-\equiv\beta^2\sum\limits_{\gamma<\gamma'}\sum\limits_{rr'}
+\equiv\beta^2\sum\limits_{\gamma<\gamma'}\sum\limits_{r,r'}
 q_{\gamma\gamma'}^{rr'}S_i^{(r,\gamma)}
 S_i^{(r',\gamma')}+\\
 \beta^2\sum_\gamma\sum\limits_{r<r'}
@@ -726,7 +731,7 @@ on the paramagnetic phase at high temperature, where this approximation is exact
 In particular, we show that the behavior of the model is fully determined by the 
 diagonal part of the overlap tensor $q_{\gamma\gamma'}^{rr'}$. The general structure 
 of $q_{\gamma\gamma'}^{rr'}$ in the replica-symmetric (RS) ansatz  is discussed in 
-subsection~\ref{rs-section}. This allows to determine the critical temperature of 
+subsection~\ref{rs-section}. This allows us to determine the critical temperature of 
 the paramagnetic-glassy transition. Similar to the standard S-K model, the RS ansatz 
 is not correct in the low-temperature region. 
 
@@ -991,7 +996,7 @@ the critical temperature $\beta_c$ of the paramagnetic-glassy transition.
 Near the glassy transition one should expect $q'_0\to0$, whereas $q_0$ 
 should remain finite ($q_0>0$ in the paramagnetic phase, see section~\ref{para-section}). 
 By expanding $[F_{RS}(\omega,n,\beta)]$ (cf. Eq~\eqref{rs-F}) for small $q_0'$, and 
-keeping only terms up to ${\mathcal O}((q_0')^2$, one obtains a standard Landau theory. 
+keeping only terms up to ${\mathcal O}((q_0')^2)$, one obtains a standard Landau theory. 
 Thus, $\beta_c$ is obtained imposing that the coefficient of the quadratic term $q_0'^2$ 
 changes sign. This leads to the equation 
 %
@@ -1295,8 +1300,8 @@ of the replica symmetry breaking.
 We now turn to discuss the behavior of the classical R\'enyi entropies (cf. 
 Eq.~\eqref{renyi}) in the S-K model. Here we restrict ourselves to the second R\'enyi 
 entropy $S_2$. Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
-there is no boundary between the two parts $A$ and $B$ of the system (see Fig.~\ref{cartoon}), 
-implying that $S_2$ exhibits the volume law $S_2\propto N$, rather than the area law. 
+there is no well defined boundary between the two parts $A$ and $B$ of the system (unlike Fig.~\ref{cartoon} for local models).
+The fully connected nature of the model suggests that $S_2$ should be volume law $S_2 \propto N$ for all temperature.
 Therefore it is natural to consider the entropy per spin $S_2/N$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
@@ -1368,8 +1373,9 @@ approximation fails.
 Here we focus on the behavior of the Renyi mutual information ${\mathcal I}_2$ in 
 the S-K model. Similar to $S_2(\omega)$, the mutual information obeys the volume 
 law ${\mathcal I}_2(\omega)\propto N$. This is in contrast with local models, 
-where ${\mathcal I}_n(\omega)$ exhibits an area law. Here we consider the 
-mutual information per spin ${\mathcal I}_2(\omega)/N$. 
+where ${\mathcal I}_n(\omega)$ is constructed to exhibit an area law at all temperatures.
+Again, the fully connected nature of the S-K model means that common expectations from local models
+do not apply.  Here we consider the mutual information per spin ${\mathcal I}_2(\omega)/N$. 
 
 Figure~\ref{I2-MC} ${\mathcal I}_2/N$ versus $0\le\beta\le 2.5$ and $\omega=1/2,1/4,1/8$ 
 (panels from left to right in the Figure). Notice that by definition (cf. Eq.~\eqref{MI}) 
@@ -1398,7 +1404,7 @@ As a consequence, the geometric mutual information ${\mathcal G}_n$ (cf.~\eqref{
 is not well defined for the S-K model. 
 Furthermore, the curves for ${\mathcal I}_2/N$ calculated at different sizes do not exhibit any 
 crossing at $\beta=1$, in sharp contrast with local models~\cite{jaconis-2013}, for which it has 
-been shown that ${\mathcal I}_n(\omega)/N$ exhibits a crossing at a second order phase transition. 
+been shown that ${\mathcal I}_n(\omega)/\ell$ exhibits a crossing at a second order phase transition. 
 For $\beta\gtrsim 1$, ${\mathcal I}_2$ decreases monotonically, for any $N$. 
 The dash-dotted line in Fig.~\ref{I2-MC} denotes the analytical result obtained using the replica 
 symmetric (RS) approximation (see section~\ref{rs-section}). Formally this is obtained using 
@@ -1415,7 +1421,7 @@ In order to extract the thermodynamic behavior of ${\mathcal I}_2/N$ we fit the 
 \end{equation}
 %
 where we fix $\gamma=2/3$. The results of the fits are shown in Fig.~\ref{I2-extrapolated}. 
-The circles, squares, and triangles denote ${\mathcal I}_2/N$ in the thermodynamic limit 
+The circles, squares, and triangles denote ${\mathcal I}_2/N$ extrapolated from Monte Carlo to the thermodynamic limit 
 $N\to\infty$ for $\omega=1/2,1/4,1/8$. 
 Interestingly, we numerically checked that in the zero-temperature limit the data 
 support the vanishing behavior as ${\mathcal I}_2/N\propto \beta^{-2}$. This reflects 
@@ -1466,7 +1472,7 @@ averages $[S_n]$ and $[{\mathcal I}_n]$, with the brackets $[\cdot]$ denoting th
 over different disorder realizations. Here $S_n$ and ${\mathcal I}_n$ were obtained 
 from suitable combinations of the partition functions of the S-K model on the 
 so-called $n$-sheets booklet (cf.~\ref{cartoon}). This is obtained by ``gluing'' together 
-$n$ independent replicas (``sheets'') of the model. One each replica the spins are 
+$n$ independent replicas (``sheets'') of the model. On each replica the spins are 
 divided into two groups $A$ and $B$, containing $N_A$ and $N_B$ spins respectively. The 
 spins in part $A$ of the different sheets are identified. Due to the mean-field nature of 
 the model, the R\'enyi entropies and other physical quantities depend on the bipartition 
@@ -1479,7 +1485,7 @@ of $\omega$ and the inverse temperature $\beta$, in the situation without extern
 magnetic field ($h=0$ in Eq.~\eqref{SK-intro}). For any $\omega$, in the 
 thermodynamic limit the S-K model exhibit glassy phase for low-enough tempereatures, 
 whereas at high temperature the model is paramagnetic. The two phases are divided 
-by a second order phase transition, as in the standard, i.e., on the plane, S-K model. 
+by a second order phase transition, as in the standard S-K model. 
 Interestingly, we found that the critical temperature depends in a non-trivial 
 way on $\omega$. Moreover, we fully characterized the high-temperature phase 
 using the replica-symmetric (RS) approximation, which is a simple generalization 
@@ -1528,7 +1534,7 @@ interesting to extend our results taking into account the full breaking of the r
 symmetry. This would allow to reach a conclusion on the correctness of the replica symmetry 
 breaking scheme that we used. Moreover, it would be interesting to go beyond the saddle 
 point approximation, including finite-size correztions. An interesting question would be 
-to investigate hwo the paramagnetic-glassy transition is associated with the subleading 
+to investigate how the paramagnetic-glassy transition is associated with the subleading 
 corrections to the observed volume law in the classical R\'enyi entropies. Also, it 
 would be interesting to investigate the behavior of entanglement-related quantities in 
 disordered quantum spin systems that exhibit replica symmetry breaking~\cite{read-1995, 
@@ -1542,6 +1548,7 @@ R\'enyi mutual information.
 \section{Acknowledgements}
 We would like to thank Pasquale Calabrese for useful discussions. V.A.  acknowledge 
 financial support by the ERC under Starting Grant 279391 EDEQS. 
+[Stephen's grant under Lode?]
 
 
 
