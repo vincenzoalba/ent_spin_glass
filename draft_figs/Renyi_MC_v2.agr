@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri May 15 18:17:59 2015"
+@timestamp def "Thu May 28 16:40:04 2015"
 @with string
 @    string on
 @    string loctype view
@@ -723,7 +723,7 @@
 @    s13 errorbar riser clip off
 @    s13 errorbar riser clip length 0.100000
 @    s13 comment "Cols 1:2"
-@    s13 legend  "S\s2\N\S\h{-.5}RS\N/N"
+@    s13 legend  "[S\s2\N\S\h{-.5}RS\N]/N"
 @    s14 hidden false
 @    s14 type xy
 @    s14 symbol 1
@@ -772,7 +772,7 @@
 @    s14 errorbar riser clip off
 @    s14 errorbar riser clip length 0.100000
 @    s14 comment "/u/he/valba/Dropbox/Glass/draft/draft_figs/test.dat"
-@    s14 legend  "S\s2\N\S\h{-.5}1-RSB\N/N"
+@    s14 legend  "[S\s2\N\S\h{-.5}1-RSB\N]/N"
 @g1 on
 @g1 hidden false
 @g1 type XY
