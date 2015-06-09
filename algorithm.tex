@@ -1,0 +1,73 @@
+\documentclass{article}                         
+\usepackage{amssymb,amsmath,bm,color} 
+
+\begin{document} 
+
+\section{Numerical methods}
+
+There are a few approaches to calculate the log of the ratio of the partition function numerically.
+Numerical integration of the energy as a function of temperature\cite{jaconis-2013} can be used, but requires highly accurate information over a large range of temperature for both the normal and modified partition function.
+
+We can also directly calculate the ratio of partition functions where $A$ changes only slightly, and build up the full quantity by taking the product of many such measurements.
+This method is usually referred to as the ratio trick, and in finite dimensional systems there are efficient ways to calculate this ratio\cite{stephan-2014}.
+In an infinite dimensional system the only efficient way to use this method is to increase $A$ more slowly than typical.
+For this study, $A$ is increased by only 4 sites at a time.
+
+First, if we want to sample from $A=0$ (two disconnected systems) to $A=N$ (two fully connected systems), let us use the ratio trick to write
+\begin{align}
+\frac{Z(A,n,\beta)}{\bigl[ Z(\beta) \bigr]^n} = \prod_{i=0}^{N/4-1} \frac{Z(A_i,n,\beta)}{Z(A_{i+1},n,\beta)}
+\end{align}
+where we define the set of $A_i$ such that
+\begin{align}
+A_i = 4i,\quad i \in [0,N/4] .
+\end{align}
+Second, we can write the ratio of partition functions as
+\begin{align}
+\frac{Z(A_i,n,\beta)}{Z(A_{j},n,\beta)} = \frac{T_{j\rightarrow i}}{T_{i\rightarrow j}}
+\end{align}
+where $T_{i\rightarrow j}$  is the probability one could transition to a valid state with $A_j$ given that one is currently in a valid state with $A_i$.
+Since the region $A$ is realized as a hard constraint on the spin configurations in the two copies if $A_j < A_i$ this probability is one.
+When $A_j > A_i$ a naive method would simply count the fraction of cases where the spin configurations match on the two copies where one wants to increase $A$, and this fraction would correspond to the transition probability.
+
+Building on that approach we use the following method:
+\begin{enumerate}
+\item Do a full sweep of the system to generate an importance sampled state.
+\item For the four spins spin that $A_j$ has that are not in $A_i$, calculate 
+\begin{align}
+W_a = \sum_i e^{-\beta E_i}
+\end{align}
+where $i$ runs over all $2^8$ configurations of the four spins in two replicas.
+\item Calculate the quantity
+\begin{align}
+W_b = \sum_j e^{-\beta E_j}
+\end{align}
+where $j$ runs over all $2^4$ configurations where the four spins in the two replicas match.
+\item Using these two quantities, we can now express the transition probability as
+\begin{align}
+T_{i \rightarrow j} = \Bigl< \frac{W_b}{W_a} \Bigr>
+\end{align}
+\end{enumerate}
+
+This method is much faster than simply counting matching configurations as it allows us to integrate over all possible configurations of the spins we are adding, treating the remaining spins in the system as a bath that is updated by the regular Monte Carlo updates with importance sampling.
+The scaling of this measurement is exponential with the number of spins added to $A$ per step, and is why we have restricted it to four spins per step in this study.
+We also gain some speed by calculating the weights in each replica seperately, and then recombining the results in a smart way, meaning that we only have to explicitly loop over $2 \cdot 2^4 = 32$ configurations.
+
+We calculate this quantity for every disorder and then take the disorder average of the R\'enyi entropy of each disorder.
+When calculating the mutual information
+\begin{align}
+I_{n}(A) = S_{n}(A) + S^*_{n}(N-A) - S_{n}(N)
+\end{align}
+we do this calculating for each specific realization of disorder, and then take the disorder average of this final quantity.
+The star in $S^*$ denotes the fact that even though $A$ denotes the size of the region that is connected, due to disorder one must be careful which specific spins are in the region.
+$S^*$ is defined in such a way that the connected spins in $S_{n}(A)$ and those in $S^*_{n}(N-A)$ contain every spin in the system exactly once.
+
+%For each disorder and each $\omega_i$ we create a simulation, and measure
+%\begin{align}
+%\frac{Z(\omega_i,\alpha,\beta)}{Z(\omega_{i+1},\alpha,\beta)} = \\
+%\frac{Z(\omega_i,\alpha,\beta)}{Z(\omega_{i-1},\alpha,\beta)}
+%\end{align}
+
+%Due to the infinite dimensional nature of the Sherrington-Kirkpatrick model, the calculation the R\'enyi mutual information is unable to exploit efficient methods that are available for finite dimensional systems [ref: JMS/Inglis].
+
+
+\end{document}

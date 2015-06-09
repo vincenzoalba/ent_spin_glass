@@ -81,7 +81,7 @@ M\"unchen, D-80333 M\"unchen, Germany}
 We investigate the \emph{classical} R\'enyi entropy $S_n$ and the associated mutual 
 information ${\mathcal I}_n$ in the Sherrington-Kirkpatrick (S-K) model, which is the 
 paradigm model of mean-field spin glasses. 
-Using both classical Monte Carlo simulation and analytical tools we investigate the 
+Using both classical Monte Carlo simulations and analytical tools we investigate the 
 S-K model on a booklet of $n$-sheets.
 This is obtained by gluing together $n$ independent copies of the model, and it is the 
 main ingredient to construct the R\'enyi entaglement-related quantities. We find that at 
@@ -94,10 +94,9 @@ perform disorder averages. In the glassy phase the replica symmetry has to be br
 Using a generalization of the celebrated Parisi solution, we provide approximated results 
 for $S_n$ and ${\mathcal I}_n$, and for standard thermodynamic quantities. Both $S_n$ 
 and ${\mathcal I}_n$ exhibit a volume law in the whole phase diagram. We characterize 
-analytically and numerically the behavior of the corresponding densities $S_n/N$ and 
-${\mathcal I}_n/N$, in the thermodynamic limit. Remarkably, at the critical point 
-${\mathcal I}_n/N$ does not exhibit any crossing for different system sizes, in 
-contrast with local spin models. 
+analytically the behavior of the corresponding densities $S_n/N$ and ${\mathcal I}_n/N$, 
+in the thermodynamic limit. Remarkably, at the critical point ${\mathcal I}_n/N$ does not 
+exhibit any crossing for different system sizes, in contrast with local spin models. 
 
 \end{abstract}
 
@@ -121,7 +120,7 @@ effort has been devoted to characterizing this spin glass order, the nature of
 the paramagnetic-glassy transition, and that of the associated order 
 parameter~\cite{binder-1986,parisi-book,young-1998,nishimori-book,castellani-2005}. 
 
-All these issues have been thoroughly addressed in the Sherrington-Kirkpatrick 
+All these issues can be thoroughly addressed in the Sherrington-Kirkpatrick 
 (S-K) model~\cite{sherrington-1978,sherrington-1978-prl}, which is exactly 
 solvable. The S-K model is a \emph{classical} Ising model on the fully-connected 
 graph of $N$ sites, with quenched random interactions. Its hamiltonian reads  
@@ -135,19 +134,19 @@ h\sum\limits_{1\le i\le N}S_i.
 Here $S_i=\pm 1$ are classical Ising spins, $h$ is an external magnetic field, and 
 $J_{ij}$ are uncorrelated (from site to site) random variables. The S-K model hosts 
 a low-temperature glassy phase, which is separated from a high-temperature paramagnetic 
-one by a second order phase transition. In contrast with its mean-field nature, the 
-solution of the S-K model has been a mathematical challenge. 
-Although it was proposed as an ansatz by Parisi~\cite{parisi-1980} more than thirthy 
-years ago, its rigourous proof was obtained only recently~\cite{talagrand-2006}. Moreover, 
-the solution exhibits several intricate features, such as lack of self-averaging~\cite{pastur-1991}, 
-ultrametricity~\cite{mezard-1984,rammal-1986}, and replica symmetry breaking~\cite{parisi-book,
-castellani-2005}. The last refers to the breaking of the permutation symmetry among the 
-fictitious replicas of the system, which in the standard replica trick~\cite{cardy-book} are 
-used to perform disorder averages. Finally, although the applicability of the S-K 
+one by a second order phase transition. Despite its mean-field nature, the solution 
+of the S-K model has been a mathematical challenge. Although it was proposed as an 
+ansatz by Parisi~\cite{parisi-1980} more than thirthy years ago, its rigourous proof 
+was obtained only recently~\cite{talagrand-2006}. Moreover, the solution exhibits several 
+intricate features, such as lack of self-averaging~\cite{pastur-1991}, ultrametricity~\cite{
+mezard-1984,rammal-1986}, and replica symmetry breaking~\cite{parisi-book,castellani-2005}. 
+The last refers to the breaking of the permutation symmetry among the fictitious replicas 
+of the system, which are introduced to perform disorder averages (\emph{replica 
+trick}~\cite{cardy-book}). Finally, although the applicability of the S-K 
 model to describe realistic spin glasses is still highly debated~\cite{yucesoy-2012,
-billoire-2012,yucesoy-2013}, we should mention that there are recent proposals on how to 
-realize this model in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser 
-systems~\cite{ghofraniha-2015}. 
+billoire-2012,yucesoy-2013}, there are recent proposals on how to realize this model 
+in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser systems~\cite{
+ghofraniha-2015}. 
 
 In the last decade entanglement-related quantities have emerged as valuable tools to 
 understand the physics of complex systems~\cite{amico-2008,eisert-2009,calabrese-2009,
@@ -174,7 +173,7 @@ booklet ``sheets'') of the model. Notice that these \emph{physical} replicas are
 from the \emph{fictitious} ones used to perform the disorder average. Each sheet is 
 divided into two parts $A$ and $B$, containing $N_A$ and $N_B$ spins, respectively. 
 The spins in part $A$ of different sheets are constrained to be equal. It is 
-convenient to introduce the aspect ratio $0\le\omega\le1$ as  
+convenient to introduce the booklet aspect ratio $0\le\omega\le1$ as  
 %
 \begin{equation}
 \label{a-ratio}
@@ -221,8 +220,8 @@ physical and the fictitious ones, is preserved. This allows us to provide an exa
 expression for the free energy of the model and several derived quantities, such as the internal 
 energy. We compare our results with Monte Carlo simulations, finding perfect agreement. 
 Oppositely, we provide evidence that in the low-temperature phase the replica symmetry is  
-broken. Precisely, we numerically observe that the replica-symmetric (RS) result for the 
-internal energy  is systematically lower than the Monte Carlo data, as in the standard 
+broken. For instance, we numerically observe that the replica-symmetric (RS) result for the 
+internal energy is systematically lower than the Monte Carlo data, as in the standard 
 S-K model~\cite{sherrington-1978-prl,sherrington-1978}. This discrepancy becomes larger 
 upon lowering the temperature.  
 
@@ -249,10 +248,9 @@ the fictitious replicas, preserving that among the physical ones. Although this 
 natural, we are not able to provide a rigourous proof that this is the correct symmetry 
 breaking pattern. In particular, we cannot exclude that the symmetry among the physical 
 replicas has to be broken. As a consequence, our scheme should be regarded as an 
-approximation, and not as an exact solution. Finally, we restrict ourselves to the 
-one-level replica symmetry breaking ($1$-RSB), although, in principle, it is possible 
-to treat within our scheme the full breaking of the replica symmetry ($\infty$-RSB). 
-Surprisingly, we observe that the $1$-RSB approximation for the internal energy is in 
+approximation, and not as an exact solution. We restrict ourselves to the 
+one-level replica symmetry breaking ($1$-RSB). 
+Surprisingly, we observe that the $1$-RSB result for the internal energy is in 
 excellent agreement with the Monte Carlo data for  $\beta\lesssim 3$, whereas the RS 
 approximation fails already at $\beta\approx 1$. This suggests that the $1$-RSB ansatz 
 captures correctly some aspects of the replica symmetry breaking. 
@@ -273,12 +271,12 @@ energy.
 Finally, we consider the R\'enyi mutual information $[{\mathcal I}_2]$. This obeys a volume 
 law for any $\beta$ and $\omega$, in contrast with local spin models, where an area law is 
 observed~\cite{wolf-2008}. The corresponding density $[{\mathcal I}_2]/N$ vanishes in 
-both the infinite-temperature and the zero-temperature limits. Surprisingly, ${\mathcal I}_2/N$ 
+both the infinite-temperature and the zero-temperature limits. Surprisingly, $[{\mathcal I}_2]/N$ 
 does not exhibit any crossing for different system sizes at the paramagnetic-glassy transition.
 This is in striking contrast with local spin models~\cite{jaconis-2013}. Interestingly, for 
 any $\omega$, ${\mathcal I}_2/N$ exhibits a maximum for $\beta\approx 1$. However, the 
 position of this maximum is not simply related to the paramagnetic-glassy transition. Finally, 
-at high temperature $[{\mathcal I}_2]/N$ is fully described analytically by the RS result 
+at high temperature $[{\mathcal I}_2]/N$ is described analytically by the RS result 
 $[{\mathcal I}_2]^{RS}/N$, whereas at low temperatures one has to include the effects of the 
 replica symmetry breaking. Similar to $[S_2]$, we observe that the $1$-RSB approximation 
 $[{\mathcal I}^{1\textrm{-}RSB}_2]/N$, is in good agreement with the Monte Carlo data 
@@ -287,31 +285,25 @@ for $\beta\lesssim 3$.
 The Article is organized as follows. In section~\ref{booklet} we introduce the classical 
 R\'enyi entropy and the mutual information, reviewing their representation in terms of 
 the booklet partition functions. In section~\ref{the-model} we present the structure of 
-the  the solution of the S-K model on the booklet. Specifically, we discuss the replica 
+the solution of the S-K model on the booklet. Specifically, we discuss the replica 
 trick, which is used to perform disorder averages, and the saddle point approximation in 
-the thermodynamic limit . Section~\ref{solution} is concerned with the RS approximation. 
-In subsection~\ref{para-section} we focus on the high-temperature 
-region, where this approximation becomes exact. In subsection~\ref{rs-section} we discuss 
-the RS ansatz in the low-temperature region. Section~\ref{rsb-1-section} is devoted to   
-the $1$-RSB approximation. In section~\ref{mc-results} we check the validity of both 
-the RS and the $1$-RSB results comparing with Monte Carlo simulations for the internal energy. 
-Section~\ref{Renyi-section} and~\ref{I2-section} discuss the classical R\'enyi entropy and the 
-mutual information, respectively. Finally, we conclude in section~\ref{conclusions}.
+the thermodynamic limit. Section~\ref{solution} is concerned with the RS approximation. 
+Precisely, in subsection~\ref{para-section} we focus on the high-temperature 
+region, where this pproximation becomes exact. In subsection~\ref{rs-section} we discuss 
+the structure of the RS ansatz in the low-temperature region. Section~\ref{rsb-1-section} 
+is devoted to   the $1$-RSB approximation. In section~\ref{mc-results} we check the validity 
+of both the RS and the $1$-RSB results comparing with Monte Carlo simulations for the 
+internal energy. Section~\ref{Renyi-section} and~\ref{I2-section} discuss the classical R\'enyi 
+entropy and the mutual information, respectively. Finally, we conclude in section~\ref{conclusions}.
 
 
 
 %########################################################################
-\section{The booklet construction \& and the classical mutual information}
+\section{The booklet construction \& and the classical R\'enyi entropy}
 \label{booklet}
 
-%Clearly, $p_{i_A}\equiv\sum_{j_b\in{\mathcal C}_B}p_{i_A,j_B}$, with $p_{i_A,j_B}$ 
-%being the probability that the system is in the configuration $i_A\in{\mathcal C}_A$
-%in part $A$, and $j_B\in{\mathcal C}_B$ in part $B$. For a spin model at inverse 
-%temperature $\beta$, one has $p_{i_A,j_B}\equiv e^{-\beta E(i_A,j_B)}/Z(\beta)$, 
-%where $E(i_A,j_B)$ is the energy of the system, and $Z(\beta)$ its partition function. 
-
 Given a generic \emph{classical} spin model at inverse temperature $\beta$, 
-the R\'enyi classical entropy $S_n(A)$ is defined as~\cite{jaconis-2013,stephan-2014} 
+the classical R\'enyi entropy $S_n(A)$ is defined as~\cite{jaconis-2013,stephan-2014} 
 %
 \begin{equation}
 \label{renyi}
@@ -325,13 +317,14 @@ Each sheet is divided into two parts $A$ and $B$ (cf. Figure~\ref{cartoon} (a)).
 of the system are ``glued'' together to form the booklet. The spins in part $A$ of the different 
 sheets are identified (cf. Figure~\ref{cartoon} (b)). While spins in parts $B$ of the booklet 
 are at inverse temperature $\beta$, the ones in $A$ are at the effective temperature $n\beta$. 
-A similar geometric construction~\cite{guerra-2002} plays an important role in the mathematical 
-proof of the Parisi ansatz. 
+Notice that a similar geometric construction~\cite{guerra-2002} plays an important role in the 
+mathematical proof of the Parisi ansatz. 
 
-Notice that one has $S_n(A)\equiv1/(n-1)\log(F(A,n,\beta))-n\log(F(\beta))$, where $F(A,n,\beta)
+Clearly, one has $S_n(A)\equiv1/(n-1)\log(F(A,n,\beta))-n\log(F(\beta))$, where $F(A,n,\beta)
 \equiv\log(Z(A,n\beta))$ and $F(\beta)\equiv\log(Z(\beta))$ are related (apart from a factor 
 $\beta$) to the free energy of the model on the booklet and on the plane, respectively.
 The mutual information ${\mathcal I}_n(A,B,\beta)$ is defined~\cite{jaconis-2013,stephan-2014} 
+as 
 %
 \begin{equation}
 \label{MI}
@@ -368,17 +361,17 @@ charge~\cite{stephan-2014}.
 \section{The Sherrington-Kirkpatrick (S-K) model on the booklet}
 \label{the-model}
 
-Here we introduce the Sherrington-Kirkpatrick (S-K) model on the booklet 
-(see Fig.~\ref{cartoon}). In subsection~\ref{the-model-def}  we define the 
+Here we introduce the Sherrington-Kirkpatrick (S-K) model on the booklet. 
+In subsection~\ref{the-model-def}  we define the 
 model and its partition function. In subsection~\ref{replica-sec} 
 we discuss the replicated booklet construction that is used to calculate the 
 disorder-averaged free energy $[F(\omega,n,\beta)]$. 
-In~\ref{saddle-point} we consider the thermodynamic limit, 
+In section~\ref{saddle-point} we consider the thermodynamic limit, 
 using the saddle point approximation. We also introduce the overlap tensor,  
 which contains all the information about the thermodynamic behavior of the 
 model. The analytical formula for the replicated partition function (Eq.~\eqref{Z-ac}), 
-and the saddle point equations (Eqs.~\eqref{saddle-final}) for the overlap tensor 
-are the main results of this section. 
+and the saddle point equations (Eqs.~\eqref{saddle-final}\eqref{saddle-final-a}) 
+for the overlap tensor are the main results of this section. 
 
 %########################################################################
 \subsection{The model and its partition function}
@@ -400,10 +393,10 @@ each sheet, $J_{ij}$ is the interaction strength, and $h$ is an external
 magnetic field. Here we choose $h=0$. The total number of spins in the booklet 
 is $nN$. The first sum inside the brackets in Eq.~\eqref{SK-ham} is over all the 
 $N(N-1)/2$ pairs of spins in each sheet. Spins on different sheets do not interact. 
-In each ``page'' of the booklet all the sites are divided into two groups $A\equiv
-\{1,\dots, N_A\}$ and $B\equiv\{N_A+1,\dots,N\}$, containing $N_A$ and $N_B\equiv 
-N-N_A$ sites, respectively. The spins living in part $A$ and different sheets 
-are identified, i.e., $\forall i\in A$ one has  
+In each ``sheet'' of the booklet all the sites are divided into two groups $A\equiv\{1,
+\dots, N_A\}$ and $B\equiv\{N_A+1,\dots,N\}$, containing $N_A$ and $N_B\equiv N-N_A$ 
+sites, respectively. The spins living in part $A$ and different sheets are identified, 
+i.e., $\forall i\in A$ one has  
 %
 \begin{equation}
 S_i^{(r)}=S_{i}^{(r')}\quad\forall\, r,r'. 
@@ -416,7 +409,7 @@ only through the ratio $\omega$ (cf. Eq.~\eqref{a-ratio}).
 
 In Eq.~\eqref{SK-ham} the couplings $J_{ij}\in\mathbb{R}$ are uncorrelated (from site to site) 
 quenched random variables. $J_{ij}$ are the same in all the sheets of the booklet. Specifically, 
-here we choose $J_{ij}$ distributed according to a gaussian distribution   
+here $J_{ij}$ are drawn from the gaussian distribution   
 %
 \begin{equation}
 P(J_{ij})=
@@ -433,8 +426,8 @@ $J_0=0$ and $J=1$. The factors $N$ in Eq.~\eqref{quenched-distr} ensure a well-d
 thermodynamic limit. 
 
 The partition function $Z(\omega,n,\beta,\{J\})$ of the S-K model on the booklet 
-at inverse temperature $\beta\equiv 1/T$, and fixed disorder realization $\{J_{ij}\}$, 
-reads 
+at inverse temperature $\beta\equiv 1/T$, and for fixed disorder realization 
+$\{J_{ij}\}$, reads 
 %
 \begin{multline}
 Z(\omega,n,\beta,\{J\})\equiv\textrm{Tr}'\exp(-\beta{\mathcal H})=\\
@@ -446,14 +439,13 @@ S^{(r)}_j-h\sum\limits_{i=1}^NS^{(r)}_i\Big)\Big\},
 %
 where $\textrm{Tr}'\equiv \sum_{\{S_i\}}$ denotes the sum over all possible 
 spin configurations. The prime in $\textrm{Tr}'$ stresses that only spin configurations 
-satisfying the booklet constraint in Eq.~\eqref{book-constraint} are considered. 
-In the two limits $\omega=0$ and $\omega=1$ one recovers the standard 
-S-K model. In particular, for $\omega=0$, i.e., $n$ disconnected sheets, one has 
-$Z(0,n,\beta,\{J\})=Z(\beta,\{J\})^n$, with $Z(\beta,\{J\})$ the partition function 
-of the S-K model on the plane. On the other hand, for $\omega=1$ it is $Z(1,n,\beta,
-\{J\})=Z(n\beta,\{J\})$, i.e., the partition function of the S-K model at inverse 
-temperature $n\beta$. The quenched averaged free energy $[F(\omega,n,\beta)]$, is defined 
-as 
+satisfying the constraint in Eq.~\eqref{book-constraint} are considered. In the two limits 
+$\omega=0$ and $\omega=1$ one recovers the standard S-K model. In particular, for $\omega=0$, 
+i.e., $n$ disconnected sheets, one has $Z(0,n,\beta,\{J\})=Z(\beta,\{J\})^n$, with 
+$Z(\beta,\{J\})$ the partition function of the S-K model on the plane. On the other hand, 
+for $\omega=1$ it is $Z(1,n,\beta,\{J\})=Z(n\beta,\{J\})$, i.e., the partition function 
+of the S-K model at inverse temperature $n\beta$. The quenched averaged free energy 
+$[F(\omega,n,\beta)]$, is defined as 
 %
 \begin{equation}
 \label{free-energy}
@@ -463,9 +455,6 @@ as
 %
 where $\int{\mathcal D}\{J\}\equiv\prod\nolimits_{i<j}\int_{-\infty}^{
 +\infty}dJ_{ij}P(J_{ij})$. 
-%Notice that $[F(\omega,n,\beta)]$ is the 
-%main ingredient to construct the classical R\'enyi entropies and the 
-%mutual information (cf. Eq.~\eqref{MI} and Eq.~\eqref{renyi}).
 
 At $\omega=0$ and $\omega=1$ the phase diagram of the S-K model in the 
 thermodynamic limit is well established~\cite{nishimori-book}. In particular, 
@@ -480,7 +469,7 @@ replica-symmetry-broken phase at low temperatures survives for generic
 $0<\omega<1$, while at high temperature the model is paramagnetic. The 
 critical point at $\beta=\beta_c(\omega)$, which marks the transition 
 between the two phases, is a nontrivial function of the booklet ratio 
-$\omega$. 
+$\omega$ (see section~\ref{tc-section}). 
 
 %########################################################################
 \subsection{The replicated booklet and the overlap tensor}
@@ -553,7 +542,7 @@ dq^{rr'}_{\gamma\gamma'}
 %
 where we neglected subleading contributions ${\mathcal O}(1/N)$ in 
 the thermodynamic limit. Here ${\mathcal K}(\{q,m\})$ is spin-independent 
-and reads 
+and it reads 
 %
 \begin{multline}
 {\mathcal K}(\{q,m\})\equiv 
@@ -612,8 +601,6 @@ The subscript $A$ in $\tr_A$ is to stress that spins living in different physica
 replicas (i.e., for $r\ne r'$ in Eq.~\eqref{mf-action}) are identified (due 
 to the booklet constraint in Eq.~\eqref{book-constraint}), whereas they have 
 to be treated as independent variables in performing $\tr_B$.  
-Notice that in Eq.~\eqref{z-final} the trace acts over a system of $n\alpha$ 
-spins, instead of $Nn\alpha$, as in Eq.~\eqref{hs-Z}. 
 
 %########################################################################
 \subsection{The saddle point approximation}
@@ -682,14 +669,15 @@ $\alpha\to 0$ exactly.
 
 For the standard S-K model (i.e., for $n=1$) the simplest parametrization is the 
 replica-symmetric one (RS), which amounts to taking $q^{11}_{\gamma\gamma'}=q$. 
-This relies on the observation that fictitious replicas appear symmetrically 
+This relies on the observation that the fictitious replicas appear symmetrically 
 in Eq.~\eqref{rep-Z}. Although the RS ansatz is correct at high temperatures, it 
 fails in the glassy phase at low temperatures, where the permutational invariance 
-within the replicas has to be broken~\cite{almeida-1978}. Parisi's ansatz~\cite{parisi-1979}
-provides a systematic scheme to break the replica symmetry in successive steps, and it  
-allows to capture the the glassy behavior of the S-K model at low temperature. 
-We anticipate (see section~\ref{rsb-1-section}) that a similar scheme has to be used to 
-describe the glassy phase of the S-K model on the booklet. 
+within the replicas has to be broken~\cite{almeida-1978}. the celebrated Parisi 
+ansatz~\cite{parisi-1979} provides a systematic scheme to break the replica 
+symmetry in successive steps, and it allows to capture the the glassy behavior of 
+the S-K model at low temperature. We anticipate (see section~\ref{rsb-1-section} for 
+the details) that a similar scheme has to be used to describe the glassy phase of 
+the S-K model on the booklet. 
 
 
 %########################################################################
@@ -700,9 +688,10 @@ In this section we present the solution of the S-K model on the booklet, using
 the replica symmetric (RS) approximation. In subsection~\ref{para-section} we focus 
 on the high temperature phase, where this approximation is exact, and the 
 behavior of the model is fully determined by the diagonal part of the overlap 
-tensor $q_{\gamma\gamma'}^{rr'}$. The full structure of $q_{\gamma\gamma'}^{rr'}$ 
-in the RS ansatz  is discussed in subsection~\ref{rs-section}. This allows us to 
-determine the critical temperature of the paramagnetic-glassy transition. 
+tensor $q_{\gamma\gamma'}^{rr'}$ (see section~\ref{replica-sec} for its 
+definition). The generic structure of $q_{\gamma\gamma'}^{rr'}$ 
+within the RS ansatz  is discussed in subsection~\ref{rs-section}. This allows us 
+to determine the critical temperature of the paramagnetic-glassy transition. 
 
 %########################################################################
 \subsection{The paramagnetic phase}
@@ -725,10 +714,9 @@ determine the critical temperature of the paramagnetic-glassy transition.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Here we provide the exact analytical expression for the disorder-averaged free 
-energy $[F_{para}(\omega,n,\beta)]$  in the paramagnetic non-glassy phase of 
-the S-K model on the booklet. We start discussing the infinite temperature 
-limit (i.e., $\beta\to 0$), restricting ourselves to zero magnetic field. 
-
+energy $[F_{para}(\omega,n,\beta)]$  in the paramagnetic non-glassy phase. 
+We start discussing the infinite temperature limit (i.e., $\beta\to 0$), 
+restricting ourselves to zero magnetic field. 
 Using Eq.~\eqref{mf-action}, a standard high-temperature expansion yields 
 $\tr_Ae^{{\mathcal L}}=2^{\alpha}+{\mathcal O}(\beta^2)$ and $\tr_B e^{{
 \mathcal L}}=2^{n\alpha}+{\mathcal O}(\beta^2)$, implying  
@@ -740,9 +728,8 @@ $\tr_Ae^{{\mathcal L}}=2^{\alpha}+{\mathcal O}(\beta^2)$ and $\tr_B e^{{
 \delta_{\gamma,\gamma'}+{\mathcal O}(\beta^2).
 \end{align}
 %
-After substituting in Eq.~\eqref{saddle-final}, it is straightforward to 
-obtain the infinite-temperature overlap tensor $q_{\gamma\gamma'}^{rr'}$ 
-as 
+Using Eq.~\eqref{saddle-final}, it is straightforward to obtain the 
+infinite-temperature overlap tensor $q_{\gamma\gamma'}^{rr'}$ as 
 %
 \begin{equation}
 q_{\gamma\gamma'}^{rr'}=(1-\omega)\delta_{\gamma,\gamma'}\delta_{r,r'}+
@@ -751,8 +738,8 @@ q_{\gamma\gamma'}^{rr'}=(1-\omega)\delta_{\gamma,\gamma'}\delta_{r,r'}+
 \end{equation}
 %
 Remarkably, $q_{\gamma\gamma'}^{rr'}$ becomes diagonal in both the 
-indices $\gamma,\gamma'$ and $r,r'$, i.e.,  the physical and 
-fictitious replica spaces. Using Eq~\eqref{Z-ac} and Eq.~\eqref{replica-trick}, 
+indices $\gamma,\gamma'$ and $r,r'$, i.e., the physical and fictitious 
+replica spaces. Using Eq~\eqref{Z-ac} and Eq.~\eqref{replica-trick}, 
 after performing the analytic continuation $\alpha\to 0$, one obtains  
 %
 \begin{multline}
@@ -785,8 +772,8 @@ Eq.~\eqref{mf-action}) as
 \gamma)}S^{(r',\gamma)}-n\alpha\Big\}.
 \end{equation}
 %
-After introducing the auxiliary Hubbard-Stratonovich variables $z_\lambda$ 
-(with $\lambda=1,\dots,\alpha$), one can write 
+After introducing the Hubbard-Stratonovich variables $z_\lambda$ (with 
+$\lambda=1,\dots,\alpha$), one can write 
 %
 \begin{multline}
 \label{ht-saddle}
@@ -843,7 +830,7 @@ ansatz~\eqref{high-t-q} in Eqs.~\eqref{saddle-final}~\eqref{saddle-final-a}.
 Clearly, for two independent copies of the S-K model, i.e., $\omega=0$,  
 Eq.~\eqref{saddle-high-t} gives $q_0=0$ for $\beta\le1$, whereas 
 one has $q_0\ne0$ for $\beta>1$. On the other hand, for $\omega=1$ 
-one has $q_0=1$ $\forall\beta$. For intermediate $0<\omega<1$ $q_0$ 
+one has $q_0=1$ $\forall\beta$. For intermediate $0<\omega<1$, $q_0$ 
 is plotted as a function of $\omega$ in Fig.~\ref{RSB0_saddle}. For $\beta=0$ it 
 is $q_0=\omega$ (straight line in the Figure). In the low-temperature limit 
 one has $q_0\to 1$, for any $\omega$. In particular, it is straightforward 
@@ -916,19 +903,19 @@ the trace over the spin variables, in the limit $\alpha\to0$, one obtains
 \log\int Dz'H_{RS}(nz,nz'), 
 \end{align}
 %
-where we define $H_{RS}(z,z')\equiv\cosh(\beta z\sqrt{q_0'}+\beta z'\sqrt{q_0-q_0'})$. 
+where $H_{RS}(z,z')\equiv\cosh(\beta z\sqrt{q_0'}+\beta z'\sqrt{q_0-q_0'})$. 
 Notice that because of the square roots in the definition of $H_{RS}(z,z')$, 
 one has the constraint $0\le q_0'\le q_0\le 1$. 
 
-In Eq.~\eqref{eq1}\eqref{eq2} $q_0,q_0'$ satisfy the saddle point conditions 
+In Eqs.~\eqref{eq1}\eqref{eq2} $q_0,q_0'$ satisfy the saddle point conditions 
 $\partial[F_{RS}(\omega,n,\beta)]/\partial q_0=\partial[F_{RS}(\omega,n,\beta)]/
-\partial q'_0=0$ (cf. Eqs.~\eqref{RS-saddle-1}\eqref{RS-saddle-2} for the precise 
-form of the saddle point equations for $n=2$). 
-The resulting $q_0$ and $q_0'$ are plotted in Figure~\ref{RSB0-saddle} (full 
-and dotted lines, respectively) as function of $\omega$ and for several values of 
-$\beta$. Clearly, for any $\beta$ one has $q_0=1$ in the limit $\omega\to 1$. Also, 
-in the zero-temperature limit $\beta\to\infty$ one has that $q_0\to 1$ 
-and $q_0'\to 1$, for any $\omega$. Moreover, a simple calculation yields  
+\partial q'_0=0$ (cf. Eqs.~\eqref{RS-saddle-1}\eqref{RS-saddle-2} for their 
+form for $n=2$). The resulting $q_0$ and $q_0'$ are plotted in Fig.~\ref{RSB0-saddle} 
+(full and dotted lines, respectively) as function of $\omega$ and for several 
+values of $\beta$. Clearly, for any $\beta$ one has $q_0=1$ in the limit 
+$\omega\to 1$. Also, in the zero-temperature limit $\beta\to\infty$ one has 
+that $q_0\to 1$ and $q_0'\to 1$, for any $\omega$. Moreover, a simple calculation 
+yields  
 %
 \begin{align}
 \label{low-t}
@@ -938,8 +925,8 @@ and $q_0'\to 1$, for any $\omega$. Moreover, a simple calculation yields
 & q_0'=1-\frac{1}{\sqrt{2\pi}\beta}-\frac{1}{2\pi\beta^2}+{\mathcal O}(\beta^{-3}),
 \end{align}
 %
-with the dots denoting exponentially suppressed terms. Interestingly, from 
-Eq.~\eqref{low-t} one has that $q_0\to 1$ exponentially in the limit $\beta\to\infty$, 
+with the dots denoting exponentially suppressed terms in the limit $\beta\to\infty$. 
+Interestingly, from Eq.~\eqref{low-t} one has that $q_0\to 1$ exponentially in the limit $\beta\to\infty$, 
 as in the paramagnetic phase (cf. section~\ref{para-section}), whereas 
 $q_0'-1\propto 1/\beta$, similar to the standard SK model~\cite{nishimori-book}. 
 
@@ -961,13 +948,14 @@ $q_0'-1\propto 1/\beta$, similar to the standard SK model~\cite{nishimori-book}.
 
 %##########################################################################
 \subsection{The paramagnetic-glassy transition}
+\label{tc-section}
 
-Finally, using the replica-symmetric ansatz Eq.~\eqref{rs-ansatz} one can determine 
+Using the replica-symmetric ansatz Eq.~\eqref{rs-ansatz} one can determine 
 the critical temperature $\beta_c$ of the paramagnetic-glassy transition. 
 Near the glassy transition one should expect $q'_0\to0$, whereas $q_0$ 
 should remain finite (see section~\ref{para-section}). By expanding $[F_{RS}(\omega,n,\beta)]$ 
 (cf. Eq~\eqref{rs-F}) for small $q_0'$, and keeping only terms up to ${\mathcal O}((q_0')^2)$, 
-one obtains a standard Landau theory. Thus, $\beta_c$ is obtained imposing that the 
+one obtains a standard Landau theory. Thus, $\beta_c$ is obtained by imposing that the 
 coefficient of the quadratic term $q_0'^2$ changes sign. This leads to the equation 
 %
 \begin{equation}
@@ -997,13 +985,13 @@ The resulting $\beta_c$ is plotted in Fig.~\ref{beta_c} as a function of $\omega
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %##########################################################################
-\section{The one-step replica-symmetry-broking (1-RSB) approximation}
+\section{The one-step replica-symmetry-breaking (1-RSB) approximation}
 \label{rsb-1-section}
 
-In this section we go beyond the replicas-ymmetric approximation, including some 
+In this section we go beyond the replica-ymmetric approximation, including some 
 of the effects of the replica symmetry breaking. More specifically, 
-here we discuss the one-step replica symmetry breaking (1-RSB) approximation for the 
-S-K model on the booklet. The overlap tensor $q_{\gamma\gamma'}^{rr'}$ now reads  
+here we discuss the one-step replica symmetry breaking (1-RSB) approximation. 
+The overlap tensor $q_{\gamma\gamma'}^{rr'}$ now reads  
 %
 \begin{equation}
 \label{q-rsb1}
@@ -1026,19 +1014,20 @@ q_0' & \textrm{otherwise}\\
 \label{q-rsb1a}
 \end{equation}
 %
-where now $q_0',q_1'\in{\mathbb R}$, $m_1\in{\mathbb N}$, and $\lfloor\cdot\rfloor$ 
-denotes the floor function. The off-diagonal elements of $q'$ do not depend on 
-$r,r'$, meaning that, although the permutational symmetry between the 
-fictitious replicas is broken, the symmetry among the physical ones is preserved. 
-The choice in Eq.~\eqref{q-rsb1a} corresponds to a simple block-diagonal structure for 
-$q'$: the matrix elements of the $m_1\times m_1$ diagonal blocks of $q'$ are set to 
-$q_1'$, whereas all the off-diagonal elements are set to $q_0'$. As for the replica-symmetric 
-ansatz in Eq.~\eqref{rs-ansatz}, we do not have any rigorous argument to justify 
-Eq.~\eqref{q-rsb1a} (see section~\eqref{mc-results}, however, for numerical results).
+where $q_0',q_1'\in{\mathbb R}$, $m_1\in{\mathbb N}$, and $\lfloor\cdot\rfloor$ 
+denotes the floor function. Notice that the off-diagonal elements of $q'$ (i.e., for 
+$\gamma\ne\gamma'$) do not depend on $r,r'$, meaning that, although the permutational 
+symmetry between the fictitious replicas is broken, the symmetry among the physical ones 
+is preserved. The choice in Eq.~\eqref{q-rsb1a} corresponds to a simple block-diagonal 
+structure for $q'$: the matrix elements of the $m_1\times m_1$ diagonal blocks of $q'$ 
+are set to $q_1'$, whereas all the off-diagonal elements are set to $q_0'$. As for the 
+replica-symmetric ansatz in Eq.~\eqref{rs-ansatz}, we do not have any rigorous argument 
+to justify Eq.~\eqref{q-rsb1a} (see section~\eqref{mc-results}, however, for numerical 
+results).
 
 The effective interaction ${\mathcal L}_{1\textrm{-}RSB}$ (cf. Eq.~\eqref{mf-action}) 
-in the replica space is obtained by substituting Eq.~\eqref{q-rsb1} in Eq.~\eqref{mf-action}. 
-This yields  
+in the replica space is obtained by substituting Eq.~\eqref{q-rsb1} in 
+Eq.~\eqref{mf-action}. This yields  
 %
 \begin{multline}
 {\mathcal L}_{1\textrm{-}RSB}/\beta^2=-\frac{q_0}{2}n\alpha
@@ -1065,7 +1054,7 @@ It is convenient to introduce the Hubbard-Stratonovich variables $z,z_\sigma,z_{
 z_{\sigma}\sqrt{q_1'-q_0'}\Big)S^{(r,\gamma)}\Big\}.
 \end{multline}
 %
-The trace over the spin variables can now be performed explicitly in Eq.~\eqref{step}. 
+The trace over the spin variables in Eq.~\eqref{step} can be now performed explicitly. 
 Finally, one obtains the 1-RSB approximation for the free energy 
 $[F_{1\textrm{-}RSB}(\omega,n,\beta)]$ as 
 %
@@ -1090,19 +1079,20 @@ where we defined $H_{1\textrm{-}RSB}(z,z',z'')$ as
 %
 \begin{multline}
 H_{1\textrm{-}RSB}(z,z',z'')\equiv\cosh(z\beta\sqrt{q'_0}\\+
-z''\beta\sqrt{q_0-q'_1} +z'\beta\sqrt{q_1'-q_0'})
+z''\beta\sqrt{q_0-q'_1} +z'\beta\sqrt{q_1'-q_0'}).
 \label{H1}
 \end{multline}
 %
 Similar to the replica-symmetric situation (see section~\ref{rs-section}), 
 from Eq.~\eqref{H1} one has the constraint $0\le q_0'\le q_1'\le q_0\le 1$.
 The parameters $q_0,q_0',q_1',m_1$ are obtained by solving the saddle 
-point equations Eqs.~\eqref{RSB-1-saddle-a}\eqref{RSB-1-saddle-b}\eqref{RSB-1-saddle-c}
-\eqref{RSB-1-saddle-d}. One should remark that, although formally $m_1\in\mathbb{N}$, 
-one obtains $m_1\in\mathbb{R}$ from the saddle point equations. 
-Finally, the RS result $F_{RS}(\omega,n,\beta)$ (cf. Eq.~\eqref{rs-F}) is recovered 
-from Eq.~\eqref{RSB-1-logZ} in the limit $q_1'=q_0'$, while the result in the 
-paramagnetic phase (cf. Eq.~\eqref{ht-logZ}) corresponds to $q_1'=q_0'=0$.
+point equations~\eqref{RSB-1-saddle-a}\eqref{RSB-1-saddle-b}\eqref{RSB-1-saddle-c}
+\eqref{RSB-1-saddle-d}. One should remark that, although formally $m_1$ is an 
+integer, one obtains $m_1\in\mathbb{R}$ from the saddle point equations. 
+Clearly, the replica-symmetric result $[F_{RS}(\omega,n,\beta)]$ (cf. 
+Eq.~\eqref{rs-F}) is recovered from Eq.~\eqref{RSB-1-logZ} in the limit 
+$q_1'=q_0'$, while the free energy in the paramagnetic phase $[F_{para}(\omega,n,
+\beta)]$ (cf. Eq.~\eqref{ht-logZ}) corresponds to $q_1'=q_0'=0$.
 
 %##########################################################################
 \section{Monte Carlo results: The internal energy}
@@ -1120,12 +1110,12 @@ U(\omega,n,\beta)\equiv-\frac{\partial}{\partial\beta}
 \end{equation}
 %  
 Fig.~\ref{U-MC} plots the MC data for $U(\omega,2,\beta)$ versus the inverse temperature 
-$\beta$, for $\omega=1/2$ (see Fig.~\ref{cartoon}). The cicles, squares, and triangles 
+$\beta$, for $\omega=1/2$ (see Fig.~\ref{cartoon}). The circles, squares, and triangles 
 are the MC results for different sizes, i.e., number of spins per sheet, $N=32,64,128$. 
 The vertical dotted line is the critical temperature $\beta_c\approx 0.603$ of 
 the paramagnetic-glassy transition (cf. Fig.~\ref{beta_c}). In the high-temperature 
 region finite size effects are small, and already for $N=64$ the MC data are indistinguishable 
-from the thermodynamic limit. Oppositely, stronger scaling corrections are  visible in 
+from the thermodynamic limit. Oppositely, stronger scaling corrections are visible in 
 the low-temperature phase at $\beta>\beta_c$. 
 The plus symbols in Fig.~\ref{U-MC} are the numerical extrapolations in the 
 thermodynamic limit. These are obtained by fitting the finite size MC data 
@@ -1266,7 +1256,7 @@ We now turn to discuss the behavior of the disorder-averaged classical R\'enyi e
 entropy $[S_2]$. Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
 there is no well defined boundary between the two parts $A$ and $B$ of the system 
 (unlike Fig.~\ref{cartoon} for local models). The fully connected nature of the S-K model 
-suggests the volume-law behavir $[S_2]\propto N$ for all temperature.
+suggests the volume-law behavior $[S_2]\propto N$ for all temperature.
 Therefore it is natural to consider the entropy per spin $[S_2]/N$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
@@ -1298,8 +1288,8 @@ are the results of the fits. We should mention that the fits give $\phi'\approx 
 which is the exponent of the scaling corrections of the free energy in the standard 
 S-K model. This is not surprising, since $[S_2]$ is obtained as the difference 
 $[S_2]\equiv [F(0,2,\beta)-F(\omega,2,\beta)]$ (cf. Eq.~\eqref{renyi}). 
-Clearly, in the thermodynamic limit $[S_2]/N$ is finite for any $\beta$, 
-confirming the expected volume law behavior. Moreover, $[S_2]/N$ 
+Clearly, from Fig.~\ref{I2-MC} one has that in the thermodynamic limit $[S_2]/N$ is 
+finite for any $\beta$, confirming the expected volume law behavior. Moreover, $[S_2]/N$ 
 exhibits a maximum in the infinite-temperature limit $\beta\to0$. The height of this 
 maximum  is a decreasing function of $\omega$ (compare the panels (a)(b)(c) in 
 Fig.~\ref{Renyi-MC}). 
@@ -1321,10 +1311,10 @@ observed at lower temperatures (not shown in the Figure). These reflect the symm
 breaking. A better approximation for $[S_2]/N$ at low temperatures is obtained by 
 including the effects of the replica symmetry breaking. The circles in Fig.~\ref{Renyi-MC} 
 denote the one-step replica symmetry breaking result $[S_2^{1\textrm{-}RSB}]/N$
-(see section~\ref{rsb-1-section}). Here $[S_2^{1\textrm{-}RSB}]/N$ is formally obtained 
-using Eq.~\eqref{renyi} and the free energy $[F_{1\textrm{-}RSB}]$ (cf. 
-Eq.~\eqref{RSB-1-logZ}). Remarkably, $[S_2^{1\textrm{-}RSB}]/N$ is in excellent 
-agreement with the Monte Carlo extrapolations for $\beta\lesssim 2$. 
+(see section~\ref{rsb-1-section}). This is formally obtained using Eq.~\eqref{renyi} 
+and the free energy $[F_{1\textrm{-}RSB}]$ (cf. Eq.~\eqref{RSB-1-logZ}). Remarkably, 
+$[S_2^{1\textrm{-}RSB}]/N$ is in excellent agreement with the Monte Carlo extrapolations 
+for $\beta\lesssim 2$. 
 
 
 %##########################################################################
@@ -1335,74 +1325,59 @@ Here we focus on the behavior of the Renyi mutual information $[{\mathcal I}_2]$
 the S-K model. Similar to $[S_2]$, the mutual information obeys the volume 
 law $[{\mathcal I}_2]\propto N$. This is in contrast with local models, where 
 $[{\mathcal I}_n]$ by construction exhibits an area law at all temperatures.
-However, due to the fully connected nature of the S-K model common expectations 
-from local models do not apply.  Here we consider the mutual information per spin 
+Here we consider the mutual information per spin 
 $[{\mathcal I}_2]/N$. 
 
-Figure~\ref{I2-MC} ${\mathcal I}_2/N$ versus $0\le\beta\le 2.5$ and $\omega=1/2,1/4,1/8$ 
+Figure~\ref{I2-MC} plots $[{\mathcal I}_2]/N$ versus $0\le\beta\le 2.5$ and $\omega=1/2,1/4,1/8$ 
 (panels from left to right in the Figure). Notice that by definition (cf. Eq.~\eqref{MI}) 
-${\mathcal I}_n(\omega)={\mathcal I}_n(1-\omega)$. Circles, squares, and rhombi in 
-Fig.~\ref{I2-MC} are Monte Carlo data for $N=32,64,128$. 
-In the high-temperature region ${\mathcal I}_2$ exhibits a clear vanishing 
-behavior, for any $0<\omega<1$. Moreover, finite size effects are ``small''. 
-Using Eq.~\eqref{logZ-ht} it is straightforward to derive the high-temperature 
-behavior of ${\mathcal I}_n(\omega)$ as  
+$[{\mathcal I}_n(\omega)]=[{\mathcal I}_n(1-\omega)]$. Circles, squares, and rhombi 
+are Monte Carlo data for $N=32,64,128$. In the high-temperature region $[{\mathcal I}_2]$ 
+exhibits a vanishing behavior. Moreover, finite size effects are 
+``small''. Using Eq.~\eqref{logZ-ht} it is straightforward to derive the high-temperature 
+behavior of $[{\mathcal I}_n]$ as  
 %
 \begin{equation}
-{\mathcal I}_n(\omega)=\frac{N\beta^2}{2}\omega(1-\omega)n+{\mathcal O}
+[{\mathcal I}_n]=\frac{N\beta^2}{2}\omega(1-\omega)n+{\mathcal O}
 (\beta^4).
 \end{equation}
 %
-At lower temperatures ${\mathcal I}_2/N$ increases monotonically up to $\beta\approx 1$, 
-where it exhibits a maximum. Interestingly, the largest value of ${\mathcal I}_2/N$ 
-(${\mathcal I}_2/N\approx 0.09$ for $\omega=1/2$) is quite small, as it is observed in 
-local spin models~\cite{jaconis-2013}. The height of the maximum decreases as a function of 
-$\omega$. Its position is not simply related to the paramagnetic-glassy transition at $\beta=1$ 
-of the standard S-K model. This is not surprising because ${\mathcal I}_n(\omega)$ is constructed 
-by combining the partition functions of the S-K model on the booklets with ratios $\omega$, 
-$1-\omega$, $\omega=0$, and $\omega=1$ (cf. Eq.~\eqref{MI}), and the critical temperature of 
-the paramagnetic-glassy transition is a non trivial function of $\omega$ (see Fig.~\ref{beta_c}). 
-As a consequence, the geometric mutual information ${\mathcal G}_n$ (cf.~\eqref{GMI}) 
-is not well defined for the S-K model. 
-Furthermore, the curves for ${\mathcal I}_2/N$ calculated at different sizes do not exhibit any 
-crossing at $\beta=1$, in sharp contrast with local models~\cite{jaconis-2013}, for which it has 
-been shown that ${\mathcal I}_n(\omega)/\ell$ exhibits a crossing at a second order phase transition. 
-For $\beta\gtrsim 1$, ${\mathcal I}_2$ decreases monotonically, for any $N$. 
+Moreover, $[{\mathcal I}_2]/N$ increases upon lowering the temperature, up to $\beta\approx 1$, 
+where it exhibits a maximum. The height of this  
+maximum decreases as a function of $\omega$. Its position is not simply related to the 
+paramagnetic-glassy transition in the standard S-K model. This is not surprising 
+as $[{\mathcal I}_n]$ is constructed by combining the partition functions of the S-K model 
+on the booklets with aspect ratios $\omega$, $1-\omega$, $\omega=0$, and $\omega=1$ (cf. Eq.~\eqref{MI}), 
+and the critical temperature of the paramagnetic-glassy transition is a non trivial 
+function of $\omega$ (see Fig.~\ref{beta_c}). 
+Furthermore, the curves for $[{\mathcal I}_2]/N$ for different system sizes do not exhibit any 
+crossing. This is in sharp contrast with local models~\cite{jaconis-2013}, where ${\mathcal I}_n/L$ 
+exhibits a crossing at a second order phase transition. 
 The dash-dotted line in Fig.~\ref{I2-MC} denotes the analytical result obtained using the replica 
 symmetric (RS) approximation (see section~\ref{rs-section}). Formally this is obtained using 
-Eq~\eqref{MI} and Eq.~\eqref{rs-F}. This is in perfect agreement with the 
-MC data in the whole paramagnetic phase.  
+Eq~\eqref{MI} and Eq.~\eqref{rs-F}, and it is in perfect agreement with the MC data in the whole 
+paramagnetic phase.  
 
 
-Interestingly, at low temperatures ${\mathcal I}_2/N$ exhibits strong finite-size corrections, and 
-significant deviations from the RS result. 
-In order to extract the thermodynamic behavior of ${\mathcal I}_2/N$ we fit the MC data to 
+Interestingly, at low temperatures $[{\mathcal I}_2]/N$ exhibits strong finite-size corrections, 
+and significant deviations from the RS result. In order to extract the thermodynamic behavior of 
+$[{\mathcal I}_2]/N$ we fit the MC data to 
 %
 \begin{equation}
-\frac{{\mathcal I}_2}{N}=a+\frac{b}{N^\gamma}
+\frac{[{\mathcal I}_2]}{N}=a+\frac{b}{N^{\phi''}},
 \end{equation}
 %
-where we fix $\gamma=2/3$. The results of the fits are shown in Fig.~\ref{I2-extrapolated}. 
-The circles, squares, and triangles denote ${\mathcal I}_2/N$ extrapolated from Monte Carlo to the thermodynamic limit 
-$N\to\infty$ for $\omega=1/2,1/4,1/8$. 
-Interestingly, we numerically checked that in the zero-temperature limit the data 
-support the vanishing behavior as ${\mathcal I}_2/N\propto \beta^{-2}$. This reflects 
-the vanishing of the classical R\'enyi entropy $S_2$ at zero temperature (see Fig.~\ref{Renyi-MC}).
-The dash-dotted lines are the RS results (same as 
-in Fig.~\ref{I2-MC}). Remarkably, the RS approximation is in good agreement with 
-the extrapolations, at least within the error bars, up to $\beta\lesssim 1.5$, whereas 
-deviations occur at lower temperatures (not shown in the figure). For $\omega=1/8$, 
-the numerical results exhibit deviations from the RS result already at $\beta\gtrsim 1$. 
+where we fix $\phi''=2/3$. The results of the fits are shown in Fig.~\ref{I2-extrapolated} 
+(circles, squares, and triangles). Remarkably, the RS approximation (dash-dotted lines) is 
+in good agreement with the extrapolations up to $\beta\lesssim 1.5$, whereas deviations 
+occur at lower temperatures (not shown in the figure). 
+For $\omega=1/8$, the numerical results exhibit deviations from the RS result already at $\beta\gtrsim 1$. 
 These deviations have to be attributed to the physics of the replica symmetry breaking. 
-The full rhombi in Fig.~\ref{I2-extrapolated} are the analytical results for ${\mathcal I}_2/N$ 
-including some of the effects of the replica symmetry breaking. More precisely, 
-${\mathcal I}_2^{1\textrm{-}RSB}$ is obtained using Eq.~\eqref{MI} and the one-step replica 
+The full rhombi in Fig.~\ref{I2-extrapolated} denote the result $[{\mathcal I}^{1\textrm{-}RSB}_2]/N$ 
+obtained in the one-step replica symmetry breaking approximation. More precisely, 
+$[{\mathcal I}_2^{1\textrm{-}RSB}]$ is obtained using Eq.~\eqref{MI} and the one-step replica 
 symmetry breaking (1-RSB) approximation for the free energy of the S-K model on the 
-booklet (cf. Eq.~\eqref{RSB-1-logZ}). The agreement between ${\mathcal I}_2^{1\textrm{-}RSB}$ 
-is perfect, at least up to $\beta\lesssim 2$. Notice that at lower temperatures 
-one should expect deviations from ${\mathcal I}_2^{1\textrm{-}RSB}$, similar to what it 
-is observed in the standard S-K model. In particular, one should implement the fully 
-breaking of the replica symmetry ($\infty$-RSB).
+booklet (cf. Eq.~\eqref{RSB-1-logZ}). The agreement between $[{\mathcal I}_2^{1\textrm{-}RSB}]$ 
+and the Monte Carlo data is perfect, at least up to $\beta\lesssim 2$. 
  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1429,83 +1404,66 @@ breaking of the replica symmetry ($\infty$-RSB).
 
 We investigated the \emph{classical} R\'enyi entropy $S_n$ and the mutual information 
 ${\mathcal I}_n$ in the Sherrington-Kirkpatrick (S-K) model, which is the paradigm model 
-for mean-field spin glasses. As usual in disordered systems, we focused on the quenched 
+of mean-field spin glasses. We focused on the quenched 
 averages $[S_n]$ and $[{\mathcal I}_n]$, with the brackets $[\cdot]$ denoting the average 
-over different disorder realizations. Here $S_n$ and ${\mathcal I}_n$ were obtained 
-from suitable combinations of the partition functions of the S-K model on the 
-so-called $n$-sheets booklet (cf.~\ref{cartoon}). This is obtained by ``gluing'' together 
+over different disorder realizations. Specifically, here $[S_n]$ and $[{\mathcal I}_n]$ 
+were obtained from suitable combinations of the partition functions of the S-K model on the 
+$n$-sheets booklet (cf. Fig.~\ref{cartoon}). This is constructed by ``gluing'' together 
 $n$ independent replicas (``sheets'') of the model. On each replica the spins are 
 divided into two groups $A$ and $B$, containing $N_A$ and $N_B$ spins respectively. The 
 spins in part $A$ of the different sheets are identified. Due to the mean-field nature of 
-the model, the R\'enyi entropies and other physical quantities depend on the bipartition 
-only through the aspect ratio $\omega\equiv N_A/N$. Although many of our analytic results 
-are for generic $n$, we often restricted ourselves to the $2$-sheets booklet, i.e., the 
-second R\'enyi entropy $S_2$ and ${\mathcal I}_2$. 
+the model, physical quantities depend on the bipartition only through the aspect ratio 
+$\omega\equiv N_A/N$. 
 
-We investigated the phase diagram of the S-K model on the $2$-sheets booklet as a function 
-of $\omega$ and the inverse temperature $\beta$, in the situation without external 
-magnetic field ($h=0$ in Eq.~\eqref{SK-intro}). For any $\omega$, in the 
-thermodynamic limit the S-K model exhibit glassy phase for low-enough tempereatures, 
-whereas at high temperature the model is paramagnetic. The two phases are divided 
-by a second order phase transition, as in the standard S-K model. 
-Interestingly, we found that the critical temperature depends in a non-trivial 
-way on $\omega$. Moreover, we fully characterized the high-temperature phase 
-using the replica-symmetric (RS) approximation, which is a simple generalization 
-of the replica-symmetric solution of the S-K model model on the plane. Specifically, 
-we provided the exact formula for the disorder-averaged free energy $[F_{para}(\omega,n,
-\beta)]$ of the S-K model on the booklet (cf. Eq.~\eqref{ht-logZ}). The analytic results 
-for $S_2$ and ${\mathcal I}_2$ follow straightforwardly using Eq.~\eqref{renyi} and 
-Eq.~\eqref{MI}. In the low-temperature glassy phase the replica symmetry has to be 
-broken, similar to the standard S-K model. In order to take into account the 
-replica symmetry breaking we device a simple generalization of the the Parisi 
-ansatz~\cite{parisi-1980}, which allows to break the replica symmetry in successive 
-steps. After restricting ourselves to the one-step replica symmetry breaking, we 
-provide the exact formula for the disorder-averaged free energy $F_{1\textrm{-}RSB}
-(\omega,n,\beta)$ (cf. Eq.~\eqref{RSB-1-logZ}), and, correspondingly, $S_2^{1\textrm{RSB}}$, 
-${\mathcal I}_2^{1\textrm{-}RSB}$. As a preliminary check, we compared the analytical 
-results for the internal energy $U_{RS}$ and $U_{1\textrm{-}RSB}$ with Monte Carlo data. 
-In the high-temperature region, where the replica symmetry is not broken, these are 
-in perfect agreement with $U_{RS}$. Oppositely, in the glassy phase, where the replica 
-symmetry breaking occurs, the Monte Carlo data exhibit deviations from the analytical 
-results already at $\beta\approx 1$. However, we numerically observed that the one-step 
-replica-symmetry-broken approximation $U_{1\textrm{-}RSB}$ matches the Monte Carlo 
-data up to $\beta\approx 3$. 
+We first investigated the phase diagram of the S-K model on the $2$-sheets booklet as a 
+function of $\omega$ and the inverse temperature $\beta$. We considered the situation 
+without external magnetic field ($h=0$ in Eq.~\eqref{SK-intro}). For any $\omega$, in the 
+thermodynamic limit, the model exhibits a glassy phase for low enough temperatures and 
+a standard paramagnetic one at high temperature. The two phases are divided 
+by a phase transition, as in the S-K model on the plane. Interestingly, the critical 
+temperature exhibits a non-trivial dependence on $\omega$ that we determined analytically. 
+We fully characterized the high-temperature phase of the model using the replica-symmetric 
+(RS) approximation. Specifically, we provided the exact analytical expression for the 
+disorder-averaged free energy $[F_{para}(\omega,n,\beta)]$  (cf. Eq.~\eqref{ht-logZ}) in 
+the thermodynamic limit. On the other hand, in the glassy phase the replica symmetry has 
+to be broken, similar to the standard S-K model. To take into account the effects of the 
+replica symmetry breaking we used a generalization of the the Parisi 
+ansatz~\cite{parisi-1980}, i.e., breaking the replica symmetry in successive 
+steps. We restricted ourselves to the one-step replica symmetry breaking ($1$-RSB),   
+providing the exact expression for the disorder-averaged free energy $F_{1\textrm{-}RSB}
+(\omega,n,\beta)$ (cf. Eq.~\eqref{RSB-1-logZ}). 
 
-Finally, we discussed the behavior of $S_2$ and ${\mathcal I}_2$. Due to the mean-field 
-nature of the S-K model we observed that both quantities obey a volume law $S_2\propto N$, 
-${\mathcal I}_2\propto N$. Thus we considered the densities $S_2/N$ and ${\mathcal I}_2/N$, 
-focusing on the thermodynamic limit $N\to\infty$, at fixed $\omega$. 
-At high temperature the Monte Carlo data for $S_2/N$ are in excellent agreement with the 
-replica-symmetric result $S_2^{RS}$. Interestingly, we observed that $S_2/N$ exhibits a 
-maximum at infinite temperature, and it is a \emph{smooth} monotonically descreasing 
-function of the temperature. This behavior does not depend on the booklet aspect ratio 
-$\omega$.  Moreover, while in the high-temperature region $S_2$ is fully described by 
-the replica symmetric ansatz $S_2^{RS}$, in the glassy phase it exhibits signatures of 
-the replica symmetry breaking. The one-step replica symmetry breaking approximation 
-$S_2^{1\textrm{-}RSB}$ is in full agreement with the Monte Carlo data for $\beta\approx 3$, 
-reflecting the behavior of the internal energy. Finally, we numerically observed that the 
-mutual information per spin ${\mathcal I}_2/N$ does not show any crossing for different 
-system sizes $N$, in contrast with local models, where it exhibits a crossing at 
-the critical point. In the thermodynamic limit ${\mathcal I}_2/N$ is vanishing both 
-at $\beta=0$, and $\beta=\infty$, whereas it has a mximum at intermediate temperatures. 
-The position of this maximum is not  simply related to the paramagnetic glassy transition 
-of the S-K model. 
+Finally, we compared our analytical results with Monte Carlo simulations, focusing on the 
+internal energy per spin $U(\omega,n,\beta)/N$. In the high-temperature region, where the 
+replica symmetry is not broken, we observed perfect agreement with the replica-symmetric 
+result $U_{RS}/N$, for any $\omega$. In the glassy phase at low temperature, we found 
+significant deviations from $U_{RS}$ already at $\beta\approx 1$. On the other hand,  
+the one-step replica-symmetry-broken approximation $U_{1\textrm{-}RSB}/N$ matched the 
+Monte Carlo data for $\beta\lesssim 3$. 
 
-Finally, our work opens several interesting research directions. First, it would be 
-interesting to extend our results taking into account the full breaking of the replica 
-symmetry. This would allow to reach a conclusion on the correctness of the replica symmetry 
-breaking scheme that we used. Moreover, it would be interesting to go beyond the saddle 
-point approximation, including finite-size correztions. An interesting question would be 
-to investigate how the paramagnetic-glassy transition is associated with the subleading 
-corrections to the observed volume law in the classical R\'enyi entropies. Also, it 
-would be interesting to investigate the behavior of entanglement-related quantities in 
-disordered quantum spin systems that exhibit replica symmetry breaking~\cite{read-1995, 
-andreanov-2012}. Finally, it would be enlightening to understand the interplay between 
-the physical and the fictitious replicas at the level of the entropy. Notice that,  
-using the analytical results provided in the paper, it is possible to perform the 
-analytic continuation $n\to 1$ to obtain the von Neumann classical mutual information. 
-It would be interesting to check wheather this differs significantly from the 
-R\'enyi mutual information. 
+Finally, we discussed the behavior of $[S_2]$ and $[{\mathcal I}_2]$. Due to the mean-field 
+nature of the S-K model we observed the volume laws $[S_2]\propto N$ and 
+$[{\mathcal I}_2]\propto N$, for any $\beta$. We considered the corresponding densities 
+$[S_2]/N$ and $[{\mathcal I}_2]/N$. Using the replica-symmetric (RS) and the one-step 
+replica symmetry breaking ($1$-RSB) approximations we provided analytical results for 
+both $[S_2]/N$ and $[{\mathcal I}_2]/N$. We observed that at high temperature the 
+RS result fully agrees with the Monte Carlo simulations, whereas deviatios occur in the 
+glassy phase, signalling the replica symmetry breaking. Similar to the internal energy, 
+we found that the $1$-RSB approximation fully matches the Monte Carlo data for $\beta\approx 3$.
+Interestingly, we numerically observed that at the critical point ${\mathcal I}_2/N$ 
+does not show any crossing for different system sizes, in contrast with local 
+models~\cite{jaconis-2013}.
+
+Our work opens several research directions. First, it would be interesting to extend our 
+results taking into account the full breaking of the replica symmetry, i.e., going beyond 
+the one-step replica symmetry breaking approximation. This would allow to reach a conclusion 
+on the correctness of the replica symmetry breaking scheme that we used. Moreover, it 
+would be interesting to discuss the finite size-corrections to the saddle 
+point approximation. An interesting direction would be to investigate wheather the 
+glassy behavior is reflected in the volume-law corrections to the classical R\'enyi 
+entropies. Also, it would be interesting to extend our results to {\it quantum} spin 
+systems exhibiting glassy behavior and replica symmetry breaking~\cite{read-1995,
+andreanov-2012}. 
 
 \section{Acknowledgements}
 We would like to thank Pasquale Calabrese for useful discussions. V.A.  acknowledge 
@@ -1522,26 +1480,24 @@ financial support by the ERC under Starting Grant 279391 EDEQS.
 \label{saddle-equations}
 
 In this section we provide the analytical expression for the saddle point equations 
-\eqref{saddle-final}, which determine the overlap tensor $q_{\gamma\gamma'}^{rr'}$ 
-(see section~\ref{replica-trick}) in the thermodynamic limit, and the behavior of the 
-S-K model on the booklet. We restrict ourselves to the situation with zero magnetic 
-field and to the $2$-sheets booklet (see Fig.~\ref{cartoon}). It is straightforward 
-to generalize the calculation to the case with non zero magnetic field and to the 
-$n$-sheets booklet. Here we provide the saddle point equations obtained in both the 
-replica-symmmetric (RS) approximation (see section~\ref{rs-section}), and the 
-one-step replica symmetry breaking ($1$-RSB) approximation (see 
+\eqref{saddle-final}\eqref{saddle-final-a}, which determine the overlap tensor 
+$q_{\gamma\gamma'}^{rr'}$ (see section~\ref{replica-sec}). We restrict ourselves 
+zero magnetic field and to the $2$-sheets booklet (see Fig.~\ref{cartoon}). It is 
+straightforward to generalize the calculation to the case with non zero magnetic 
+field and to the $n$-sheets booklet. Specifically, here we provide the saddle point 
+equations obtained in both the replica-symmmetric (RS) (see section~\ref{rs-section}), 
+and the one-step replica symmetry breaking ($1$-RSB) approximation (see 
 section~\ref{rsb-1-section}). 
 
 %####################################
-\subsection{The replica symmetric (RS) approximation}
+\subsection{The replica-symmetric (RS) approximation}
 
 In the replica-symmetric approximation $q_{\gamma\gamma'}^{rr'}$ depends on the two 
 parameters $q_0,q_0'\in\mathbb{R}$ (cf. Eq.~\eqref{rs-ansatz}). The saddle point 
-equations are easily derived using the RS approximation for the free energy $[F_{RS}
-(\omega,n,\beta)]$ (cf. Eq.~\eqref{rs-F}) of the S-K model on the booklet as 
-$\nabla_{\mathbf{q}}[F_{RS}(\omega,2,\beta)]=0$, where $\mathbf{q}\equiv(q_0,q_0')$, 
-and $\nabla_{\mathbf{q}}\equiv\partial/\partial\mathbf{q}$. A straightforward 
-calculation gives the system of equations  
+equations are easily derived from the RS approximation for the free energy $[F_{RS}
+(\omega,n,\beta)]$ (cf. Eq.~\eqref{rs-F}) as $\nabla_{\mathbf{q}}[F_{RS}(\omega,2,
+\beta)]=0$, where $\mathbf{q}\equiv(q_0,q_0')$, and $\nabla_{\mathbf{q}}\equiv
+\partial/\partial\mathbf{q}$. A straightforward calculation gives the two equations 
 %
 \begin{equation}
 \label{RS-saddle-1}
@@ -1557,7 +1513,7 @@ and
 \log\cosh(2z)\\
 +\Delta_0(z)\log(1+\exp(2\beta^2(q_0-q_0'))\cosh(2z))\\
 +2\beta^2(1+\exp(2\beta^2(q_0-q_0'))\cosh(2z))^{-1}
-\Big\}
+\Big\},
 \end{multline}
 %
 where we defined $\Delta_0(z)$ as 
@@ -1573,15 +1529,15 @@ G_0(z)\equiv\frac{1}{\sqrt{2\pi \beta^2 q_0'}}\exp\Big(-\frac{z^2}
 {2\beta^2 q_0'}\Big).
 \end{equation}
 %
-Notice that it is trivial to check that $\int dz G_0(z)\Delta_0(z)=0$.
+Notice that $\int dz G_0(z)\Delta_0(z)=0$.
 
 %##########################################################################
 \subsection{The one-step replica symmetry breaking ($1$-RSB) approximation}
 
-In the one-step replica symmetry breaking scenario (see section~\ref{rsb-1-section}) 
-the overlap depends on the four parameters $q_0,q_0',q_1',m_1\in\mathbb{R}$. The 
-saddle point equations are now given as $\nabla_{\mathbf{p}}[F_{1\textrm{-}RSB}]=0$, 
-where now $\mathbf{p}\equiv(q_0,q_0',q_1',m_1)$, and $[F_{1\textrm{-}RSB}]$ is 
+In the one-step replica symmetry breaking approximation (see section~\ref{rsb-1-section}) 
+$q_{\gamma\gamma'}^{rr'}$ depends on the four parameters $q_0,q_0',q_1',m_1\in\mathbb{R}$. 
+The saddle point equations are given as $\nabla_{\mathbf{p}}[F_{1\textrm{-}RSB}]=0$, 
+where $\mathbf{p}\equiv(q_0,q_0',q_1',m_1)$, and $[F_{1\textrm{-}RSB}]$ is 
 the disorder-averaged free energy given in Eq.~\eqref{RSB-1-logZ}.
 It is useful to define the modified heat kernel $G_1(z)$ as 
 %
@@ -1599,8 +1555,7 @@ and
 & \Theta(z,z')\equiv 1+\exp(2\beta^2(q_0-q_1'))\cosh(2z+2z'). 
 \end{align}
 %
-Finally, a straightforward calculation yields the saddle point equations for 
-$q_0,q_0',q_1',m_1$ as 
+Finally, the saddle point equations for $q_0,q_0',q_1',m_1$ are obtained as 
 %
 \begin{widetext}
 \begin{multline}
