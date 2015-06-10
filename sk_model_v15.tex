@@ -1098,7 +1098,7 @@ $q_1'=q_0'$, while the free energy in the paramagnetic phase $[F_{para}(\omega,n
 \section{Monte Carlo results: The internal energy}
 \label{mc-results}
 
-In this section we numerically confirm the results of section~\ref{solution}. 
+In this section we numerically confirm the analytical results of section~\ref{solution}. 
 We discuss Monte Carlo (MC) data for the S-K model on the $2$-sheets booklet 
 with zero external magnetic field. We focus on the internal energy $U(\omega,n,
 \beta)$ 
@@ -1110,9 +1110,9 @@ U(\omega,n,\beta)\equiv-\frac{\partial}{\partial\beta}
 \end{equation}
 %  
 Fig.~\ref{U-MC} plots the MC data for $U(\omega,2,\beta)$ versus the inverse temperature 
-$\beta$, for $\omega=1/2$ (see Fig.~\ref{cartoon}). The circles, squares, and triangles 
+$\beta$, for $\omega=1/2$. The circles, squares, and triangles 
 are the MC results for different sizes, i.e., number of spins per sheet, $N=32,64,128$. 
-The vertical dotted line is the critical temperature $\beta_c\approx 0.603$ of 
+The vertical dotted line is the critical temperature $\beta_c\approx 0.6$ of 
 the paramagnetic-glassy transition (cf. Fig.~\ref{beta_c}). In the high-temperature 
 region finite size effects are small, and already for $N=64$ the MC data are indistinguishable 
 from the thermodynamic limit. Oppositely, stronger scaling corrections are visible in 
@@ -1136,11 +1136,18 @@ U_{RS}=-N\beta(1+q_0^2-2q_0'^2).
 % 
 Here $q_0,q_0'$ are solutions of the saddle point equations Eqs.~\eqref{RS-saddle-1}
 \eqref{RS-saddle-2}. Notice that $U_{RS}$ depends on $\omega$ only through $q_0,q_0'$. 
-From Fig.~\ref{U-MC} one has that, while $U_{RS}$ is in perfect agreement with the numerics 
-for $\beta\approx\beta_c$, deviations appear in the low-temperature region. Moreover, these 
-deviations increase upon lowering the temperature, and already at $\beta\gtrsim 1$, $U_{RS}$ 
-is incompatible with the data. This is has to be attributed to the replica symmetry breaking 
-happening in the glassy phase. 
+From Fig.~\ref{U-MC} one has that, while $U_{RS}$ is in perfect agreement with the 
+numerics for $\beta\approx\beta_c$, deviations appear in the low-temperature region. 
+Notice that already at $\beta\gtrsim 1$, $U_{RS}$ is incompatible with the data. 
+Moreover, these deviations increase upon lowering the temperature. This has to be 
+attributed to the replica symmetry breaking happening in the glassy phase. 
+Finally, since in the limit $\beta\to\infty$ all the physical replicas are in the same state, 
+one should expect that $u_\infty(\omega,\beta)\to n \tilde u_\infty$ (horizonthal line in 
+Fig.~\ref{U-MC}), with $\tilde u_{\infty}=-0.76321...$~\cite{parisi-1979,parisi-1983} the 
+zero-temperature internal energy density of the S-K model on the plane. Surprisingly, 
+this behavior is already observed in the MC data at $\beta\approx 3$, whereas it is not 
+captured correctly by the RS approximation.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
@@ -1175,12 +1182,6 @@ happening in the glassy phase.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Finally, since in the limit $\beta\to\infty$ all the physical replicas are in the same state, 
-one should expect that $u_\infty(\omega,\beta)\to n u_\infty(0,\beta)$ (horizonthal line in 
-Fig.~\ref{U-MC}), with $u_{\infty}(0,\beta)\to-0.76321...$~\cite{parisi-1979,parisi-1983} the 
-zero-temperature density of internal energy for the S-K model on the plane. Surprisingly, 
-this behavior is already observed in the MC data at $\beta\approx 3$, whereas it is not 
-captured correctly by the RS approximation.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[t]
@@ -1200,9 +1201,9 @@ captured correctly by the RS approximation.
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The behavior of $U/N$ is similar for $\omega\ne1/2$, and it is investigated in Fig.~\ref{U-RS},
-plotting $U/N$ as a function of $\beta$ for $\omega=0,1/4,1/2,3/4,1$. The plus symbols 
-are the MC data extrapolated in the thermodynamic, at fixed $\omega$. Similar to Fig.~\ref{U-RS}, 
+The behavior of $U/N$ for $\omega\ne1/2$ is investigated in Fig.~\ref{U-RS},
+plotting $U/N$ as a function of $\beta$ and $\omega=0,1/4,1/2,3/4,1$. The plus symbols 
+are the MC data extrapolated to the thermodynamic, at fixed $\omega$. Similar to Fig.~\ref{U-RS}, 
 the extrapolations are done assuming $U/N(\omega,n,\beta)=u_{\infty}(\omega,n,\beta)+
 c/N^{\phi}$, with $\phi=2/3$ irrespective of $\omega$. The stars in Fig.~\ref{U-RS} are 
 the critical values $U_c/N$ at the paramagnetic-glassy transition. Specifically, here  
@@ -1217,17 +1218,19 @@ U_{RS}= -N\frac{\beta}{2}(\omega^2(n^2-n)+n)+{\mathcal O}(\beta^2),
 \end{equation}
 %
 i.e., a linear behavior of $U/N$ as a function of $\beta$. For $\omega=0$ and $\omega=1$ 
-this behavior is exact up to $\beta=\beta_c$, meaning that the higher orders ${\mathcal O}(\beta^2)$ 
-in Eq.~\eqref{ht-U} are zero. This is only an approximation at intermediate $0<\omega<1$. 
-Both Eq.~\eqref{U} and Eq.~\eqref{ht-U} are clearly confirmed in Fig.~\ref{U-RS}. 
+this behavior is exact up to the critical point at $\beta=\beta_c$, meaning that the higher 
+orders ${\mathcal O}(\beta^2)$ in Eq.~\eqref{ht-U} are zero. This is only an approximation 
+at intermediate $0<\omega<1$. Both the behaviors in Eq.~\eqref{U} and Eq.~\eqref{ht-U} are 
+clearly confirmed in Fig.~\ref{U-RS}. 
 
-However, Eq.~\eqref{ht-U} is not correct for $\beta>\beta_c$, where the replica symmetry breaking 
+However, the RS result is not correct for $\beta>\beta_c$, where the replica symmetry breaking 
 has to be taken into account. The effects of the replica symmetry breaking are more carefully 
-discussed in Fig.~\ref{U-RSB-1}, plotting $U/N$ versus $1\le\beta\le 2$. The plus symbols and the 
-lines are the same as in Fig.~\ref{U-RS}. The circles denote the internal energy per spin 
-$U_{1\textrm{-}RSB}/N$ as obtained using the $1$-step replica symmetry breaking (1-RSB) 
-approximation (see section~\ref{rsb-1-section}). Specifically, from Eq.~\eqref{RSB-1-logZ} 
-and Eq.~\eqref{U-def}, for $n=2$ a straightforward calculation gives 
+discussed in Fig.~\ref{U-RSB-1}, focusing on the low temperature phase at $1\le\beta\le 2$. 
+The plus symbols and the lines are the same as in Fig.~\ref{U-RS}. The circles denote the 
+internal energy per spin $U_{1\textrm{-}RSB}/N$ as obtained using the $1$-step replica 
+symmetry breaking (1-RSB) approximation (see section~\ref{rsb-1-section}). Specifically, 
+from Eq.~\eqref{RSB-1-logZ} and Eq.~\eqref{U-def}, for $n=2$ a straightforward calculation 
+gives 
 %
 \begin{equation}
 U_{1\textrm{-}RSB}=-N\beta(1+q_0^2+2q_1'^2(m_1-1)-2q_0'^2m_1), 
@@ -1238,9 +1241,9 @@ where $q_0,q_0',q_1',m_1\in\mathbb{R}$ are solutions of the saddle point
 equations \eqref{RSB-1-saddle-a}-\eqref{RSB-1-saddle-d}. Clearly, Eq.~\eqref{U'} 
 implies $U_{1\textrm{-}RSB}\to U_{RS}$ for $q_1'\to q_0'$, as expected. 
 Moreover, for $\beta\approx\beta_c$ one has $q_1'\approx q_0'\approx0$, implying   
-that $U_{RSB}\approx U_{RS}$, i.e. the effects of the replica symmetry breaking are 
-negligible near the critical point. Interestingly, at low temperatures, where the 
-RS approximation $U_{RS}$ fails (see Fig.~\ref{U-RS}), $U_{1\textrm{-}RSB}$ 
+that $U_{1\textrm{-}RSB}\approx U_{RS}$, i.e. the effects of the replica symmetry 
+breaking are negligible near the critical point. Interestingly, at low temperatures, where the 
+RS approximation fails (see Fig.~\ref{U-RS}), $U_{1\textrm{-}RSB}$ 
 is in good agreement with the Monte Carlo data, at least up to $\beta\approx 2$.  
 This allows us to conclude that, although the 1-RSB ansatz (cf. Eq.~\eqref{q-rsb1}) 
 is not correct for $\beta\to\infty$, it captures some of the effects 
@@ -1252,12 +1255,12 @@ of the replica symmetry breaking.
 \label{Renyi-section}
 
 We now turn to discuss the behavior of the disorder-averaged classical R\'enyi entropies 
-(cf. Eq.~\eqref{renyi}) in the S-K model. Here we restrict ourselves to the second R\'enyi 
+(cf. Eq.~\eqref{renyi}). Here we restrict ourselves to the second R\'enyi 
 entropy $[S_2]$. Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
 there is no well defined boundary between the two parts $A$ and $B$ of the system 
-(unlike Fig.~\ref{cartoon} for local models). The fully connected nature of the S-K model 
-suggests the volume-law behavior $[S_2]\propto N$ for all temperature.
-Therefore it is natural to consider the entropy per spin $[S_2]/N$. 
+(unlike in local spin models). This suggests the volume-law behavior $[S_2]\propto N$ 
+for all temperatures. Thus, it is natural to consider the entropy per spin 
+$[S_2]/N$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
 \begin{figure*}[t]
@@ -1277,28 +1280,27 @@ Therefore it is natural to consider the entropy per spin $[S_2]/N$.
 
 The Monte Carlo data for $[S_2]/N$  are shown in Fig.~\ref{Renyi-MC} plotted versus the 
 inverse temperature $0.25\le\beta\le 2.5$. The different panels correspond to the  
-booklet ratios $\omega=3/4,1/2,1/4$ (see Fig.~\ref{cartoon}). In all panels the empty 
-triangles, squares, and rhombi correspond to booklets with $N=32,64,128$ spins per per sheet. 
+booklet ratios $\omega=3/4,1/2,1/4$ (see Fig.~\ref{cartoon}). In all panels the 
+triangles, squares, and rhombi correspond to booklets with $N=32,64,128$ spins per sheet. 
 Clearly, finite size effects are present, which increase upon lowering 
 the temperature, as expected. In order to obtain $[S_2]/N$ in the thermodynamic limit 
 we fit the data to the ansatz $[S_2]=s_2(\omega)+c'(\omega)/N^{\phi'}$, where 
 $s_2(\omega)$ is the entropy per spin in the thermodynamic limit, $c'$ a constant, and 
-$\phi'$ the exponent of the scaling corrections. The plus symbols in Fig.~\ref{Renyi-MC} 
+$\phi'$ the exponent of the finite-size corrections. The plus symbols in Fig.~\ref{Renyi-MC} 
 are the results of the fits. We should mention that the fits give $\phi'\approx 2/3$, 
 which is the exponent of the scaling corrections of the free energy in the standard 
 S-K model. This is not surprising, since $[S_2]$ is obtained as the difference 
 $[S_2]\equiv [F(0,2,\beta)-F(\omega,2,\beta)]$ (cf. Eq.~\eqref{renyi}). 
-Clearly, from Fig.~\ref{I2-MC} one has that in the thermodynamic limit $[S_2]/N$ is 
+Clearly, from Fig.~\ref{Renyi-MC} one has that in the thermodynamic limit $[S_2]/N$ is 
 finite for any $\beta$, confirming the expected volume law behavior. Moreover, $[S_2]/N$ 
 exhibits a maximum in the infinite-temperature limit $\beta\to0$. The height of this 
 maximum  is a decreasing function of $\omega$ (compare the panels (a)(b)(c) in 
 Fig.~\ref{Renyi-MC}). 
 
-The dash-dotted line in Fig.~\ref{Renyi-MC} denotes the analytical result $[S_2^{RS}]$ 
-obtained using the RS approximation (see section~\ref{rs-section}). More precisely, 
-$[S_2^{RS}]/N$ is obtained from Eq.~\eqref{renyi} and the expression for the free energy 
-$[F_{RS}]$ (cf. Eq.~\eqref{rs-F}). Notice that in the 
-high-temperature limit $\beta\to0$, where the RS approximation is exact, 
+The dash-dotted line denotes the analytical result $[S_2^{RS}]$ obtained within the RS 
+approximation (see section~\ref{rs-section}). More precisely, $[S_2^{RS}]/N$ is obtained 
+from Eq.~\eqref{renyi} and the expression for the free energy $[F_{RS}]$ (cf. Eq.~\eqref{rs-F}). 
+Notice that in the high-temperature limit $\beta\to0$, where the RS approximation is exact, 
 Eq.~\eqref{renyi} and Eq.~\eqref{ht-logZ} give 
 %
 \begin{equation}
@@ -1307,12 +1309,11 @@ Eq.~\eqref{renyi} and Eq.~\eqref{ht-logZ} give
 %
 From Fig~\ref{Renyi-MC} one has that the extrapolated MC data are in quantitative 
 agreement with $[S_2^{RS}]/N$ for $\beta\lesssim 1.5$, whereas strong deviations are 
-observed at lower temperatures (not shown in the Figure). These reflect the symmetry 
-breaking. A better approximation for $[S_2]/N$ at low temperatures is obtained by 
-including the effects of the replica symmetry breaking. The circles in Fig.~\ref{Renyi-MC} 
-denote the one-step replica symmetry breaking result $[S_2^{1\textrm{-}RSB}]/N$
-(see section~\ref{rsb-1-section}). This is formally obtained using Eq.~\eqref{renyi} 
-and the free energy $[F_{1\textrm{-}RSB}]$ (cf. Eq.~\eqref{RSB-1-logZ}). Remarkably, 
+observed at lower temperatures (not shown in the Figure). A better approximation for 
+$[S_2]/N$ at low temperatures is obtained by including the effects of the replica 
+symmetry breaking. The circles in Fig.~\ref{Renyi-MC} denote the one-step replica 
+symmetry breaking result $[S_2^{1\textrm{-}RSB}]/N$ (see section~\ref{rsb-1-section}), 
+which is obtained from Eq.~\eqref{renyi}  Eq.~\eqref{RSB-1-logZ}. Remarkably, 
 $[S_2^{1\textrm{-}RSB}]/N$ is in excellent agreement with the Monte Carlo extrapolations 
 for $\beta\lesssim 2$. 
 
@@ -1321,12 +1322,11 @@ for $\beta\lesssim 2$.
 \section{The classical R\'enyi mutual information}
 \label{I2-section}
 
-Here we focus on the behavior of the Renyi mutual information $[{\mathcal I}_2]$ in 
-the S-K model. Similar to $[S_2]$, the mutual information obeys the volume 
-law $[{\mathcal I}_2]\propto N$. This is in contrast with local models, where 
-$[{\mathcal I}_n]$ by construction exhibits an area law at all temperatures.
-Here we consider the mutual information per spin 
-$[{\mathcal I}_2]/N$. 
+Here we focus on the behavior of the Renyi mutual information $[{\mathcal I}_2]$. 
+Similar to $[S_2]$, the mutual information exhibits the volume law $[{\mathcal I}_2]
+\propto N$. This is in contrast with local models, where $[{\mathcal I}_n]$ by 
+construction one finds an area law at all temperatures. Here we consider the 
+mutual information per spin $[{\mathcal I}_2]/N$. 
 
 Figure~\ref{I2-MC} plots $[{\mathcal I}_2]/N$ versus $0\le\beta\le 2.5$ and $\omega=1/2,1/4,1/8$ 
 (panels from left to right in the Figure). Notice that by definition (cf. Eq.~\eqref{MI}) 
