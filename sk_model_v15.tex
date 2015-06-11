@@ -81,13 +81,13 @@ M\"unchen, D-80333 M\"unchen, Germany}
 We investigate the \emph{classical} R\'enyi entropy $S_n$ and the associated mutual 
 information ${\mathcal I}_n$ in the Sherrington-Kirkpatrick (S-K) model, which is the 
 paradigm model of mean-field spin glasses. 
-Using both classical Monte Carlo simulations and analytical tools we investigate the 
-S-K model on a booklet of $n$-sheets.
+First, using classical Monte Carlo simulations and analytical tools we investigate the 
+S-K model on the $n$-sheets booklet.
 This is obtained by gluing together $n$ independent copies of the model, and it is the 
 main ingredient to construct the R\'enyi entaglement-related quantities. We find that at 
 low temperature the S-K model is in a glassy phase, whereas at high temperature it exhibits 
 paramagnetic behavior. Interestingly, the temperature of the paramagnetic-glassy 
-transition depends in a non-trivial way on the geometry of the booklet. At high-temperatures 
+transition depends non-trivially on the geometry of the booklet. At high-temperatures 
 we provide the exact solution of the model exploiting the replica symmetry. This is the 
 permutation symmetry among the fictitious replicas that are used in the replica trick to 
 perform disorder averages. In the glassy phase the replica symmetry has to be broken. 
@@ -141,14 +141,14 @@ was obtained only recently~\cite{talagrand-2006}. Moreover, the solution exhibit
 intricate features, such as lack of self-averaging~\cite{pastur-1991}, ultrametricity~\cite{
 mezard-1984,rammal-1986}, and replica symmetry breaking~\cite{parisi-book,castellani-2005}. 
 The last refers to the breaking of the permutation symmetry among the fictitious replicas 
-of the system, which are introduced to perform disorder averages (\emph{replica 
+of the model, which are introduced to perform disorder averages (\emph{replica 
 trick}~\cite{cardy-book}). Finally, although the applicability of the S-K 
 model to describe realistic spin glasses is still highly debated~\cite{yucesoy-2012,
-billoire-2012,yucesoy-2013}, there are recent proposals on how to realize this model 
+billoire-2012,yucesoy-2013}, there are recent proposals on how to realize it  
 in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser systems~\cite{
 ghofraniha-2015}. 
 
-In the last decade entanglement-related quantities have emerged as valuable tools to 
+In the last decade entanglement-related quantities emerged as valuable tools to 
 understand the physics of complex systems~\cite{amico-2008,eisert-2009,calabrese-2009,
 cc-rev}, both classical and quantum. For instance, at a conformally invariant critical 
 point entanglement measures contain universal information about the underlying 
@@ -168,8 +168,8 @@ Here ${\mathcal C}_A$ denotes the set of all the possible spin configurations in
 $A$, whereas $p_{i_A}$ is the probability of the configuration $i_A$. 
 Alternatively, $S_n(A)$ can be obtained from the partition function of the model on 
 an \emph{ad hoc} defined ``booklet'' geometry (see section~\ref{booklet} for its 
-precise definition). This consists of $n$ independent and identical replicas (the 
-booklet ``sheets'') of the model. Notice that these \emph{physical} replicas are different 
+definition). This consists of $n$ independent and identical replicas (the 
+booklet ``sheets'') of the model. These \emph{physical} replicas are different 
 from the \emph{fictitious} ones used to perform the disorder average. Each sheet is 
 divided into two parts $A$ and $B$, containing $N_A$ and $N_B$ spins, respectively. 
 The spins in part $A$ of different sheets are constrained to be equal. It is 
@@ -180,11 +180,11 @@ convenient to introduce the booklet aspect ratio $0\le\omega\le1$ as
 \omega\equiv \frac{N_A}{N}.
 \end{equation}
 %
-Eq.~\eqref{renyi-intro} can be used for quantum systems by interpreting $p_{i_A}$ as 
+Eq.~\eqref{renyi-intro} can also be used for quantum systems by interpreting $p_{i_A}$ as 
 the probability of finding part $A$ in the \emph{quantum} configuration $i_A$. In particular, 
-for $n=1$ it defines the subsystem Shannon entropy~\cite{alcaraz-2013,stephan-2014-a}. 
-From $S_n(A)$, one defines the classical mutual information ${\mathcal I}_n(A,B)$ 
-as 
+for $n=1$ Eq.~\eqref{renyi-intro} defines the subsystem Shannon entropy~\cite{alcaraz-2013,
+stephan-2014-a}. From $S_n(A)$, one defines the classical mutual information 
+${\mathcal I}_n(A,B)$ as 
 %
 \begin{equation}
 {\mathcal I}_n(A,B)\equiv S_n(A)+S_n(B)-S_n(A\cup B). 
@@ -312,10 +312,10 @@ S_n(A)\equiv \frac{1}{1-n}\log\left(\frac{Z(A,n,\beta)}{Z^n(\beta)}\right).
 %
 Here $Z(A,n,\beta)$ is the partition function of the model on the $n$-sheet booklet, 
 whereas $Z(\beta)$ is the partition functions on the plane at inverse temperatures $\beta$. 
-The booklet geometry is illustrated in Figure~\ref{cartoon}. 
-Each sheet is divided into two parts $A$ and $B$ (cf. Figure~\ref{cartoon} (a)). Then $n$ copies 
+The booklet geometry is illustrated in Fig.~\ref{cartoon}. 
+Each sheet is divided into two parts $A$ and $B$ (cf. Fig.~\ref{cartoon} (a)). Then $n$ copies 
 of the system are ``glued'' together to form the booklet. The spins in part $A$ of the different 
-sheets are identified (cf. Figure~\ref{cartoon} (b)). While spins in parts $B$ of the booklet 
+sheets are identified (cf. Fig.~\ref{cartoon} (b)). While spins in parts $B$ of the booklet 
 are at inverse temperature $\beta$, the ones in $A$ are at the effective temperature $n\beta$. 
 Notice that a similar geometric construction~\cite{guerra-2002} plays an important role in the 
 mathematical proof of the Parisi ansatz. 
@@ -1175,7 +1175,7 @@ captured correctly by the RS approximation.
  The S-K model on the 2-sheets booklet with zero magnetic field: 
  The internal energy per spin $U/N$ in the thermodynamic limit plotted 
  as a function of inverse temperature $\beta$. The plus symbols are the same 
- Monte Carlo data as in Figure~\ref{U-RS}. The lines denote $U/N$ 
+ Monte Carlo data as in Fig.~\ref{U-RS}. The lines denote $U/N$ 
  in the replica-symmetric (RS) approximation (same as in Fig.~\ref{U-RS}). 
  The circles are the results  in the one-step replica symmetry breaking 
  (1-RSB) approximation.
@@ -1281,8 +1281,9 @@ $[S_2]/N$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The Monte Carlo data for $[S_2]/N$  are shown in Fig.~\ref{Renyi-MC} plotted versus the 
-inverse temperature $0.25\le\beta\le 2.5$. The different panels correspond to the  
-booklet ratios $\omega=3/4,1/2,1/4$ (see Fig.~\ref{cartoon}). In all panels the 
+inverse temperature $0.25\le\beta\le 2.5$. Some details on the Monte Carlo method used 
+to calculate $[S_2]$ are provided in Appendix~\ref{mc-method}. The different panels 
+correspond to the booklet ratios $\omega=3/4,1/2,1/4$ (see Fig.~\ref{cartoon}). In all panels the 
 triangles, squares, and rhombi correspond to booklets with $N=32,64,128$ spins per sheet. 
 Clearly, finite size effects are present, which increase upon lowering 
 the temperature, as expected. In order to obtain $[S_2]/N$ in the thermodynamic limit 
@@ -1608,7 +1609,8 @@ G_{1}(z')\Theta^{m_1}(z,z')\\
 %##########################################################################
 
 
-\section{Monte Carlo method for the R\'enyi entropies and the mutual information}
+\section{Monte Carlo method to calculate the classical R\'enyi entropies}
+\label{mc-method}
 
 Here we describe the Monte Carlo method that we used to calculate the R\'enyi entropies 
 $S_n$ and the mutual information ${\mathcal I}_n$. The method exploits the representation 
@@ -1645,7 +1647,8 @@ A_i = 4i,\quad i \in [0,N/4] .
 %
 Crucially, if the length of $A_i$ increases mildly with $i$, each term in the product 
 in the left hand side of~\eqref{ratio-trick} can be sampled efficiently in Monte 
-Carlo~\cite{stephan-2014}. More specifically, one can write
+Carlo~\cite{stephan-2014}. Notice that a similar method has also been used in 
+Ref.~\onlinecite{alba-2010,alba-2011,alba-2013}. More specifically, one can write
 %
 \begin{align}
 \frac{Z(A_i,n,\beta)}{Z(A_{j},n,\beta)} = \frac{T_{j\rightarrow i}}{T_{i\rightarrow j}}
@@ -1683,7 +1686,7 @@ A_i$ and different sheets are identified.
 \item Calculate the transition probability $T_{i\rightarrow i+1}$ as
 %
 \begin{align}
-T_{i \rightarrow i+1} = \Bigl< \frac{W_b}{W_a} \Bigr>
+T_{i \rightarrow i+1} = \Bigl< \frac{W_b}{W_a} \Bigr>.
 \end{align}
 %
 \end{enumerate}
@@ -1723,8 +1726,6 @@ Finally, we average over the disorder to obtain $[S_n(A)]$.
 %For this study, $A$ is increased by only 4 sites at a time.
 
 %First, if we want to sample from $A=0$ (two disconnected systems) to $A=N$ (two fully connected systems), let us use the ratio trick to write
-
-
 
 \begin{thebibliography}{99}
 \bibitem{binder-1986}
@@ -1892,6 +1893,16 @@ N.~Read, S.~Sachdev, and J.~Ye, Phys.\ Rev.\ B {\bf 52}, 384 (1995).
 
 \bibitem{andreanov-2012}
 A.~Andreanov and M.~M\"uller, Phys.\ Rev.\ Lett.\ {\bf 109}, 177201 (2012). 
+
+\bibitem{alba-2010}
+V.~Alba, L.~Tagliacozzo, and P.~Calabrese, Phys.\ Rev.\ B {\bf 81}, 060411(R) (2010).
+
+\bibitem{alba-2011}
+V.~Alba, L.~Tagliacozzo, and P.~Calabrese, J.\ Stat.\ Mech.\ (2011) P06012. 
+
+\bibitem{alba-2013}
+V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013. 
+
 
 
 
