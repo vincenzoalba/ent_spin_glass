@@ -91,7 +91,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri Jun 12 15:48:29 2015"
+@timestamp def "Fri Jun 12 16:07:42 2015"
 @with string
 @    string on
 @    string loctype view
@@ -2258,8 +2258,8 @@
 @    s0 symbol char font 0
 @    s0 symbol skip 0
 @    s0 line type 1
-@    s0 line linestyle 5
-@    s0 line linewidth 1.5
+@    s0 line linestyle 2
+@    s0 line linewidth 2.0
 @    s0 line color 2
 @    s0 line pattern 1
 @    s0 baseline type 0
