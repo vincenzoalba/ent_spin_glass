@@ -1345,12 +1345,7 @@ it is straightforward to derive the high-temperature behavior of $[{\mathcal I}_
 Interestingly, $[{\mathcal I}_2]/N$ increases upon lowering the temperature 
 up to $\beta\approx 1$, where it exhibits a maximum. The height of this maximum 
 decreases as a function of $\omega$. We numerically observe that its position 
-is not simply related to the paramagnetic-glassy transition. 
-%This is not surprising as $[{\mathcal I}_n]$ is constructed by combining the partition 
-%functions on booklets with different aspect ratios $\omega$, $1-\omega$, $\omega=0$, and 
-%$\omega=1$ (cf. Eq.~\eqref{MI}), and the critical temperature of the paramagnetic-glassy 
-%transition is a non trivial function of $\omega$ (see Fig.~\ref{beta_c}). 
-Furthermore, the 
+is not simply related to the paramagnetic-glassy transition. Furthermore, the 
 data for $[{\mathcal I}_2]/N$ at different system sizes do not exhibit any crossing. This is 
 in sharp contrast with local models~\cite{jaconis-2013}, where ${\mathcal I}_n/L$ exhibits a 
 crossing at a second order phase transition. The dash-dotted line in Fig.~\ref{I2-MC} is the 
@@ -1697,35 +1692,11 @@ us to integrate over all possible configurations of the spins in $A_{i+1}-A_i$,
 treating the remaining ones as a bath that is updated by the regular Monte Carlo update. 
 The computational cost of this procedure grows exponentially with the number of spins 
 in $A_{i+1}-A_i$. 
-%We also gain some speed by calculating the weights in each replica seperately, 
-%and then recombining the results in a smart way, meaning that we only have to explicitly 
-%loop over $2 \cdot 2^4 = 32$ configurations.
 In our Monte Carlo simulations we calculate $Z(A_i,n,\beta)/Z(A_{i+1},n,\beta)$ 
 for every disorder realization and $S_n(A)$ using Eq.~\eqref{renyi-app}. 
 Finally, we average over the disorder to obtain $[S_n(A)]$.
-%When calculating the mutual information
-%\begin{align}
-%I_{n}(A) = S_{n}(A) + S^*_{n}(N-A) - S_{n}(N)
-%\end{align}
-%we do this calculating for each specific realization of disorder, and then take the disorder average of this final quantity.
-%The star in $S^*$ denotes the fact that even though $A$ denotes the size of the region that is connected, due to disorder one must be careful which specific spins are in the region.
-%$S^*$ is defined in such a way that the connected spins in $S_{n}(A)$ and those in $S^*_{n}(N-A)$ contain every spin in the system exactly once.
-
-%For each disorder and each $\omega_i$ we create a simulation, and measure
-%\begin{align}
-%\frac{Z(\omega_i,\alpha,\beta)}{Z(\omega_{i+1},\alpha,\beta)} = \\
-%\frac{Z(\omega_i,\alpha,\beta)}{Z(\omega_{i-1},\alpha,\beta)}
-%\end{align}
-
-%Due to the infinite dimensional nature of the Sherrington-Kirkpatrick model, the calculation the R\'enyi mutual information is unable to exploit efficient methods that are available for finite dimensional systems [ref: JMS/Inglis].
 
 
-%where $A$ changes only slightly, and build up the full quantity by taking the product of many such measurements.
-%This method is usually referred to as the ratio trick, and in finite dimensional systems there are efficient ways to calculate this ratio\cite{stephan-2014}.
-%In an infinite dimensional system the only efficient way to use this method is to increase $A$ more slowly than typical.
-%For this study, $A$ is increased by only 4 sites at a time.
-
-%First, if we want to sample from $A=0$ (two disconnected systems) to $A=N$ (two fully connected systems), let us use the ratio trick to write
 
 \begin{thebibliography}{99}
 \bibitem{binder-1986}
@@ -1907,16 +1878,6 @@ V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013.
 
 
 
-
-%\bibitem{bouchaud-2003}
-
-%J.-P.~Bouchaud, F.~Krzakala, and O.~C.~Martin, Phys.\ Rev.\ B {\bf 68}, 
-
-%224404 (2003).
-
-%\bibitem{boettcher-2005}
-
-%S.~Boettcher: Eur.\ Phys.\ J.\ {\bf B46}, 501 (2005).
 
 %\bibitem{katzgraber-2003}
 
