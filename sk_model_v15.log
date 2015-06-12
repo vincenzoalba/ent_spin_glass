@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.24)  12 JUN 2015 15:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.24)  12 JUN 2015 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,14 +556,7 @@ Package pdftex.def Info: ./draft_figs/I2_extrapolated.pdf used on input line 14
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 1436.
 
-[12 <./draft_figs/I2_extrapolated.pdf>]
-Overfull \vbox (10.98622pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (10.98622pt too high) has occurred while \output is active []
-
-
-[13]
+[12 <./draft_figs/I2_extrapolated.pdf>] [13]
 Underfull \hbox (badness 2020) in paragraph at lines 1791--1794
  []\OT1/ptm/m/n/9 S. Mor-ri-son, A. Kan-tian, A. J. Da-ley, H. G. Katz-graber,
  []
@@ -575,15 +568,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1966.
  (./sk_model_v15.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1966.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1966.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
  ) 
 Here is how much of TeX's memory you used:
- 8389 strings out of 495031
- 118500 string characters out of 6181531
- 242511 words of memory out of 5000000
- 11331 multiletter control sequences out of 15000+600000
+ 8388 strings out of 495031
+ 118490 string characters out of 6181531
+ 239510 words of memory out of 5000000
+ 11330 multiletter control sequences out of 15000+600000
  23962 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,13n,27p,961b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,27p,961b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -606,7 +604,7 @@ s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sk_model_v15.pdf (15 pages, 617642 bytes).
+Output written on sk_model_v15.pdf (15 pages, 617812 bytes).
 PDF statistics:
  745 PDF objects out of 1000 (max. 8388607)
  660 compressed objects within 7 object streams
