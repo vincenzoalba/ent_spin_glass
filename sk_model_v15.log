@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.24)  12 JUN 2015 16:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.24)  12 JUN 2015 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -584,11 +584,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 Here is how much of TeX's memory you used:
  8389 strings out of 495031
  118500 string characters out of 6181531
- 243928 words of memory out of 5000000
+ 244072 words of memory out of 5000000
  11331 multiletter control sequences out of 15000+600000
  23962 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,13n,27p,1006b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,27p,1008b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -611,7 +611,7 @@ s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sk_model_v15.pdf (15 pages, 624720 bytes).
+Output written on sk_model_v15.pdf (15 pages, 624738 bytes).
 PDF statistics:
  749 PDF objects out of 1000 (max. 8388607)
  662 compressed objects within 7 object streams
