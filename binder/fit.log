@@ -1,0 +1,372 @@
+
+
+*******************************************************************************
+Tue Jun 23 11:49:22 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.338932          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.579138
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 0.0137127
+rel. change during last iteration : -2.19802e-09
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = 1.34533        
+b               = -1.31602       
+c               = 6.11654        
+
+
+*******************************************************************************
+Tue Jun 23 11:49:48 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.037298          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.57735
+
+initial set of free parameter values
+
+a               = 1.434
+b               = -1.31602
+c               = 6.11654
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.0137127
+rel. change during last iteration : -2.11874e-08
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = 1.34533        
+b               = -1.31602       
+c               = 6.11653        
+
+
+*******************************************************************************
+Tue Jun 23 11:49:50 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.0137127         delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.57735
+
+initial set of free parameter values
+
+a               = 1.34533
+b               = -1.31602
+c               = 6.11653
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0137127
+rel. change during last iteration : -2.5301e-16
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = 1.34533        
+b               = -1.31602       
+c               = 6.11653        
+
+
+*******************************************************************************
+Tue Jun 23 11:50:18 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.0107438         delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.580353
+
+initial set of free parameter values
+
+a               = 1.34533
+b               = -1.31602
+c               = 1
+
+After 287 iterations the fit converged.
+final sum of squares of residuals : 1.47911e-31
+abs. change during last iteration : -2.26798e-30
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = 1.43799        
+b               = -27.5884       
+c               = 1.4441         
+
+
+*******************************************************************************
+Tue Jun 23 11:50:48 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.47911e-31       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.623885
+
+initial set of free parameter values
+
+a               = 1.43799
+b               = -27.5884
+c               = 1.4441
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : -1.47911e-31
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = 1.43799        
+b               = -27.5884       
+c               = 1.4441         
+
+
+*******************************************************************************
+Tue Jun 23 11:50:49 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0                 delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.623885
+
+initial set of free parameter values
+
+a               = 1.43799
+b               = -27.5884
+c               = 1.4441
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0
+abs. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = 1.43799        
+b               = -27.5884       
+c               = 1.4441         
+
+
+*******************************************************************************
+Tue Jun 23 11:55:33 2015
+
+
+FIT:    data read from "tc.dat" u 1:2
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.76762e-05       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.289566
+
+initial set of free parameter values
+
+b               = -27.5884
+c               = 1.4441
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 1.76024e-06
+rel. change during last iteration : -5.3798e-07
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00132674
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.76024e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = -34.9026         +/- 3.289        (9.423%)
+c               = 1.51803          +/- 0.02648      (1.745%)
+
+
+correlation matrix of the fit parameters:
+
+               b      c      
+b               1.000 
+c              -0.997  1.000 
+
+
+*******************************************************************************
+Tue Jun 23 11:59:43 2015
+
+
+FIT:    data read from "tc.dat" u (1/$1):(-$2+1.434)
+	y range restricted to [0.000100000 : 1.00000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.159238          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.00340632
+
+initial set of free parameter values
+
+b               = -34.9026
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.60535e-06
+rel. change during last iteration : -4.6843e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00114135
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30268e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = 32.7326          +/- 0.1935       (0.591%)
+
+
+correlation matrix of the fit parameters:
+
+               b      
+b               1.000 
+
+
+*******************************************************************************
+Tue Jun 23 12:01:30 2015
+
+
+FIT:    data read from "tc.dat" u (1/$1**1.5):(-$2+1.434)
+	x range restricted to [0.00000 : 0.00600000]
+	y range restricted to [0.00000 : 0.200000]
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.037298          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.00340632
+
+initial set of free parameter values
+
+a               = 1e-30
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.60535e-06
+rel. change during last iteration : -1.09714e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00114135
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.30268e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 32.7326          +/- 0.1935       (0.591%)
+
+
+correlation matrix of the fit parameters:
+
+               a      
+a               1.000 
