@@ -1668,10 +1668,11 @@ in $A_{i+1}\setminus A_i$, but the spins living on different sheets are identifi
 \item Calculate the transition probability $T_{i\rightarrow i+1}$ as
 %
 \begin{align}
-T_{i \rightarrow i+1} = \Bigl< \frac{W_b}{W_a} \Bigr>.
+T_{i \rightarrow i+1} = \Bigl< \frac{W_b}{W_a} \Bigr>,
 \end{align}
 \end{enumerate}
 %
+where the angular brackets denote the Monte Carlo average. 
 This method is much faster than simply counting configurations as it allows 
 us to integrate over all possible configurations of the spins in $A_{i+1}\setminus A_i$, 
 treating the remaining ones as a bath that is updated by the regular Monte Carlo update. 
@@ -1682,6 +1683,7 @@ for every disorder realization and $S_n(A)$ using Eq.~\eqref{renyi-app}.
 Finally, we average over the disorder to obtain $[S_n(A)]$.
 
 
+%##########################################################################
 \begin{thebibliography}{99}
 \bibitem{binder-1986}
 K.~Binder and A.~P.~Young, Rev.\ Mod.\ Phys.\ {\bf 58}, 801 (1986).
