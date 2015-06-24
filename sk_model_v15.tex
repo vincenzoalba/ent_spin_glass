@@ -81,17 +81,18 @@ M\"unchen, D-80333 M\"unchen, Germany}
 We investigate the \emph{classical} R\'enyi entropy $S_n$ and the associated mutual 
 information ${\mathcal I}_n$ in the Sherrington-Kirkpatrick (S-K) model, which is the 
 paradigm model of mean-field spin glasses. 
-Using classical Monte Carlo simulations and analytical tools we first investigate the 
+Using classical Monte Carlo simulations and analytical tools we investigate the 
 S-K model on the $n$-sheets booklet.
 This is obtained by gluing together $n$ independent copies of the model, and it is the 
 main ingredient to construct the R\'enyi entanglement-related quantities. We find a 
 glassy phase at low temperature, whereas at high temperature the model exhibits 
-paramagnetic behavior. The temperature of the paramagnetic-glassy transition depends 
+paramagnetic behavior, consistent with the regular S-K model. The temperature 
+of the paramagnetic-glassy transition depends 
 non-trivially on the geometry of the booklet. At high-temperatures we provide the exact 
-solution of the model exploiting the replica symmetry. This is the permutation symmetry 
+solution of the model by exploiting the replica symmetry. This is the permutation symmetry 
 among the fictitious replicas that are used to perform disorder averages (via the replica 
 trick). In the glassy phase the replica symmetry has to be broken. Using a generalization 
-of the Parisi solution, we provide analytical results for $S_n$ and ${\mathcal I}_n$, 
+of the Parisi solution, we provide analytical results for $S_n$, ${\mathcal I}_n$, 
 and for standard thermodynamic quantities. Both $S_n$ and ${\mathcal I}_n$ exhibit a 
 volume law in the whole phase diagram. We fully characterize the behavior of the 
 corresponding densities $S_n/N$ and ${\mathcal I}_n/N$, in the thermodynamic limit. 
@@ -142,7 +143,7 @@ intricate features, such as lack of self-averaging~\cite{pastur-1991}, ultrametr
 mezard-1984,rammal-1986}, and replica symmetry breaking~\cite{parisi-book,castellani-2005}. 
 The last refers to the breaking of the permutation symmetry among the fictitious replicas 
 of the model, which are introduced to perform disorder averages (via the so-called 
-\emph{replica trick}~\cite{cardy-book}). Finally, although the applicability of the S-K 
+\emph{replica trick}~\cite{cardy-book}, not to be confused with the replica trick used in calculating the R\'enyi entanglement entropies). Finally, although the applicability of the S-K 
 model to describe realistic spin glasses is still highly debated~\cite{yucesoy-2012,
 billoire-2012,yucesoy-2013}, there are recent proposals on how to realize it  
 in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser systems~\cite{
@@ -168,7 +169,7 @@ Here ${\mathcal C}_A$ denotes the set of all the possible spin configurations in
 $A$, whereas $p_{i_A}$ is the probability of the configuration $i_A$. 
 Alternatively, $S_n(A)$ can be obtained from the partition function of the model on 
 an \emph{ad hoc} defined ``booklet'' geometry (see section~\ref{booklet} for its 
-definition). This consists of $n$ independent and identical replicas (the 
+definition) using another \emph{replica trick}\cite{nakagawa-2009,buividovich-2008}. This consists of $n$ independent and identical replicas (the 
 booklet ``sheets'') of the model. These \emph{physical} replicas are different 
 from the \emph{fictitious} ones used to perform the disorder average. Each sheet is 
 divided into two parts $A$ and $B$, containing $N_A$ and $N_B$ spins, respectively. 
@@ -180,9 +181,10 @@ convenient to introduce the booklet aspect ratio $0\le\omega\le1$ as
 \omega\equiv \frac{N_A}{N}.
 \end{equation}
 %
-Notice that Eq.~\eqref{renyi-intro} can also be used for quantum systems by interpreting $p_{i_A}$ as 
-the probability of finding part $A$ in the \emph{quantum} configuration $i_A$. For $n=1$ 
-Eq.~\eqref{renyi-intro} defines the subsystem Shannon entropy~\cite{alcaraz-2013,
+Notice that Eq.~\eqref{renyi-intro} can also be used for quantum systems 
+by replacing the sum over the probabilities of each state in region $A$ with the trace over the 
+reduced density matrix for region $A$.
+For $n=1$ Eq.~\eqref{renyi-intro} defines the subsystem Shannon entropy~\cite{alcaraz-2013,
 stephan-2014-a}. From $S_n(A)$, one defines the classical mutual information 
 ${\mathcal I}_n(A,B)$ as 
 %
@@ -192,7 +194,7 @@ ${\mathcal I}_n(A,B)$ as
 %
 For local models ${\mathcal I}_n$ obeys the area law~\cite{wolf-2008} ${\mathcal I}_n(A)
 \propto\ell$, with $\ell$ the length of the boundary between $A$ and $B$. Remarkably, 
-for different $\ell$, the ratio ${\mathcal I}_n/\ell$ exhibits a crossing at a second 
+for different $\ell$, the ratio ${\mathcal I}_n/\ell$ has been shown to exhibit a crossing at a second 
 order phase transition~\cite{jaconis-2013}, implying that it can be used as a diagnostic 
 tool for critical behaviors. For conformally invariant critical models more universal 
 information can be extracted from the area-law corrections of ${\mathcal I}_n$~\cite{stephan-2014}. 
@@ -234,7 +236,7 @@ lowering the temperature.
  to form the booklet. The spins in part $B$ of the booklet pages are at inverse 
  temperature $\beta$. The spins in part $A$ are identified  (see Eq.~\eqref{book-constraint}). 
  As a consequence, the effective temperature in part $A$ is $n\beta$. 
- $Z(A,n,\beta)$ denotes the partition function of the S-K model on 
+ $Z(\omega,n,\beta)$ denotes the partition function of the S-K model on 
  the booklet. 
 }
 \label{cartoon}
@@ -262,19 +264,19 @@ form of $[S_2]/N$ in the thermodynamic limit, using the replica-symmetric approx
 perfectly matches the Monte Carlo data. At low temperatures deviations from the RS result are 
 present, reflecting the replica symmetry breaking. Remarkably, the one-step replica symmetry 
 breaking ($1$-RSB) result $[S_2^{1\textrm{-}RSB}]/N$ is in full agreement with the Monte Carlo 
-data for $\beta\lesssim 3$, confirming what is observed for the internal energy. 
+data for $\beta\lesssim 3$, consistent with what is observed for the internal energy. 
 
 Finally, we consider the R\'enyi mutual information $[{\mathcal I}_2]$. This obeys a volume 
 law for any $\beta$ and $\omega$, in contrast with local spin models, where an area law is 
 observed~\cite{wolf-2008}. The corresponding density $[{\mathcal I}_2]/N$ vanishes in 
 both the infinite-temperature and the zero-temperature limits. Surprisingly, $[{\mathcal I}_2]/N$ 
 does not exhibit any crossing for different system sizes at the paramagnetic-glassy transition, 
-in striking contrast with local spin models~\cite{jaconis-2013}. For any $\omega$, ${\mathcal I}_2/N$ 
+in striking contrast with local spin models~\cite{jaconis-2013}. For any $\omega$, $[{\mathcal I}_2]/N$ 
 exhibits a maximum for $\beta\approx 1$. The position of this maximum is not simply 
 related to the paramagnetic-glassy transition. At high temperature $[{\mathcal I}_2]/N$ 
 is described analytically by the RS result $[{\mathcal I}_2]^{RS}/N$, whereas at low temperatures 
 one has to include the effects of the replica symmetry breaking. Similar to $[S_2]$, the $1$-RSB 
-approximation $[{\mathcal I}^{1\textrm{-}RSB}_2]/N$, is in good agreement with the Monte Carlo 
+approximation $[{\mathcal I}^{1\textrm{-}RSB}_2]/N$ is in good agreement with the Monte Carlo 
 data for $\beta\lesssim 3$.
 
 The Article is organized as follows. In section~\ref{booklet} we introduce the classical 
@@ -436,7 +438,7 @@ spin configurations. The prime in $\textrm{Tr}'$ stresses that only spin configu
 satisfying the constraint in Eq.~\eqref{book-constraint} are considered. In the two limits 
 $\omega=0$ and $\omega=1$ one recovers the standard S-K model. In particular, for $\omega=0$, 
 i.e., $n$ disconnected sheets, one has $Z(0,n,\beta,\{J\})=Z(\beta,\{J\})^n$, with 
-$Z(\beta,\{J\})$ the partition function of the S-K model on the plane. On the other hand, 
+$Z(\beta,\{J\})$ the partition function of the S-K model on the plane (i.e. the original S-K model). On the other hand, 
 for $\omega=1$ it is $Z(1,n,\beta,\{J\})=Z(n\beta,\{J\})$, i.e., the partition function 
 of the S-K model at inverse temperature $n\beta$. The quenched averaged free energy 
 $[F(\omega,n,\beta)]$, is defined as 
@@ -492,7 +494,7 @@ booklet. Precisely, $[Z^\alpha(\omega,n,\beta)]$ reads
 %
 where the index $\gamma=1,2,\dots,\alpha$ labels the different fictitious 
 replicas introduced in Eq.~\eqref{replica-trick}, whereas $r$ denote the 
-physical replicas, as in Eq.~\eqref{book-pf}. Clearly, physical and fictitious 
+physical replicas, as in Eq.~\eqref{book-pf}. Again, both the physical and fictitious 
 replicas do not interact. Notice that $Z^{\alpha}(\omega,n,\beta)$ can be 
 thought of as the partition function of the S-K model on a ``replicated'' 
 booklet. 
@@ -907,7 +909,7 @@ form for $n=2$). The resulting $q_0$ and $q_0'$ are plotted in Fig.~\ref{RSB0-sa
 (full and dotted lines, respectively) as function of $\omega$ and for several 
 values of $\beta$. Clearly, for any $\beta$ one has $q_0=1$ in the limit 
 $\omega\to 1$. Also, in the zero-temperature limit $\beta\to\infty$ one has 
-that $q_0\to 1$ and $q_0'\to 1$, for any $\omega$. Moreover, a simple calculation 
+that $q_0\to 1$ and $q_0'\to 1$, for any $\omega$. Moreover, expansion 
 yields  
 %
 \begin{align}
@@ -930,7 +932,7 @@ $q_0'-1\propto 1/\beta$.
 \caption{
  The critical temperature $\beta_c\equiv 1/T_c$ of the paramagnetic-glassy 
  transition for the S-K model on the $2$-sheets booklet (see Fig.~\ref{cartoon}) 
- with zero magnetic field: $\beta_c$ as a function of the booklet ratio $\omega
+ with zero magnetic field from Eq.~\eqref{tc}: $\beta_c$ as a function of the booklet ratio $\omega
  \equiv N_A/N$. Here $\beta_c$  is obtained from the replica-symmetric (RS) 
  approximation. Notice that $\beta_c=1$ and $\beta_c=1/2$ for $\omega=0$ and 
  $\omega=1$, respectively. 
@@ -1166,7 +1168,7 @@ captured correctly by the RS approximation.
  The S-K model on the 2-sheets booklet with zero magnetic field: 
  The internal energy per spin $U/N$ in the thermodynamic limit plotted 
  as a function of inverse temperature $\beta$. The plus symbols are the same 
- Monte Carlo data as in Fig.~\ref{U-RS}. The lines denote $U/N$ 
+ extrapolated Monte Carlo data as in Fig.~\ref{U-RS}. The lines denote $U/N$ 
  in the replica-symmetric (RS) approximation (same as in Fig.~\ref{U-RS}). 
  The circles are the results  in the one-step replica symmetry breaking 
  (1-RSB) approximation.
@@ -1249,9 +1251,9 @@ We now turn to discuss the behavior of the classical R\'enyi entropies
 (cf. Eq.~\eqref{renyi}). Here we restrict ourselves to the second R\'enyi 
 entropy $[S_2]$. Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
 there is no well defined boundary between the two parts $A$ and $B$ of the system 
-(unlike in local spin models). This suggests the volume-law behavior $[S_2]\propto N$ 
-for all temperatures. Thus, it is natural to consider the entropy per spin 
-$[S_2]/N$. 
+(unlike in local spin models). With this in mind we assume that we will find
+volume-law behavior $[S_2]\propto N$ for all temperatures, and consider the entropy per spin 
+$[S_2]/N$ as the quantity of interest.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
 \begin{figure*}[t]
@@ -1296,7 +1298,7 @@ Notice that in the high-temperature limit $\beta\to0$, where the RS approximatio
 Eq.~\eqref{renyi} and Eq.~\eqref{ht-logZ} give 
 %
 \begin{equation}
-[S^{RS}_2]=\omega\log(2)-\frac{\beta^2}{4}\omega^2+{\mathcal O}(\beta^3).
+\frac{[S^{RS}_2]}{N}=\omega\log(2)-\frac{\beta^2}{4}\omega^2+{\mathcal O}(\beta^3).
 \end{equation}
 %
 From Fig.~\ref{Renyi-MC} one has that the extrapolated MC data are in quantitative 
@@ -1333,7 +1335,7 @@ it is straightforward to derive the high-temperature behavior of $[{\mathcal I}_
 \end{equation}
 %
 $[{\mathcal I}_2]/N$ increases upon lowering the temperature up to $\beta\approx 1$, where 
-it exhibits a maximum. The height of this maximum decreases as a function of $\omega$. 
+it exhibits a maximum.
 One should stress that its position is not simply related to the paramagnetic-glassy transition. 
 Furthermore, the data for $[{\mathcal I}_2]/N$ at different system sizes do not exhibit any crossing. 
 This is in sharp contrast with local models~\cite{jaconis-2013}, where ${\mathcal I}_n/L$ exhibits a 
@@ -1450,9 +1452,7 @@ andreanov-2012}.
 \section{Acknowledgements}
 We would like to thank Pasquale Calabrese for useful discussions. V.A.  acknowledges  
 financial support from the ERC under Starting Grant 279391 EDEQS. S.I. and L.P. 
-acknowledge support  from the  FP7/ERC Starting Grant No. 306897. 
-
-
+acknowledge support  from the  FP7/ERC Starting Grant No. 306897.
 
 %##########################################################################
 \appendix
@@ -1609,8 +1609,7 @@ a function of temperature\cite{jaconis-2013} can be used to calculate $Z(A,n,\be
 However, this requires high accuracy over a large range of temperature.
 
 Here we directly measure the ratio of partition functions using the so-called \emph{ratio trick}. In 
-the ratio trick one splits the subsystem $A$ as $A=\sum_{i}A_i$, where $A_i$ is a sequence of subsystems 
-such that $A_i\subset A_{i+1}$. Then one writes 
+the ratio trick one splits the subsystem $A$ in a set of subsystems $A_i$ such that $A_i\subset A_{i+1}$ and the largest subsystem in the set is simply $A$ itself. Then one writes 
 %
 \begin{align}
 \label{ratio-trick}
@@ -1625,7 +1624,7 @@ A_i = 4i,\quad i \in [0,N/4].
 \end{align}
 %
 Crucially, if the length of $A_i$ increases mildly with $i$, each term in the product 
-in the left hand side of Eq.~\eqref{ratio-trick} can be sampled efficiently in Monte 
+in the right hand side of Eq.~\eqref{ratio-trick} can be sampled efficiently in Monte 
 Carlo~\cite{stephan-2014}. Notice that the same trick has also been used in 
 Ref.~\onlinecite{alba-2010,alba-2011,alba-2013}. More specifically, one can write
 %
@@ -1651,20 +1650,21 @@ update scheme, such as standard Metropolis or cluster updates
 \item For the spins living in the set difference $A_{i+1}\setminus A_i$ calculate 
 %
 \begin{align}
-W_a = \sum_i e^{-\beta E_i}.
+W_a = \prod_n \sum_{i_n} e^{-\beta E_{i_n}}.
 \end{align}
 %
-Here (cf. Eq.~\eqref{sub-choice}) $i$ runs over all the $n2^4$ configurations of the 
-four spins in $A_{i+1}\setminus A_i$, and $E_i$ is the energy associated with 
-the spin configuration $i$. 
+Here (cf. Eq.~\eqref{sub-choice}) $i$ runs over all the $2^4$ configurations of the 
+four spins in $A_{i+1}\setminus A_i$ for each of the $n$ sheets, and $E_i$ is the energy associated with 
+the spin configuration $i$ of a single sheet.
 \item Calculate the quantity
 %
 \begin{align}
 W_b = \sum_j e^{-\beta E_j}.
 \end{align}
 %
-As in step $2$, $j$ runs over all the $n2^4$ configurations of the four spins living 
-in $A_{i+1}\setminus A_i$, but the spins living on different sheets are identified.
+As in step $2$, $j$ runs over all the $2^4$ configurations of the four spins living 
+in $A_{i+1}\setminus A_i$, but since the spins living on different sheets are identified
+there are only $2^4$ configurations in total and the energy $E_j$ is that of all $n$ sheets together.
 \item Calculate the transition probability $T_{i\rightarrow i+1}$ as
 %
 \begin{align}
@@ -1851,10 +1851,11 @@ V.~Alba, L.~Tagliacozzo, and P.~Calabrese, J.\ Stat.\ Mech.\ (2011) P06012.
 \bibitem{alba-2013}
 V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013. 
 
+\bibitem{nakagawa-2009}
+Y.~Nakagawa, A.~Nakamura, S.~Motoki, and V.~Zakharov (2009), arXiv:0911.2596
 
-
-
-
+\bibitem{buividovich-2008}
+P.~Buividovich and M.~Polikarpov, Nuc.\ Phys.\ B {\bf 802}, 458 (2008)
 
 %\bibitem{katzgraber-2003}
 
