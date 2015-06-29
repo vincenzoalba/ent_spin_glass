@@ -1,0 +1,260 @@
+\relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\citation{binder-1986}
+\citation{parisi-book}
+\citation{young-1998}
+\citation{nishimori-book}
+\citation{castellani-2005}
+\citation{sherrington-1978}
+\citation{sherrington-1978-prl}
+\citation{parisi-1980}
+\citation{talagrand-2006}
+\citation{pastur-1991}
+\citation{mezard-1984}
+\citation{rammal-1986}
+\citation{parisi-book}
+\citation{castellani-2005}
+\citation{cardy-book}
+\citation{yucesoy-2012}
+\citation{billoire-2012}
+\citation{yucesoy-2013}
+\citation{morrison-2008}
+\citation{rotondo-2015}
+\citation{ghofraniha-2015}
+\citation{amico-2008}
+\citation{eisert-2009}
+\citation{calabrese-2009}
+\citation{cc-rev}
+\citation{holzhey-1994}
+\citation{vidal-2003}
+\citation{calabrese-2004}
+\citation{calabrese-2012}
+\citation{jaconis-2013}
+\citation{stephan-2014}
+\citation{alcaraz-2013}
+\citation{stephan-2014-a}
+\citation{wolf-2008}
+\citation{jaconis-2013}
+\citation{stephan-2014}
+\newlabel{FirstPage}{{}{1}{\relax }{section*.1}{}}
+\@writefile{toc}{\contentsline {title}{The classical mutual information in mean-field spin glass models}{1}{section*.2}}
+\@writefile{toc}{\contentsline {abstract}{Abstract}{1}{section*.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section*.3}}
+\newlabel{SK-intro}{{1}{1}{\relax }{equation.1}{}}
+\newlabel{renyi-intro}{{2}{1}{\relax }{equation.2}{}}
+\newlabel{a-ratio}{{3}{1}{\relax }{equation.3}{}}
+\citation{refael-2009}
+\citation{castelnovo-2010}
+\citation{sherrington-1978}
+\citation{sherrington-1978-prl}
+\citation{parisi-1979}
+\citation{wolf-2008}
+\citation{jaconis-2013}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  The booklet geometry considered in this work. (a) The single sheet (``page'') of the booklet: The $N$ spins living on the sheet are divided into two groups $A$ and $B$, containing $N_A$ and $N_B$ spins, respectively. Here $\omega \equiv N_A/N$ is the booklet ratio. (b) The $n$ sheets are glued together to form the booklet. The spins in part $B$ of the booklet pages are at inverse temperature $\beta $. The spins in part $A$ are identified (see Eq.\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {book-constraint}\unskip \@@italiccorr )}}). As a consequence, the effective temperature in part $A$ is $n\beta $. $Z(A,n,\beta )$ denotes the partition function of the S-K model on the booklet. }}{2}{figure.1}}
+\newlabel{cartoon}{{1}{2}{ The booklet geometry considered in this work. (a) The single sheet (``page'') of the booklet: The $N$ spins living on the sheet are divided into two groups $A$ and $B$, containing $N_A$ and $N_B$ spins, respectively. Here $\omega \equiv N_A/N$ is the booklet ratio. (b) The $n$ sheets are glued together to form the booklet. The spins in part $B$ of the booklet pages are at inverse temperature $\beta $. The spins in part $A$ are identified (see Eq.~\eqref {book-constraint}). As a consequence, the effective temperature in part $A$ is $n\beta $. $Z(A,n,\beta )$ denotes the partition function of the S-K model on the booklet. \relax }{figure.1}{}}
+\citation{jaconis-2013}
+\citation{stephan-2014}
+\citation{guerra-2002}
+\citation{jaconis-2013}
+\citation{stephan-2014}
+\citation{cardy-book}
+\citation{stephan-2014}
+\citation{stephan-2014}
+\citation{sherrington-1978}
+\citation{sherrington-1978-prl}
+\@writefile{toc}{\contentsline {section}{\numberline {II}The booklet construction \& and the classical R\'enyi entropy}{3}{section*.4}}
+\newlabel{booklet}{{II}{3}{\relax }{section*.4}{}}
+\newlabel{renyi}{{5}{3}{\relax }{equation.5}{}}
+\newlabel{MI}{{6}{3}{\relax }{equation.6}{}}
+\newlabel{GMI}{{7}{3}{\relax }{equation.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}The Sherrington-Kirkpatrick (S-K) model on the booklet}{3}{section*.5}}
+\newlabel{the-model}{{III}{3}{\relax }{section*.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}The model and its partition function}{3}{section*.6}}
+\newlabel{the-model-def}{{III\tmspace  +\thinmuskip {.1667em}A}{3}{\relax }{section*.6}{}}
+\newlabel{SK-ham}{{8}{3}{\relax }{equation.8}{}}
+\newlabel{book-constraint}{{9}{3}{\relax }{equation.9}{}}
+\newlabel{quenched-distr}{{10}{3}{\relax }{equation.10}{}}
+\citation{parisi-book}
+\citation{nishimori-book}
+\citation{cardy-book}
+\citation{parisi-book}
+\citation{sherrington-1978-prl}
+\newlabel{book-pf}{{11}{4}{\relax }{equation.11}{}}
+\newlabel{free-energy}{{12}{4}{\relax }{equation.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}The replicated booklet and the overlap tensor}{4}{section*.7}}
+\newlabel{replica-sec}{{III\tmspace  +\thinmuskip {.1667em}B}{4}{\relax }{section*.7}{}}
+\newlabel{replica-trick}{{13}{4}{\relax }{equation.13}{}}
+\newlabel{rep-Z}{{14}{4}{\relax }{equation.14}{}}
+\newlabel{dis-aver-Z}{{15}{4}{\relax }{equation.15}{}}
+\newlabel{hs-Z}{{16}{4}{\relax }{equation.16}{}}
+\newlabel{Gamma}{{17}{4}{\relax }{equation.17}{}}
+\newlabel{mf-action}{{18}{4}{\relax }{equation.18}{}}
+\citation{parisi-book}
+\citation{nishimori-book}
+\citation{almeida-1978}
+\citation{parisi-1979}
+\newlabel{z-final}{{19}{5}{\relax }{equation.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}The saddle point approximation}{5}{section*.8}}
+\newlabel{saddle-point}{{III\tmspace  +\thinmuskip {.1667em}C}{5}{\relax }{section*.8}{}}
+\newlabel{Z-ac}{{20}{5}{\relax }{equation.20}{}}
+\newlabel{saddle}{{21}{5}{\relax }{equation.21}{}}
+\newlabel{saddle-a}{{22}{5}{\relax }{equation.22}{}}
+\newlabel{saddle-final}{{23}{5}{\relax }{equation.23}{}}
+\newlabel{saddle-final-a}{{24}{5}{\relax }{equation.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  The S-K model on the $2$-sheets booklet with zero magnetic field in the paramagnetic phase: the solution $q_0$ of the saddle point equation\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {saddle-high-t}\unskip \@@italiccorr )}} plotted as a function of the booklet aspect ratio $\omega $ and several values of the inverse temperature $\beta =1/T$. At $\omega =1$ one has $q_0=1,\forall \beta $. In the zero-temperature limit one has $q_0\to 1,\forall \omega $. The straight line is the infinite temperature result. }}{5}{figure.2}}
+\newlabel{RSB0_saddle_ht}{{2}{5}{ The S-K model on the $2$-sheets booklet with zero magnetic field in the paramagnetic phase: the solution $q_0$ of the saddle point equation~\eqref {saddle-high-t} plotted as a function of the booklet aspect ratio $\omega $ and several values of the inverse temperature $\beta =1/T$. At $\omega =1$ one has $q_0=1,\forall \beta $. In the zero-temperature limit one has $q_0\to 1,\forall \omega $. The straight line is the infinite temperature result. \relax }{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}The replica-symmetric (RS) ansatz}{5}{section*.9}}
+\newlabel{solution}{{IV}{5}{\relax }{section*.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A}The paramagnetic phase}{5}{section*.10}}
+\newlabel{para-section}{{IV\tmspace  +\thinmuskip {.1667em}A}{5}{\relax }{section*.10}{}}
+\newlabel{inf-t-q}{{27}{6}{\relax }{equation.27}{}}
+\newlabel{logZ-ht}{{28}{6}{\relax }{equation.28}{}}
+\newlabel{high-t-q}{{29}{6}{\relax }{equation.29}{}}
+\newlabel{high-t-action}{{30}{6}{\relax }{equation.30}{}}
+\newlabel{ht-saddle}{{31}{6}{\relax }{equation.31}{}}
+\newlabel{ht-logZ}{{32}{6}{\relax }{equation.32}{}}
+\newlabel{saddle-high-t}{{33}{6}{\relax }{equation.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  The S-K model on the $2$-sheets booklet with zero magnetic field. The overlap tensor in the replica-symmetric (RS) approximation (see Eq.\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {rs-ansatz}\unskip \@@italiccorr )}}): the solutions $q_0$ and $q_0'$ (shown as full and dotted lines, respectively) of the saddle point equations\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {RS-saddle-1}\unskip \@@italiccorr )}}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {RS-saddle-2}\unskip \@@italiccorr )}} plotted as a function of the booklet aspect ratio $\omega $, and inverse temperature $\beta =1/T=1,3/2,2$. At $\omega =1$ one has that $q_0=1, \forall \beta $. In the limit $\beta \to \infty $ it is $q_0,q_0'\to 1,\forall \omega $. }}{6}{figure.3}}
+\newlabel{RSB0-saddle}{{3}{6}{\label {RSB0-saddle} The S-K model on the $2$-sheets booklet with zero magnetic field. The overlap tensor in the replica-symmetric (RS) approximation (see Eq.~\eqref {rs-ansatz}): the solutions $q_0$ and $q_0'$ (shown as full and dotted lines, respectively) of the saddle point equations~\eqref {RS-saddle-1}\eqref {RS-saddle-2} plotted as a function of the booklet aspect ratio $\omega $, and inverse temperature $\beta =1/T=1,3/2,2$. At $\omega =1$ one has that $q_0=1, \forall \beta $. In the limit $\beta \to \infty $ it is $q_0,q_0'\to 1,\forall \omega $. \relax }{figure.3}{}}
+\newlabel{RSB0_saddle}{{3}{6}{\label {RSB0-saddle} The S-K model on the $2$-sheets booklet with zero magnetic field. The overlap tensor in the replica-symmetric (RS) approximation (see Eq.~\eqref {rs-ansatz}): the solutions $q_0$ and $q_0'$ (shown as full and dotted lines, respectively) of the saddle point equations~\eqref {RS-saddle-1}\eqref {RS-saddle-2} plotted as a function of the booklet aspect ratio $\omega $, and inverse temperature $\beta =1/T=1,3/2,2$. At $\omega =1$ one has that $q_0=1, \forall \beta $. In the limit $\beta \to \infty $ it is $q_0,q_0'\to 1,\forall \omega $. \relax }{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}The replica-symmetric (RS) approximation}{6}{section*.11}}
+\newlabel{rs-section}{{IV\tmspace  +\thinmuskip {.1667em}B}{6}{\relax }{section*.11}{}}
+\newlabel{rs-ansatz}{{34}{6}{\relax }{equation.34}{}}
+\citation{parisi-1979}
+\newlabel{rs-F}{{35}{7}{\relax }{equation.35}{}}
+\newlabel{l-rs}{{36}{7}{\relax }{equation.36}{}}
+\newlabel{eq1}{{37}{7}{\relax }{equation.37}{}}
+\newlabel{eq2}{{38}{7}{\relax }{equation.38}{}}
+\newlabel{low-t}{{39}{7}{\relax }{equation.39}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}The paramagnetic-glassy transition}{7}{section*.12}}
+\newlabel{tc-section}{{IV\tmspace  +\thinmuskip {.1667em}C}{7}{\relax }{section*.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  The critical temperature $\beta _c\equiv 1/T_c$ of the paramagnetic-glassy transition for the S-K model on the $2$-sheets booklet (see Fig.\nobreakspace  {}\ref  {cartoon}) with zero magnetic field: $\beta _c$ as a function of the booklet ratio $\omega \equiv N_A/N$. Here $\beta _c$ is obtained from the replica-symmetric (RS) approximation. Notice that $\beta _c=1$ and $\beta _c=1/2$ for $\omega =0$ and $\omega =1$, respectively. }}{7}{figure.4}}
+\newlabel{beta_c}{{4}{7}{ The critical temperature $\beta _c\equiv 1/T_c$ of the paramagnetic-glassy transition for the S-K model on the $2$-sheets booklet (see Fig.~\ref {cartoon}) with zero magnetic field: $\beta _c$ as a function of the booklet ratio $\omega \equiv N_A/N$. Here $\beta _c$ is obtained from the replica-symmetric (RS) approximation. Notice that $\beta _c=1$ and $\beta _c=1/2$ for $\omega =0$ and $\omega =1$, respectively. \relax }{figure.4}{}}
+\newlabel{tc}{{41}{7}{\relax }{equation.41}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}The one-step replica-symmetry-breaking (1-RSB) approximation}{7}{section*.13}}
+\newlabel{rsb-1-section}{{V}{7}{\relax }{section*.13}{}}
+\newlabel{q-rsb1}{{42}{7}{\relax }{equation.42}{}}
+\newlabel{q-rsb1a}{{43}{7}{\relax }{equation.43}{}}
+\citation{billoire-2007}
+\citation{aspelmeier-2008}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  The S-K model on the $2$-sheets booklet with zero magnetic field and booklet ratio $\omega =1/2$ (see Fig.\nobreakspace  {}\ref  {cartoon}): The internal energy per spin $U/N$ as a function of the inverse temperature $\beta $. The triangles, squares, and rhombi, denote the Monte Carlo data for a booklet with $N=32,64,128$ spins per sheet. The plus symbols are the extrapolations to the thermodynamic limit $N\to \infty $, at fixed $\omega $. The dash-dotted line is the analytical result $U_{RS}/N$ obtained using the replica-symmetric (RS) approximation. The horizontal dotted line is the exact zero-temperature result $U/N\approx -1.52642$. }}{8}{figure.5}}
+\newlabel{U-MC}{{5}{8}{ The S-K model on the $2$-sheets booklet with zero magnetic field and booklet ratio $\omega =1/2$ (see Fig.~\ref {cartoon}): The internal energy per spin $U/N$ as a function of the inverse temperature $\beta $. The triangles, squares, and rhombi, denote the Monte Carlo data for a booklet with $N=32,64,128$ spins per sheet. The plus symbols are the extrapolations to the thermodynamic limit $N\to \infty $, at fixed $\omega $. The dash-dotted line is the analytical result $U_{RS}/N$ obtained using the replica-symmetric (RS) approximation. The horizontal dotted line is the exact zero-temperature result $U/N\approx -1.52642$. \relax }{figure.5}{}}
+\newlabel{blocks}{{44}{8}{\relax }{equation.44}{}}
+\newlabel{step}{{45}{8}{\relax }{equation.45}{}}
+\newlabel{RSB-1-logZ}{{46}{8}{\relax }{equation.46}{}}
+\newlabel{H1}{{47}{8}{\relax }{equation.47}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Monte Carlo results: The internal energy}{8}{section*.14}}
+\newlabel{mc-results}{{VI}{8}{\relax }{section*.14}{}}
+\newlabel{U-def}{{48}{8}{\relax }{equation.48}{}}
+\citation{parisi-1979}
+\citation{parisi-1983}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  The S-K model on the 2-sheets booklet and zero magnetic field: The internal energy per spin $U/N$ in the thermodynamic limit. The symbols are the Monte Carlo data extrapolated to the thermodynamic limit $N\to \infty $, at fixed booklet ratio $\omega $ (see Fig.\nobreakspace  {}\ref  {cartoon}). $U/N$ is plotted as a function of inverse temperature $\beta $ and for $\omega =0,1/4,1/2,3/4,1$. The lines are the analytical results $U_{RS}$ obtained using the replica-symmetric (RS) approximation. The stars denote the value of $U_c/N$ at the paramagnetic-glassy transition. }}{9}{figure.6}}
+\newlabel{U-RS}{{6}{9}{ The S-K model on the 2-sheets booklet and zero magnetic field: The internal energy per spin $U/N$ in the thermodynamic limit. The symbols are the Monte Carlo data extrapolated to the thermodynamic limit $N\to \infty $, at fixed booklet ratio $\omega $ (see Fig.~\ref {cartoon}). $U/N$ is plotted as a function of inverse temperature $\beta $ and for $\omega =0,1/4,1/2,3/4,1$. The lines are the analytical results $U_{RS}$ obtained using the replica-symmetric (RS) approximation. The stars denote the value of $U_c/N$ at the paramagnetic-glassy transition. \relax }{figure.6}{}}
+\newlabel{U}{{49}{9}{\relax }{equation.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  The S-K model on the 2-sheets booklet with zero magnetic field: The internal energy per spin $U/N$ in the thermodynamic limit plotted as a function of inverse temperature $\beta $. The plus symbols are the same Monte Carlo data as in Fig.\nobreakspace  {}\ref  {U-RS}. The lines denote $U/N$ in the replica-symmetric (RS) approximation (same as in Fig.\nobreakspace  {}\ref  {U-RS}). The circles are the results in the one-step replica symmetry breaking (1-RSB) approximation. }}{9}{figure.7}}
+\newlabel{U-RSB-1}{{7}{9}{ The S-K model on the 2-sheets booklet with zero magnetic field: The internal energy per spin $U/N$ in the thermodynamic limit plotted as a function of inverse temperature $\beta $. The plus symbols are the same Monte Carlo data as in Fig.~\ref {U-RS}. The lines denote $U/N$ in the replica-symmetric (RS) approximation (same as in Fig.~\ref {U-RS}). The circles are the results in the one-step replica symmetry breaking (1-RSB) approximation. \relax }{figure.7}{}}
+\newlabel{ht-U}{{50}{9}{\relax }{equation.50}{}}
+\newlabel{U'}{{51}{9}{\relax }{equation.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  The classical disorder-averaged R\'enyi entropy per spin $[S_2(\omega )]/N$ in the S-K model on the $2$-sheets booklet with zero magnetic field: $[S_2(\omega )]/N$ as a function of the inverse temperature $\beta $. The different panels correspond to different booklet aspect ratios $\omega =3/4,1/2,1/4$ (see Fig.\nobreakspace  {}\ref  {cartoon}). The triangles, squares and rhombi denote the Monte Carlo results for booklets with $N=32,64,128$ spins per sheet. The plus symbols are the numerical extrapolations to the thermodynamic limit. The inset in panel (a) shows $[S_2]/N$ at fixed $\beta =2$, plotted versus $N^{-2/3}$.The dotted line is a linear fit. In all the panels the dash-dotted lines are the analytical results in the replica-symmetry (RS) approximation. The circles are the analytical results obtained using the one-step replica symmetry breaking (1-RSB) ansatz. }}{10}{figure.8}}
+\newlabel{Renyi-MC}{{8}{10}{ The classical disorder-averaged R\'enyi entropy per spin $[S_2(\omega )]/N$ in the S-K model on the $2$-sheets booklet with zero magnetic field: $[S_2(\omega )]/N$ as a function of the inverse temperature $\beta $. The different panels correspond to different booklet aspect ratios $\omega =3/4,1/2,1/4$ (see Fig.~\ref {cartoon}). The triangles, squares and rhombi denote the Monte Carlo results for booklets with $N=32,64,128$ spins per sheet. The plus symbols are the numerical extrapolations to the thermodynamic limit. The inset in panel (a) shows $[S_2]/N$ at fixed $\beta =2$, plotted versus $N^{-2/3}$.The dotted line is a linear fit. In all the panels the dash-dotted lines are the analytical results in the replica-symmetry (RS) approximation. The circles are the analytical results obtained using the one-step replica symmetry breaking (1-RSB) ansatz. \relax }{figure.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}The classical R\'enyi entropies}{10}{section*.15}}
+\newlabel{Renyi-section}{{VII}{10}{\relax }{section*.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}The classical R\'enyi mutual information}{10}{section*.16}}
+\newlabel{I2-section}{{VIII}{10}{\relax }{section*.16}{}}
+\citation{jaconis-2013}
+\citation{parisi-1980}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The classical disorder-averaged mutual information per spin $[{\mathcal  I}_2]/N$ in the S-K model on the $2$-sheets booklet with zero magnetic field: $[{\mathcal  I}_2]/N$ versus the inverse temperature $\beta $. The different panels correspond to different booklet ratios $\omega =1/2,1/4,1/8$ (see Fig.\nobreakspace  {}\ref  {cartoon}). The same scale is used on both axes in all panels. The symbols are the Monte Carlo data for systems with $N=32,64,128$ spins per sheet. The dash-dotted line is the analytical result in the replica-symmetric (RS) approximation. }}{11}{figure.9}}
+\newlabel{I2-MC}{{9}{11}{The classical disorder-averaged mutual information per spin $[{\mathcal I}_2]/N$ in the S-K model on the $2$-sheets booklet with zero magnetic field: $[{\mathcal I}_2]/N$ versus the inverse temperature $\beta $. The different panels correspond to different booklet ratios $\omega =1/2,1/4,1/8$ (see Fig.~\ref {cartoon}). The same scale is used on both axes in all panels. The symbols are the Monte Carlo data for systems with $N=32,64,128$ spins per sheet. The dash-dotted line is the analytical result in the replica-symmetric (RS) approximation. \relax }{figure.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Summary and Conclusions}{11}{section*.17}}
+\newlabel{conclusions}{{IX}{11}{\relax }{section*.17}{}}
+\citation{jaconis-2013}
+\citation{read-1995}
+\citation{andreanov-2012}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The classical mutual information per spin $[{\mathcal  I}_2]/N$ in the S-K model on the $2$-sheets booklet with zero magnetic field: $[{\mathcal  I}_2]/N$ plotted versus $\beta $. The symbols denote the Monte Carlo results extrapolated to the thermodynamic limit for booklet ratios $\omega =1/2,1/4,1/8$ (circles, squares, triangles). The dash-dotted lines are the analytical results in the replica-symmetric (RS) approximation. The full symbols (rhombi) are the results in the first-step replica-symmetry-breaking (1-RSB) approximation. }}{12}{figure.10}}
+\newlabel{I2-extrapolated}{{10}{12}{The classical mutual information per spin $[{\mathcal I}_2]/N$ in the S-K model on the $2$-sheets booklet with zero magnetic field: $[{\mathcal I}_2]/N$ plotted versus $\beta $. The symbols denote the Monte Carlo results extrapolated to the thermodynamic limit for booklet ratios $\omega =1/2,1/4,1/8$ (circles, squares, triangles). The dash-dotted lines are the analytical results in the replica-symmetric (RS) approximation. The full symbols (rhombi) are the results in the first-step replica-symmetry-breaking (1-RSB) approximation. \relax }{figure.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {X}Acknowledgements}{12}{section*.18}}
+\@writefile{toc}{\appendix }
+\@writefile{toc}{\contentsline {section}{\numberline {A}The saddle point equations}{12}{section*.19}}
+\newlabel{saddle-equations}{{A}{12}{\relax }{section*.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1}The replica-symmetric (RS) approximation}{12}{section*.20}}
+\newlabel{RS-saddle-1}{{A1}{12}{\relax }{equation.A1}{}}
+\newlabel{RS-saddle-2}{{A2}{12}{\relax }{equation.A2}{}}
+\citation{jaconis-2013}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2}The one-step replica symmetry breaking ($1$-RSB) approximation}{13}{section*.21}}
+\newlabel{RSB-1-saddle-a}{{A7}{13}{\relax }{equation.A7}{}}
+\newlabel{RSB-1-saddle-b}{{A8}{13}{\relax }{equation.A8}{}}
+\newlabel{RSB-1-saddle-c}{{A9}{13}{\relax }{equation.A9}{}}
+\newlabel{RSB-1-saddle-d}{{A10}{13}{\relax }{equation.A10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Monte Carlo method to calculate the classical R\'enyi entropies}{13}{section*.22}}
+\newlabel{mc-method}{{B}{13}{\relax }{section*.22}{}}
+\newlabel{renyi-app}{{B1}{13}{\relax }{equation.B1}{}}
+\newlabel{ratio-trick}{{B2}{13}{\relax }{equation.B2}{}}
+\citation{stephan-2014}
+\citation{alba-2010}
+\citation{alba-2011}
+\citation{alba-2013}
+\bibcite{binder-1986}{{1}{}{{}}{{}}}
+\bibcite{parisi-book}{{2}{}{{}}{{}}}
+\bibcite{young-1998}{{3}{}{{}}{{}}}
+\bibcite{nishimori-book}{{4}{}{{}}{{}}}
+\bibcite{castellani-2005}{{5}{}{{}}{{}}}
+\bibcite{sherrington-1978}{{6}{}{{}}{{}}}
+\bibcite{sherrington-1978-prl}{{7}{}{{}}{{}}}
+\bibcite{parisi-1980}{{8}{}{{}}{{}}}
+\bibcite{talagrand-2006}{{9}{}{{}}{{}}}
+\bibcite{pastur-1991}{{10}{}{{}}{{}}}
+\bibcite{mezard-1984}{{11}{}{{}}{{}}}
+\bibcite{rammal-1986}{{12}{}{{}}{{}}}
+\bibcite{cardy-book}{{13}{}{{}}{{}}}
+\bibcite{yucesoy-2012}{{14}{}{{}}{{}}}
+\bibcite{billoire-2012}{{15}{}{{}}{{}}}
+\bibcite{yucesoy-2013}{{16}{}{{}}{{}}}
+\bibcite{morrison-2008}{{17}{}{{}}{{}}}
+\bibcite{rotondo-2015}{{18}{}{{}}{{}}}
+\bibcite{ghofraniha-2015}{{19}{}{{}}{{}}}
+\bibcite{amico-2008}{{20}{}{{}}{{}}}
+\bibcite{eisert-2009}{{21}{}{{}}{{}}}
+\bibcite{calabrese-2009}{{22}{}{{}}{{}}}
+\bibcite{cc-rev}{{23}{}{{}}{{}}}
+\bibcite{holzhey-1994}{{24}{}{{}}{{}}}
+\bibcite{vidal-2003}{{25}{}{{}}{{}}}
+\bibcite{calabrese-2004}{{26}{}{{}}{{}}}
+\bibcite{calabrese-2012}{{27}{}{{}}{{}}}
+\bibcite{jaconis-2013}{{28}{}{{}}{{}}}
+\newlabel{sub-choice}{{B3}{14}{\relax }{equation.B3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}References}{14}{section*.23}}
+\bibcite{stephan-2014}{{29}{}{{}}{{}}}
+\bibcite{alcaraz-2013}{{30}{}{{}}{{}}}
+\bibcite{stephan-2014-a}{{31}{}{{}}{{}}}
+\bibcite{wolf-2008}{{32}{}{{}}{{}}}
+\bibcite{refael-2009}{{33}{}{{}}{{}}}
+\bibcite{castelnovo-2010}{{34}{}{{}}{{}}}
+\bibcite{parisi-1979}{{35}{}{{}}{{}}}
+\bibcite{guerra-2002}{{36}{}{{}}{{}}}
+\bibcite{almeida-1978}{{37}{}{{}}{{}}}
+\bibcite{billoire-2007}{{38}{}{{}}{{}}}
+\bibcite{aspelmeier-2008}{{39}{}{{}}{{}}}
+\bibcite{parisi-1983}{{40}{}{{}}{{}}}
+\bibcite{read-1995}{{41}{}{{}}{{}}}
+\bibcite{andreanov-2012}{{42}{}{{}}{{}}}
+\bibcite{alba-2010}{{43}{}{{}}{{}}}
+\bibcite{alba-2011}{{44}{}{{}}{{}}}
+\bibcite{alba-2013}{{45}{}{{}}{{}}}
+\bibdata{sk_model_v15Notes}
+\bibstyle{apsrev4-1}
+\citation{REVTEX41Control}
+\citation{apsrev41Control}
+\global\NAT@numberstrue
+\newlabel{LastBibItem}{{45}{15}{\relax }{section*.23}{}}
+\newlabel{LastPage}{{}{15}{}{}{}}

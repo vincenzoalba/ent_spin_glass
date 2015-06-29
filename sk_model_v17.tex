@@ -1104,15 +1104,16 @@ In this section we numerically confirm the analytical results of section~\ref{so
 We discuss Monte Carlo (MC) data for the S-K model on the $2$-sheets booklet 
 with zero external magnetic field. The data are obtained from parallel tempering  
 Monte Carlo simulations~\cite{hukushima-1996}. In the parallel tempering simulations 
-$N_{\textrm{rep}}$ identical copies of the system are simulated. Each copy is at a different temperature 
-in the range $T_{\textrm{max}}-T_{\textrm{min}}$. The standard Metropolis sweeps at 
+$N_{\textrm{rep}}$ identical disorder realizations of the system are simulated. Each copy is at 
+a different temperature in the range $\beta_{\textrm{min}}-\beta_{\textrm{max}}$. 
+The standard Metropolis sweeps at 
 each temperature are supplemented with parallel tempering moves, which allow 
-to exchange the spin configurations of replicas with neighboring temperatures. 
-In our simulations we choose $T_{\textrm{min}}=...$ and $T_{\textrm{max}}=...$. 
-Each Monte Carlo sweep consists of $...$ Metropolis steps and $...$ parallel 
-tempering moves. For each disorder realization we perform $...$ sweeps for $L=...$. 
-The disorder average is performed over $...$ different disorder realizations.  
-
+the exchange the spin configurations between replicas with neighboring temperatures. 
+In our simulations we choose $\beta_{\textrm{min}}=0.25$ and $\beta_{\textrm{max}}=2.5$, with 46 temperatures
+chosen in total with equal spacing in $\beta$.
+Each Monte Carlo sweep consists of $N$ single spin updates and $45$ parallel 
+tempering moves. For each disorder realization we perform $10^5$ sweeps. 
+The disorder average is performed over $128$ different disorder realizations.  
 
 We focus on the internal energy $U(\omega,n,
 \beta)$ 
