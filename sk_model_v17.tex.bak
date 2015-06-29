@@ -144,11 +144,11 @@ mezard-1984,rammal-1986}, and replica symmetry breaking~\cite{parisi-book,castel
 The last refers to the breaking of the permutation symmetry among the fictitious replicas 
 of the model, which are introduced to perform disorder averages (via the so-called 
 \emph{replica trick}~\cite{cardy-book}), not to be confused with the replica trick used 
-in calculating the R\'enyi entanglement entropies. Finally, although the applicability of the S-K 
-model to describe realistic spin glasses is still highly debated~\cite{yucesoy-2012,
-billoire-2012,yucesoy-2013}, there are recent proposals on how to realize it  
-in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser systems~\cite{
-ghofraniha-2015}. 
+in calculating the R\'enyi entanglement entropies (see below). Finally, although the 
+applicability of the S-K model to describe realistic spin glasses is still highly 
+debated~\cite{yucesoy-2012,billoire-2012,yucesoy-2013}, there are recent proposals on 
+how to realize it in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser 
+systems~\cite{ghofraniha-2015}. 
 
 In the last decade entanglement-related quantities emerged as valuable tools to 
 understand the physics of complex systems~\cite{amico-2008,eisert-2009,calabrese-2009,
@@ -549,7 +549,7 @@ and it reads
 \\
 +\sum\limits_{\gamma}\sum\limits_{r<r'}(q_{\gamma\gamma}^{
 rr'})^2\Big)
-+\frac{\beta}{2 J_0}\sum\limits_{\gamma r}(m_\gamma^r)^2. 
++\frac{\beta}{2}\sum\limits_{\gamma r}(m_\gamma^r)^2. 
 \label{Gamma}
 \end{multline}
 %
@@ -629,7 +629,7 @@ e^{{\mathcal L}}\right)=q_{\gamma\gamma'}^{rr'}\\
 \label{saddle-a}
 & \frac{\partial}{\partial m_\gamma^r}\left(\omega\log\tr_A 
 e^{{\mathcal L}}+(1-\omega)\log\tr_B e^{{\mathcal L}}\right)=
-\frac{1}{J_0}m_\gamma^r.
+m_\gamma^r.
 \end{align}
 %
 It is enlightening to rewrite Eqs.~\eqref{saddle}~\eqref{saddle-a} as 
@@ -640,7 +640,7 @@ It is enlightening to rewrite Eqs.~\eqref{saddle}~\eqref{saddle-a} as
 \omega\langle S^{(r,\gamma)} S^{(r',\gamma')}\rangle_A+
 (1-\omega)\langle S^{(r,\gamma)}S^{(r',\gamma')}
 \rangle_B\\
-& \frac{1}{J_0}m_\gamma^r=\omega\langle S^{(r,\gamma)}
+& m_\gamma^r=\omega\langle S^{(r,\gamma)}
 \rangle_A+(1-\omega)\langle S^{(r,\gamma)}
 \rangle_B
 \label{saddle-final-a}
@@ -1067,9 +1067,9 @@ $[F_{1\textrm{-}RSB}(\omega,n,\beta)]$ as
 \frac{n}{4}\beta^2\Big(1+nq_0'^2
 -n(m_1-1)(q_1'^2-q_0'^2)-
 (n-1)q_0^2-2q_0\Big)\\
-+\int Dz\left\{\frac{\omega}{m_1}\log\int Dz'\Big\{\int Dz''
++\int Dz\left\{\frac{1-\omega}{m_1}\log\int Dz'\Big\{\int Dz''
 H_{1\textrm{-}RSB}^n(z,z',z'')\Big\}^{m_1}
-+\frac{1-\omega}{m_1}
++\frac{\omega}{m_1}
 \log\int Dz'\Big\{\int Dz''
 H_{1\textrm{-}RSB}(nz,nz',nz'')\Big\}^{m_1}
 \right\}, 
@@ -1102,7 +1102,19 @@ $q_1'=q_0'$, while the free energy in the paramagnetic phase $[F_{para}(\omega,n
 
 In this section we numerically confirm the analytical results of section~\ref{solution}. 
 We discuss Monte Carlo (MC) data for the S-K model on the $2$-sheets booklet 
-with zero external magnetic field. We focus on the internal energy $U(\omega,n,
+with zero external magnetic field. The data are obtained from parallel tempering  
+Monte Carlo simulations~\cite{hukushima-1996}. In the parallel tempering simulations 
+$N_{\textrm{rep}}$ identical copies of the system are simulated. Each copy is at a different temperature 
+in the range $T_{\textrm{max}}-T_{\textrm{min}}$. The standard Metropolis sweeps at 
+each temperature are supplemented with parallel tempering moves, which allow 
+to exchange the spin configurations of replicas with neighboring temperatures. 
+In our simulations we choose $T_{\textrm{min}}=...$ and $T_{\textrm{max}}=...$. 
+Each Monte Carlo sweep consists of $...$ Metropolis steps and $...$ parallel 
+tempering moves. For each disorder realization we perform $...$ sweeps for $L=...$. 
+The disorder average is performed over $...$ different disorder realizations.  
+
+
+We focus on the internal energy $U(\omega,n,
 \beta)$ 
 %
 \begin{equation}
@@ -1864,6 +1876,9 @@ J.~R.~L.~de Almeida and D.~J.~Thouless, J.\ Phys.\ A {\bf 11}, 983 (1978).
 \bibitem{parisi-1983}
 G.~Parisi, Phys.\ Rev.\ Lett\ {\bf 50}, 1946 (1983). 
 
+\bibitem{hukushima-1996}
+K.~Hukushima and K.~Nemoto, J.\ Phys.\ Soc.\ Jpn.\ {\bf 65}, 1604 (1996).
+
 \bibitem{billoire-2007}
 A.~Billoire, in \emph{Rugged Free Energy Landscape}, Springer Lecture 
 Notes in Physics, edited by W. Janke (Springer, Berlin-Heidelberg 
@@ -1891,7 +1906,6 @@ V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013.
 
 \end{thebibliography}
 
-
 %Unused bibitems
 
 %\bibitem{stephan-2011}
@@ -1904,27 +1918,10 @@ V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013.
 %\bibitem{wilms-2012}
 %J.~Wilms, J.~Vidal, F.~Verstraete,and S.~Dusuel, J.\ Stat.\ Mech.\ (2012)P01023. 
 %
-%\bibitem{parisi-1980-a}
-%G.~Parisi, J.\ Phys.\ A\ {\bf 13}, 1887 (1980). 
 %\bibitem{huse-1987}
 %D.~S.~Fisher and D.~A.Huse, J.\ Phys.\ A:\ Math.\ Gen.\ {\bf 20} L997 (1987).
 %\bibitem{wilms-2011}
 %J.~Wilms, M.~Troyer, and F.~Verstraete, J.\ Stat.\ Mech.\ (2011) P10011.
-%\bibitem{huse-1987-a}
-%D.~A.~Huse and D.~S.~Fisher, J.\ Phys.\ A:\ Math.\ Gen.\ {\bf 20} L1005 (1987).
-%\bibitem{fisher-1988}
-%D.~S.~Fisher and D.~A.Huse, Phys.\ Rev. B {\bf 38}, 386 (1988).
-%\bibitem{parisi-1980-b}
-%G.~Parisi, J.\ Phys.\ A\ {\bf 13}, L115 (1980). 
-%\bibitem{fisher-1986}
-%D.~S.~Fisher and D.~A.~Huse, Phys.\ Rev.\ Lett.\ {\bf 56} 1601 (1986).
-%\bibitem{palassini-2000}
-%M.~Palassini and A.~P.~Young, Phys.\ Rev.\ Lett.\  {\bf 85}, 3017 (2000).
-%\bibitem{stephan-2009}
-%J-M~St\'ephan, S.~Furukawa, G.~Misguich, and V.~Pasquier, Phys.\ Rev.\ B, {\bf 80}, 
-%184421 (2009)
-%\bibitem{krzakala-2000}
-%F.~Krzakala and O.~C.~Martin, Phys.\ Rev.\ Lett.\ {\bf 85}, 3013 (2000).
 \end{document}
 
 

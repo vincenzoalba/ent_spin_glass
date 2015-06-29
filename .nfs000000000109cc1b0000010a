@@ -1103,15 +1103,11 @@ $q_1'=q_0'$, while the free energy in the paramagnetic phase $[F_{para}(\omega,n
 In this section we numerically confirm the analytical results of section~\ref{solution}. 
 We discuss Monte Carlo (MC) data for the S-K model on the $2$-sheets booklet 
 with zero external magnetic field. The data are obtained from parallel tempering  
-Monte Carlo simulations~\cite{hukushima-1996}. In the parallel tempering simulations 
-$N_{\textrm{rep}}$ identical copies of the system are simulated. Each copy is at a different temperature 
-in the range $T_{\textrm{max}}-T_{\textrm{min}}$. The standard Metropolis sweeps at 
+Monte Carlo simulations. In the parallel tempering simulations $N_{\textrm{rep}}$ 
+identical copies of the system are simulated. Each copy is at different temperature 
+in the range $T_{\textrm{max}}-T_\textrm{min}}$. The standard Metropolis sweeps at 
 each temperature are supplemented with parallel tempering moves, which allow 
 to exchange the spin configurations of replicas with neighboring temperatures. 
-In our simulations we choose $T_{\textrm{min}}=...$ and $T_{\textrm{max}}=...$. 
-Each Monte Carlo sweep consists of $...$ Metropolis steps and $...$ parallel 
-tempering moves. For each disorder realization we perform $...$ sweeps for $L=...$. 
-The disorder average is performed over $...$ different disorder realizations.  
 
 
 We focus on the internal energy $U(\omega,n,
@@ -1875,9 +1871,6 @@ J.~R.~L.~de Almeida and D.~J.~Thouless, J.\ Phys.\ A {\bf 11}, 983 (1978).
 
 \bibitem{parisi-1983}
 G.~Parisi, Phys.\ Rev.\ Lett\ {\bf 50}, 1946 (1983). 
-
-\bibitem{hukushima-1996}
-K.~Hukushima and K.~Nemoto, J.\ Phys.\ Soc.\ Jpn.\ {\bf 65}, 1604 (1996).
 
 \bibitem{billoire-2007}
 A.~Billoire, in \emph{Rugged Free Energy Landscape}, Springer Lecture 
