@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri May 15 18:08:45 2015"
+@timestamp def "Fri Jun 26 09:27:27 2015"
 @r0 off
 @link r0 to g0
 @r0 type polyi
@@ -1444,6 +1444,7 @@
 1.3 -1.47699
 1.2 -1.46437
 1.1 -1.44754
+0.9 -1.38917
 &
 @target G0.S5
 @type xy
