@@ -967,24 +967,6 @@ coefficient of the quadratic term $q_0'^2$ vanishes. This leads to the equation
 where $q_0$ is obtained by solving the high-temperature saddle point equation~\eqref{saddle-high-t}. 
 The resulting $\beta_c$ is plotted in Fig.~\ref{beta_c} as a function of $\omega$. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[t]
-\includegraphics*[width=0.93\linewidth]{./draft_figs/U_w05}
-\caption{
- The S-K model on the $2$-sheets booklet with zero magnetic field and 
- booklet ratio $\omega=1/2$ (see Fig.~\ref{cartoon}): The internal energy 
- per spin $U/N$ as a function of the inverse temperature $\beta$. The triangles, 
- squares, and rhombi, denote the Monte Carlo data for a booklet with 
- $N=32,64,128$ spins per sheet. The plus symbols are the extrapolations to the 
- thermodynamic limit $N\to\infty$, at fixed $\omega$. The dash-dotted line is the 
- analytical result $U_{RS}/N$ obtained using the replica-symmetric (RS) approximation. 
- The horizontal dotted line is the exact zero-temperature result $U/N=2u_{\infty}$, 
- with $\tilde u_{\infty}\approx-0.76321$ the zero temperature energy density of the 
- regular S-K model~\cite{parisi-1979,parisi-1983}.
-}
-\label{U-MC}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %##########################################################################
 \section{The one-step replica-symmetry-breaking (1-RSB) approximation}
@@ -1043,6 +1025,27 @@ S^{(r,\gamma)}\Big)^2-
 \end{multline}
 %
 where we defined $B_\sigma\equiv[\sigma m_1,(\sigma+1)m_1)$ with $\sigma\in\mathbb{N}$. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+\includegraphics*[width=0.93\linewidth]{./draft_figs/U_w05}
+\caption{
+ The S-K model on the $2$-sheets booklet with zero magnetic field and 
+ booklet ratio $\omega=1/2$ (see Fig.~\ref{cartoon}): The internal energy 
+ per spin $U/N$ as a function of the inverse temperature $\beta$. The triangles, 
+ squares, and rhombi, denote the Monte Carlo data for a booklet with 
+ $N=32,64,128$ spins per sheet. The plus symbols are the extrapolations to the 
+ thermodynamic limit $N\to\infty$, at fixed $\omega$. The dash-dotted line is the 
+ analytical result $U_{RS}/N$ obtained using the replica-symmetric (RS) approximation. 
+ The horizontal dotted line is the exact zero-temperature result $U/N=2u_{\infty}$, 
+ with $\tilde u_{\infty}\approx-0.76321$ the zero temperature energy density of the 
+ regular S-K model~\cite{parisi-1979,parisi-1983}.
+}
+\label{U-MC}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 It is convenient to introduce the Hubbard-Stratonovich variables $z,z_\sigma,z_{\sigma,\gamma}$ 
 (one for each term in Eq.~\eqref{blocks}). One then obtains 
 %
@@ -1100,19 +1103,20 @@ $q_1'=q_0'$, while the free energy in the paramagnetic phase $[F_{para}(\omega,n
 \section{Monte Carlo results: The internal energy}
 \label{mc-results}
 
+
 In this section we numerically confirm the analytical results of section~\ref{solution}. 
 We discuss Monte Carlo (MC) data for the S-K model on the $2$-sheets booklet 
-with zero external magnetic field. The data are obtained from parallel tempering  
+with zero external magnetic field. The data we present are obtained from parallel tempering  
 Monte Carlo simulations~\cite{hukushima-1996}. In the parallel tempering simulations 
 $N_{\textrm{rep}}$ identical disorder realizations of the system are simulated. Each copy is at 
 a different temperature in the range $\beta_{\textrm{min}}-\beta_{\textrm{max}}$. 
 The standard Metropolis sweeps at 
 each temperature are supplemented with parallel tempering moves, which allow 
-the exchange the spin configurations between replicas with neighboring temperatures. 
-In our simulations we choose $\beta_{\textrm{min}}=0.25$ and $\beta_{\textrm{max}}=2.5$, with 46 temperatures
-chosen in total with equal spacing in $\beta$.
-Each Monte Carlo sweep consists of $N$ single spin updates and $45$ parallel 
-tempering moves. For each disorder realization we perform $10^5$ sweeps. 
+to exchange the spin configurations between replicas with neighboring temperatures. 
+In our simulations we choose the interval with $\beta_{\textrm{min}}=0.25$ and 
+$\beta_{\textrm{max}}=2.5$, with $46$ temperatures corresponding to equally spaced 
+values of $\beta$. Each Monte Carlo sweep consists of $N$ single spin updates and $45$ 
+parallel tempering moves. For each disorder realization we perform $10^5$ sweeps. 
 The disorder average is performed over $128$ different disorder realizations.  
 
 We focus on the internal energy $U(\omega,n,
