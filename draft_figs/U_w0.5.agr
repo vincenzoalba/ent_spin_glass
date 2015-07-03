@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri May 15 18:25:42 2015"
+@timestamp def "Thu Jul  2 09:00:40 2015"
 @with string
 @    string on
 @    string loctype view
@@ -365,9 +365,9 @@
 @    s3 type xydy
 @    s3 symbol 2
 @    s3 symbol size 1.060000
-@    s3 symbol color 11
+@    s3 symbol color 10
 @    s3 symbol pattern 1
-@    s3 symbol fill color 11
+@    s3 symbol fill color 10
 @    s3 symbol fill pattern 0
 @    s3 symbol linewidth 1.5
 @    s3 symbol linestyle 1
@@ -377,7 +377,7 @@
 @    s3 line type 1
 @    s3 line linestyle 2
 @    s3 line linewidth 1.0
-@    s3 line color 11
+@    s3 line color 10
 @    s3 line pattern 1
 @    s3 baseline type 0
 @    s3 baseline off
@@ -399,7 +399,7 @@
 @    s3 avalue offset 0.000000 , 0.000000
 @    s3 errorbar on
 @    s3 errorbar place both
-@    s3 errorbar color 11
+@    s3 errorbar color 10
 @    s3 errorbar pattern 1
 @    s3 errorbar size 0.650000
 @    s3 errorbar linewidth 1.5
@@ -414,9 +414,9 @@
 @    s4 type xydy
 @    s4 symbol 3
 @    s4 symbol size 1.060000
-@    s4 symbol color 3
+@    s4 symbol color 4
 @    s4 symbol pattern 1
-@    s4 symbol fill color 3
+@    s4 symbol fill color 4
 @    s4 symbol fill pattern 0
 @    s4 symbol linewidth 1.5
 @    s4 symbol linestyle 1
@@ -426,7 +426,7 @@
 @    s4 line type 1
 @    s4 line linestyle 2
 @    s4 line linewidth 1.0
-@    s4 line color 3
+@    s4 line color 4
 @    s4 line pattern 1
 @    s4 baseline type 0
 @    s4 baseline off
@@ -448,7 +448,7 @@
 @    s4 avalue offset 0.000000 , 0.000000
 @    s4 errorbar on
 @    s4 errorbar place both
-@    s4 errorbar color 3
+@    s4 errorbar color 4
 @    s4 errorbar pattern 1
 @    s4 errorbar size 0.650000
 @    s4 errorbar linewidth 1.5

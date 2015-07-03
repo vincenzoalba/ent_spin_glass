@@ -1,61 +1,33 @@
 # Grace project file
 #
-@version 50123
+@version 50122
 @page size 1124, 595
 @page scroll 5%
 @page inout 5%
 @link page off
-@map font 8 to "Courier", "Courier"
-@map font 10 to "Courier-Bold", "Courier-Bold"
-@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
-@map font 9 to "Courier-Oblique", "Courier-Oblique"
-@map font 14 to "Courier-Regular", "Courier-Regular"
-@map font 15 to "Dingbats-Regular", "Dingbats-Regular"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
 @map font 4 to "Helvetica", "Helvetica"
 @map font 6 to "Helvetica-Bold", "Helvetica-Bold"
-@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
 @map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
-@map font 20 to "NimbusMonoL-Bold", "NimbusMonoL-Bold"
-@map font 21 to "NimbusMonoL-BoldOblique", "NimbusMonoL-BoldOblique"
-@map font 22 to "NimbusMonoL-Regular", "NimbusMonoL-Regular"
-@map font 23 to "NimbusMonoL-RegularOblique", "NimbusMonoL-RegularOblique"
-@map font 24 to "NimbusRomanNo9L-Medium", "NimbusRomanNo9L-Medium"
-@map font 25 to "NimbusRomanNo9L-MediumItalic", "NimbusRomanNo9L-MediumItalic"
-@map font 26 to "NimbusRomanNo9L-Regular", "NimbusRomanNo9L-Regular"
-@map font 27 to "NimbusRomanNo9L-RegularItalic", "NimbusRomanNo9L-RegularItalic"
-@map font 28 to "NimbusSansL-Bold", "NimbusSansL-Bold"
-@map font 29 to "NimbusSansL-BoldCondensed", "NimbusSansL-BoldCondensed"
-@map font 30 to "NimbusSansL-BoldCondensedItalic", "NimbusSansL-BoldCondensedItalic"
-@map font 31 to "NimbusSansL-BoldItalic", "NimbusSansL-BoldItalic"
-@map font 32 to "NimbusSansL-Regular", "NimbusSansL-Regular"
-@map font 33 to "NimbusSansL-RegularCondensed", "NimbusSansL-RegularCondensed"
-@map font 34 to "NimbusSansL-RegularCondensedItalic", "NimbusSansL-RegularCondensedItalic"
-@map font 35 to "NimbusSansL-RegularItalic", "NimbusSansL-RegularItalic"
-@map font 36 to "StandardSymbolsL-Regular", "StandardSymbolsL-Regular"
-@map font 12 to "Symbol", "Symbol"
-@map font 38 to "Symbol-Regular", "Symbol-Regular"
-@map font 2 to "Times-Bold", "Times-Bold"
-@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
-@map font 1 to "Times-Italic", "Times-Italic"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 17 to "Nimbus-Sans-L-Regular-Condensed", "Nimbus-Sans-L-Regular-Condensed"
+@map font 18 to "Nimbus-Sans-L-Bold-Condensed", "Nimbus-Sans-L-Bold-Condensed"
+@map font 19 to "Nimbus-Sans-L-Regular-Condensed-Italic", "Nimbus-Sans-L-Regular-Condensed-Italic"
+@map font 20 to "Nimbus-Sans-L-Bold-Condensed-Italic", "Nimbus-Sans-L-Bold-Condensed-Italic"
 @map font 0 to "Times-Roman", "Times-Roman"
-@map font 43 to "URWBookmanL-DemiBold", "URWBookmanL-DemiBold"
-@map font 44 to "URWBookmanL-DemiBoldItalic", "URWBookmanL-DemiBoldItalic"
-@map font 45 to "URWBookmanL-Light", "URWBookmanL-Light"
-@map font 46 to "URWBookmanL-LightItalic", "URWBookmanL-LightItalic"
-@map font 47 to "URWChanceryL-MediumItalic", "URWChanceryL-MediumItalic"
-@map font 48 to "URWGothicL-Book", "URWGothicL-Book"
-@map font 49 to "URWGothicL-BookOblique", "URWGothicL-BookOblique"
-@map font 50 to "URWGothicL-Demi", "URWGothicL-Demi"
-@map font 51 to "URWGothicL-DemiOblique", "URWGothicL-DemiOblique"
-@map font 52 to "URWPalladioL-Bold", "URWPalladioL-Bold"
-@map font 53 to "URWPalladioL-BoldItalic", "URWPalladioL-BoldItalic"
-@map font 54 to "URWPalladioL-Italic", "URWPalladioL-Italic"
-@map font 55 to "URWPalladioL-Roman", "URWPalladioL-Roman"
-@map font 56 to "Utopia-Bold", "Utopia-Bold"
-@map font 57 to "Utopia-BoldItalic", "Utopia-BoldItalic"
-@map font 58 to "Utopia-Italic", "Utopia-Italic"
-@map font 59 to "Utopia-Regular", "Utopia-Regular"
-@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 29 to "URW-Palladio-L-Roman", "URW-Palladio-L-Roman"
+@map font 30 to "URW-Palladio-L-Bold", "URW-Palladio-L-Bold"
+@map font 31 to "URW-Palladio-L-Italic", "URW-Palladio-L-Italic"
+@map font 32 to "URW-Palladio-L-Bold-Italic", "URW-Palladio-L-Bold-Italic"
+@map font 12 to "Symbol", "Symbol"
+@map font 34 to "URW-Chancery-L-Medium-Italic", "URW-Chancery-L-Medium-Italic"
 @map color 0 to (255, 255, 255), "white"
 @map color 1 to (0, 0, 0), "black"
 @map color 2 to (255, 0, 0), "red"
@@ -91,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Wed Jun 10 11:38:45 2015"
+@timestamp def "Thu Jul  2 09:14:50 2015"
 @with string
 @    string on
 @    string loctype view
@@ -462,7 +434,7 @@
 @    s4 type xydy
 @    s4 symbol 2
 @    s4 symbol size 0.810000
-@    s4 symbol color 11
+@    s4 symbol color 10
 @    s4 symbol pattern 1
 @    s4 symbol fill color 0
 @    s4 symbol fill pattern 1
@@ -474,7 +446,7 @@
 @    s4 line type 1
 @    s4 line linestyle 2
 @    s4 line linewidth 1.0
-@    s4 line color 11
+@    s4 line color 10
 @    s4 line pattern 1
 @    s4 baseline type 0
 @    s4 baseline off
@@ -496,7 +468,7 @@
 @    s4 avalue offset 0.000000 , 0.000000
 @    s4 errorbar on
 @    s4 errorbar place both
-@    s4 errorbar color 11
+@    s4 errorbar color 10
 @    s4 errorbar pattern 1
 @    s4 errorbar size 0.560000
 @    s4 errorbar linewidth 1.5
@@ -511,7 +483,7 @@
 @    s9 type xydy
 @    s9 symbol 4
 @    s9 symbol size 0.810000
-@    s9 symbol color 3
+@    s9 symbol color 4
 @    s9 symbol pattern 1
 @    s9 symbol fill color 0
 @    s9 symbol fill pattern 1
@@ -523,7 +495,7 @@
 @    s9 line type 1
 @    s9 line linestyle 2
 @    s9 line linewidth 1.0
-@    s9 line color 3
+@    s9 line color 4
 @    s9 line pattern 1
 @    s9 baseline type 0
 @    s9 baseline off
@@ -545,7 +517,7 @@
 @    s9 avalue offset 0.000000 , 0.000000
 @    s9 errorbar on
 @    s9 errorbar place both
-@    s9 errorbar color 3
+@    s9 errorbar color 4
 @    s9 errorbar pattern 1
 @    s9 errorbar size 0.740000
 @    s9 errorbar linewidth 1.5
@@ -560,9 +532,9 @@
 @    s14 type xy
 @    s14 symbol 0
 @    s14 symbol size 1.000000
-@    s14 symbol color 4
+@    s14 symbol color 2
 @    s14 symbol pattern 1
-@    s14 symbol fill color 4
+@    s14 symbol fill color 2
 @    s14 symbol fill pattern 0
 @    s14 symbol linewidth 1.0
 @    s14 symbol linestyle 1
@@ -571,8 +543,8 @@
 @    s14 symbol skip 0
 @    s14 line type 1
 @    s14 line linestyle 5
-@    s14 line linewidth 3.5
-@    s14 line color 4
+@    s14 line linewidth 4.0
+@    s14 line color 2
 @    s14 line pattern 1
 @    s14 baseline type 0
 @    s14 baseline off
@@ -594,7 +566,7 @@
 @    s14 avalue offset 0.000000 , 0.000000
 @    s14 errorbar on
 @    s14 errorbar place both
-@    s14 errorbar color 4
+@    s14 errorbar color 2
 @    s14 errorbar pattern 1
 @    s14 errorbar size 1.000000
 @    s14 errorbar linewidth 1.0
@@ -910,7 +882,7 @@
 @    s6 type xydy
 @    s6 symbol 2
 @    s6 symbol size 0.810000
-@    s6 symbol color 11
+@    s6 symbol color 10
 @    s6 symbol pattern 1
 @    s6 symbol fill color 0
 @    s6 symbol fill pattern 1
@@ -922,7 +894,7 @@
 @    s6 line type 1
 @    s6 line linestyle 2
 @    s6 line linewidth 1.0
-@    s6 line color 11
+@    s6 line color 10
 @    s6 line pattern 1
 @    s6 baseline type 0
 @    s6 baseline off
@@ -944,7 +916,7 @@
 @    s6 avalue offset 0.000000 , 0.000000
 @    s6 errorbar on
 @    s6 errorbar place both
-@    s6 errorbar color 11
+@    s6 errorbar color 10
 @    s6 errorbar pattern 1
 @    s6 errorbar size 0.560000
 @    s6 errorbar linewidth 1.5
@@ -959,7 +931,7 @@
 @    s10 type xydy
 @    s10 symbol 4
 @    s10 symbol size 0.810000
-@    s10 symbol color 3
+@    s10 symbol color 4
 @    s10 symbol pattern 1
 @    s10 symbol fill color 0
 @    s10 symbol fill pattern 1
@@ -971,7 +943,7 @@
 @    s10 line type 1
 @    s10 line linestyle 2
 @    s10 line linewidth 1.0
-@    s10 line color 3
+@    s10 line color 4
 @    s10 line pattern 1
 @    s10 baseline type 0
 @    s10 baseline off
@@ -993,7 +965,7 @@
 @    s10 avalue offset 0.000000 , 0.000000
 @    s10 errorbar on
 @    s10 errorbar place both
-@    s10 errorbar color 3
+@    s10 errorbar color 4
 @    s10 errorbar pattern 1
 @    s10 errorbar size 0.740000
 @    s10 errorbar linewidth 1.5
@@ -1008,9 +980,9 @@
 @    s14 type xy
 @    s14 symbol 0
 @    s14 symbol size 1.000000
-@    s14 symbol color 4
+@    s14 symbol color 2
 @    s14 symbol pattern 1
-@    s14 symbol fill color 4
+@    s14 symbol fill color 2
 @    s14 symbol fill pattern 0
 @    s14 symbol linewidth 1.0
 @    s14 symbol linestyle 1
@@ -1019,8 +991,8 @@
 @    s14 symbol skip 0
 @    s14 line type 1
 @    s14 line linestyle 5
-@    s14 line linewidth 3.5
-@    s14 line color 4
+@    s14 line linewidth 4.0
+@    s14 line color 2
 @    s14 line pattern 1
 @    s14 baseline type 0
 @    s14 baseline off
@@ -1042,7 +1014,7 @@
 @    s14 avalue offset 0.000000 , 0.000000
 @    s14 errorbar on
 @    s14 errorbar place both
-@    s14 errorbar color 4
+@    s14 errorbar color 2
 @    s14 errorbar pattern 1
 @    s14 errorbar size 1.000000
 @    s14 errorbar linewidth 1.0
@@ -1358,7 +1330,7 @@
 @    s7 type xydy
 @    s7 symbol 2
 @    s7 symbol size 0.810000
-@    s7 symbol color 11
+@    s7 symbol color 10
 @    s7 symbol pattern 1
 @    s7 symbol fill color 0
 @    s7 symbol fill pattern 1
@@ -1370,7 +1342,7 @@
 @    s7 line type 1
 @    s7 line linestyle 2
 @    s7 line linewidth 1.0
-@    s7 line color 11
+@    s7 line color 10
 @    s7 line pattern 1
 @    s7 baseline type 0
 @    s7 baseline off
@@ -1392,7 +1364,7 @@
 @    s7 avalue offset 0.000000 , 0.000000
 @    s7 errorbar on
 @    s7 errorbar place both
-@    s7 errorbar color 11
+@    s7 errorbar color 10
 @    s7 errorbar pattern 1
 @    s7 errorbar size 0.740000
 @    s7 errorbar linewidth 1.5
@@ -1407,7 +1379,7 @@
 @    s11 type xydy
 @    s11 symbol 4
 @    s11 symbol size 0.810000
-@    s11 symbol color 3
+@    s11 symbol color 4
 @    s11 symbol pattern 1
 @    s11 symbol fill color 0
 @    s11 symbol fill pattern 1
@@ -1419,7 +1391,7 @@
 @    s11 line type 1
 @    s11 line linestyle 2
 @    s11 line linewidth 1.0
-@    s11 line color 3
+@    s11 line color 4
 @    s11 line pattern 1
 @    s11 baseline type 0
 @    s11 baseline off
@@ -1441,7 +1413,7 @@
 @    s11 avalue offset 0.000000 , 0.000000
 @    s11 errorbar on
 @    s11 errorbar place both
-@    s11 errorbar color 3
+@    s11 errorbar color 4
 @    s11 errorbar pattern 1
 @    s11 errorbar size 0.740000
 @    s11 errorbar linewidth 1.5
@@ -1456,9 +1428,9 @@
 @    s13 type xy
 @    s13 symbol 0
 @    s13 symbol size 1.000000
-@    s13 symbol color 4
+@    s13 symbol color 2
 @    s13 symbol pattern 1
-@    s13 symbol fill color 4
+@    s13 symbol fill color 2
 @    s13 symbol fill pattern 0
 @    s13 symbol linewidth 1.0
 @    s13 symbol linestyle 1
@@ -1467,8 +1439,8 @@
 @    s13 symbol skip 0
 @    s13 line type 1
 @    s13 line linestyle 5
-@    s13 line linewidth 3.5
-@    s13 line color 4
+@    s13 line linewidth 4.0
+@    s13 line color 2
 @    s13 line pattern 1
 @    s13 baseline type 0
 @    s13 baseline off
@@ -1490,7 +1462,7 @@
 @    s13 avalue offset 0.000000 , 0.000000
 @    s13 errorbar on
 @    s13 errorbar place both
-@    s13 errorbar color 4
+@    s13 errorbar color 2
 @    s13 errorbar pattern 1
 @    s13 errorbar size 1.000000
 @    s13 errorbar linewidth 1.0
@@ -1505,9 +1477,9 @@
 @    s14 type xy
 @    s14 symbol 0
 @    s14 symbol size 1.000000
-@    s14 symbol color 4
+@    s14 symbol color 2
 @    s14 symbol pattern 1
-@    s14 symbol fill color 4
+@    s14 symbol fill color 2
 @    s14 symbol fill pattern 0
 @    s14 symbol linewidth 1.0
 @    s14 symbol linestyle 1
@@ -1516,8 +1488,8 @@
 @    s14 symbol skip 0
 @    s14 line type 1
 @    s14 line linestyle 5
-@    s14 line linewidth 3.5
-@    s14 line color 4
+@    s14 line linewidth 4.0
+@    s14 line color 2
 @    s14 line pattern 1
 @    s14 baseline type 0
 @    s14 baseline off
@@ -1539,7 +1511,7 @@
 @    s14 avalue offset 0.000000 , 0.000000
 @    s14 errorbar on
 @    s14 errorbar place both
-@    s14 errorbar color 4
+@    s14 errorbar color 2
 @    s14 errorbar pattern 1
 @    s14 errorbar size 1.000000
 @    s14 errorbar linewidth 1.0

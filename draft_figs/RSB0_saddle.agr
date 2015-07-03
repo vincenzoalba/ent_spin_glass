@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Wed May  6 19:07:03 2015"
+@timestamp def "Thu Jul  2 08:57:00 2015"
 @with box
 @    box on
 @    box loctype view
@@ -573,9 +573,9 @@
 @    s4 type xy
 @    s4 symbol 0
 @    s4 symbol size 1.000000
-@    s4 symbol color 3
+@    s4 symbol color 15
 @    s4 symbol pattern 1
-@    s4 symbol fill color 3
+@    s4 symbol fill color 15
 @    s4 symbol fill pattern 0
 @    s4 symbol linewidth 1.0
 @    s4 symbol linestyle 1
@@ -584,8 +584,8 @@
 @    s4 symbol skip 0
 @    s4 line type 1
 @    s4 line linestyle 1
-@    s4 line linewidth 2.5
-@    s4 line color 3
+@    s4 line linewidth 3.0
+@    s4 line color 15
 @    s4 line pattern 1
 @    s4 baseline type 0
 @    s4 baseline off
@@ -607,7 +607,7 @@
 @    s4 avalue offset 0.000000 , 0.000000
 @    s4 errorbar on
 @    s4 errorbar place both
-@    s4 errorbar color 3
+@    s4 errorbar color 15
 @    s4 errorbar pattern 1
 @    s4 errorbar size 1.000000
 @    s4 errorbar linewidth 1.0
@@ -622,9 +622,9 @@
 @    s5 type xy
 @    s5 symbol 0
 @    s5 symbol size 1.000000
-@    s5 symbol color 3
+@    s5 symbol color 15
 @    s5 symbol pattern 1
-@    s5 symbol fill color 3
+@    s5 symbol fill color 15
 @    s5 symbol fill pattern 0
 @    s5 symbol linewidth 1.0
 @    s5 symbol linestyle 1
@@ -633,8 +633,8 @@
 @    s5 symbol skip 0
 @    s5 line type 1
 @    s5 line linestyle 2
-@    s5 line linewidth 2.5
-@    s5 line color 3
+@    s5 line linewidth 3.0
+@    s5 line color 15
 @    s5 line pattern 1
 @    s5 baseline type 0
 @    s5 baseline off
@@ -656,7 +656,7 @@
 @    s5 avalue offset 0.000000 , 0.000000
 @    s5 errorbar on
 @    s5 errorbar place both
-@    s5 errorbar color 3
+@    s5 errorbar color 15
 @    s5 errorbar pattern 1
 @    s5 errorbar size 1.000000
 @    s5 errorbar linewidth 1.0

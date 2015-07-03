@@ -143,8 +143,7 @@ intricate features, such as lack of self-averaging~\cite{pastur-1991}, ultrametr
 mezard-1984,rammal-1986}, and replica symmetry breaking~\cite{parisi-book,castellani-2005}. 
 The last refers to the breaking of the permutation symmetry among the fictitious replicas 
 of the model, which are introduced to perform disorder averages (via the so-called 
-\emph{replica trick}~\cite{cardy-book}, not to be confused with the replica trick used 
-in calculating the R\'enyi entanglement entropies). Finally, although the 
+\emph{replica trick}~\cite{cardy-book}. Finally, although the 
 applicability of the S-K model to describe realistic spin glasses is still highly 
 debated~\cite{yucesoy-2012,billoire-2012,yucesoy-2013}, there are recent proposals on 
 how to realize it in cold-atomic gases~\cite{morrison-2008,rotondo-2015}, or in laser 
@@ -170,9 +169,9 @@ Here ${\mathcal C}_A$ denotes the set of all the possible spin configurations in
 $A$, whereas $p_{i_A}$ is the probability of the configuration $i_A$. 
 Alternatively, $S_n(A)$ can be obtained from the partition function of the model on 
 an \emph{ad hoc} defined ``booklet'' geometry (see section~\ref{booklet} for its 
-definition), using another replica trick. This consists of $n$ independent and identical replicas (the 
-booklet ``sheets'') of the model. These \emph{physical} replicas are different 
-from the \emph{fictitious} ones used to perform the disorder average. Each sheet is 
+definition). This consists of $n$ independent and identical copies (the 
+booklet ``sheets'') of the model. These \emph{physical} copies are different 
+from the \emph{fictitious} replicas used to perform the disorder average. Each sheet is 
 divided into two parts $A$ and $B$, containing $N_A$ and $N_B$ spins, respectively. 
 The spins in part $A$ of different sheets are constrained to be equal. It is 
 convenient to introduce the booklet aspect ratio $0\le\omega\le1$ as  
@@ -218,8 +217,8 @@ booklet, as a function of temperature, and the aspect ratio $\omega$ (cf. Eq.~\e
 For any fixed $\omega$ the S-K model exhibits a low-temperature glassy phase, which is divided 
 by the standard paramagnetic one at high temperatures by a phase transition. The critical 
 temperature exhibits a non trivial dependence on $\omega$ that we are able to determine 
-analytically. In the high-temperature region the permutation symmetry among the replicas, 
-both the physical and the fictitious ones, is preserved. This allows us to provide an exact 
+analytically. In the high-temperature region the permutation symmetry among both the replicas  
+and the physical sheets  is preserved. This allows us to provide an exact 
 analytic expression for the free energy of the model and several derived quantities, such as 
 the internal energy. We compare our results with Monte Carlo simulations, finding perfect 
 agreement. Oppositely, in the low-temperature phase the replica symmetry is broken. For 
@@ -320,27 +319,15 @@ Notice that a similar geometric construction~\cite{guerra-2002} plays an importa
 mathematical proof of the Parisi ansatz. Moreover, the study of the partition function of 
 critical models on the booklet has attracted considerable attention recently~\cite{fradkin-2006,
 fradkin-2009,hsu-2009,stephan-2009,hsu-2010,oshikawa-2010,stephan-2010,zaletel-2011}.
-
-Clearly, one has $S_n(A)\equiv1/(n-1)\log(F(A,n,\beta))-n\log(F(\beta))$, where $F(A,n,\beta)
+Clearly, one has $S_n(A)\equiv1/(n-1)(\log(F(A,n,\beta))-n\log(F(\beta)))$, where $F(A,n,\beta)
 \equiv\log(Z(A,n\beta))$ and $F(\beta)\equiv\log(Z(\beta))$ are related (apart from a factor 
-$\beta$) to the free energy of the model on the booklet and on the plane, respectively.
+$-1/\beta$) to the free energy of the model on the booklet and on the plane, respectively.
 
 The mutual information ${\mathcal I}_n(A,B,\beta)$ is obtained in terms of the booklet 
-partition functions using~\eqref{renyi} and~\eqref{MI}
-as 
-%
-\begin{equation}
-\label{MI}
-{\mathcal I}_n(A,B,\beta)\equiv\frac{1}{1-n}\log\Big(
-\frac{Z(A,n,\beta)Z(B,n,\beta)}{Z^n(\beta)Z(n\beta)}
-\Big),
-\end{equation}
-%
-where $Z(B,n,\beta)$ is obtained from $Z(A,n,\beta)$ by replacing $A$ with $B$. 
-Notice that the disorder-averaged mutual information $[{\mathcal I}_n]$ and the R\'enyi 
-entropy $[S_n]$ are directly related to the so-called quenched-averaged free energy 
-$[F(A,n,\beta)]$, which is the main quantity of interest in disordered systems~\cite{cardy-book}. 
-
+partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}. Notice that the disorder-averaged 
+mutual information $[{\mathcal I}_n]$ and the R\'enyi entropy $[S_n]$ are directly related to 
+the so-called quenched-averaged free energy $[F(A,n,\beta)]$, which is the main quantity of 
+interest in disordered systems~\cite{cardy-book}. 
 For clean (i.e., without disorder) \emph{local} spin models ${\mathcal I}_n$ 
 obeys the boundary law 
 %
@@ -392,8 +379,8 @@ S^{(r)}_j-h\sum\limits_{i=1}^NS^{(r)}_i\right\}.
 Here $S_i^{(r)}=\pm 1$ are classical Ising spins, $r\in[1,n]$ labels the 
 different sheets (``pages'') of the booklet, $i\in[1,N]$ denotes the sites on 
 each sheet, $J_{ij}$ is the interaction strength, and $h$ is an external 
-magnetic field. Here we choose $h=0$. The total number of spins in the booklet 
-is $nN$. The first sum inside the brackets in Eq.~\eqref{SK-ham} is over all the 
+magnetic field. The total number of spins in the booklet is $nN$. 
+The first sum inside the brackets in Eq.~\eqref{SK-ham} is over all the 
 $N(N-1)/2$ pairs of spins in each sheet. Spins on different sheets do not interact. 
 In each ``sheet'' all the sites are divided into two groups $A\equiv\{1,\dots, N_A\}$ 
 and $B\equiv\{N_A+1,\dots,N\}$, containing $N_A$ and $N_B\equiv N-N_A$ sites, 
@@ -422,8 +409,8 @@ P(J_{ij})=
 \end{equation}
 %
 The mean and the variance of $P(\{J_{ij}\})$ are given as $[J_{ij}]=J_0/N$ 
-and $[(J_{ij}-[J_{ij}])^2]=J^2/N$, respectively. The square brackets $[\cdot]$ denote 
-the average over different realizations of $J_{ij}$.  Here we restrict ourselves to 
+and $[(J_{ij}-[J_{ij}])^2]=J^2/N$, respectively. Here we set $J=1$. The square brackets $[\cdot]$ denote 
+the average over different realizations of $J_{ij}$. Here we restrict ourselves to 
 $J_0=0$ and $J=1$. The factors $N$ in Eq.~\eqref{quenched-distr} ensure a well-defined 
 thermodynamic limit. 
 
@@ -501,10 +488,10 @@ booklet. Precisely, $[Z^\alpha(\omega,n,\beta)]$ reads
 %
 where the index $\gamma=1,2,\dots,\alpha$ labels the different fictitious 
 replicas introduced in Eq.~\eqref{replica-trick}, whereas $r$ denote the 
-physical replicas, as in Eq.~\eqref{book-pf}. Again, physical and fictitious 
-replicas do not interact with each other. Notice that $Z^{\alpha}(\omega,n,\beta)$ can be 
-thought of as the partition function of the S-K model on a ``replicated'' 
-booklet. 
+physical copies, i.e., the booklet sheets, as in Eq.~\eqref{book-pf}. Again, 
+spins on different sheets or different replicas do not interact with each other. 
+Notice that $Z^{\alpha}(\omega,n,\beta)$ can be thought of as the partition 
+function of the S-K model on a ``replicated'' booklet. 
 
 Using Eq.~\eqref{quenched-distr}, the disorder average in Eq.~\eqref{rep-Z} 
 can be performed explicitly, to obtain 
@@ -521,8 +508,8 @@ S_i^{(r,\gamma)}\Big\}.
 \label{dis-aver-Z}
 \end{multline}
 %
-In contrast with Eq.~\eqref{rep-Z}, physical and unphysical replicas are 
-now coupled by a four-spin interaction. It is convenient to introduce the  
+In contrast with Eq.~\eqref{rep-Z}, both different sheets and different replicas 
+are now coupled by a four-spin interaction. It is convenient to introduce the  
 Hubbard-Stratonovich variables $q_{\gamma\gamma'}^{rr'}$ and $m_\gamma^r$. 
 Following the spin glass literature~\cite{parisi-book}, we dub $q_{\gamma
 \gamma'}^{rr'}$ the overlap tensor. In the standard S-K model (i.e., for $n=1$) 
@@ -547,12 +534,12 @@ and it reads
 %
 \begin{multline}
 {\mathcal K}(\{q,m\})\equiv 
-\frac{\beta^2}{2}\Big(\sum\limits_{\gamma<\gamma'}\sum
+\frac{\beta^2}{2J_0}\Big(\sum\limits_{\gamma<\gamma'}\sum
 \limits_{r,r'} (q_{\gamma\gamma'}^{rr'})^2
 \\
 +\sum\limits_{\gamma}\sum\limits_{r<r'}(q_{\gamma\gamma}^{
 rr'})^2\Big)
-+\frac{\beta}{2}\sum\limits_{\gamma r}(m_\gamma^r)^2. 
++\frac{\beta}{2J_0}\sum\limits_{\gamma r}(m_\gamma^r)^2. 
 \label{Gamma}
 \end{multline}
 %
@@ -598,8 +585,8 @@ Here to lighten the notation we drop the dependence on the coordinate $i$
 and the arguments of ${\mathcal L}_i(\{q,m\})$ and ${\mathcal K}(\{q,m\})$. 
 $\textrm{Tr}_{A}$ and $\textrm{Tr}_{B}$  denote the trace over the spin degrees 
 of freedom living in parts $A$ and $B$ of the booklet.
-The subscript $A$ in $\tr_A$ is to stress that spins living in different physical 
-replicas (i.e., for $r\ne r'$ in Eq.~\eqref{mf-action}) are identified (due 
+The subscript $A$ in $\tr_A$ is to stress that spins living in different  
+sheets (i.e., for $r\ne r'$ in Eq.~\eqref{mf-action}) are identified (due 
 to the booklet constraint in Eq.~\eqref{book-constraint}), whereas they have 
 to be treated as independent variables in performing $\tr_B$.  
 
@@ -632,7 +619,7 @@ e^{{\mathcal L}}\right)=q_{\gamma\gamma'}^{rr'}\\
 \label{saddle-a}
 & \frac{\partial}{\partial m_\gamma^r}\left(\omega\log\tr_A 
 e^{{\mathcal L}}+(1-\omega)\log\tr_B e^{{\mathcal L}}\right)=
-m_\gamma^r.
+J_0^{-1}m_\gamma^r.
 \end{align}
 %
 It is enlightening to rewrite Eqs.~\eqref{saddle}~\eqref{saddle-a} as 
@@ -643,7 +630,7 @@ It is enlightening to rewrite Eqs.~\eqref{saddle}~\eqref{saddle-a} as
 \omega\langle S^{(r,\gamma)} S^{(r',\gamma')}\rangle_A+
 (1-\omega)\langle S^{(r,\gamma)}S^{(r',\gamma')}
 \rangle_B\\
-& m_\gamma^r=\omega\langle S^{(r,\gamma)}
+& J_0^{-1}m_\gamma^r=\omega\langle S^{(r,\gamma)}
 \rangle_A+(1-\omega)\langle S^{(r,\gamma)}
 \rangle_B
 \label{saddle-final-a}
@@ -693,6 +680,9 @@ tensor $q_{\gamma\gamma'}^{rr'}$ (see section~\ref{replica-sec} for its
 definition). The generic structure of $q_{\gamma\gamma'}^{rr'}$ 
 within the RS ansatz  is discussed in subsection~\ref{rs-section}. This allows us 
 to determine the critical temperature of the paramagnetic-glassy transition. 
+For simplicity, here and in the following sections we restrict ourselves to zero 
+magnetic field ($h=0$ in Eq.~\eqref{SK-ham}), and to $J_0=0$ in 
+Eq.~\eqref{quenched-distr}. 
 
 %########################################################################
 \subsection{The paramagnetic phase}
@@ -702,7 +692,7 @@ to determine the critical temperature of the paramagnetic-glassy transition.
 \begin{figure}[t]
 \includegraphics*[width=0.9\linewidth]{./draft_figs/RSB0_saddle_ht}
 \caption{
- The S-K model on the $2$-sheets booklet with zero magnetic field in the 
+ The S-K model on the $2$-sheets booklet in the 
  paramagnetic phase: the solution $q_0$ of the saddle point 
  equation~\eqref{saddle-high-t} plotted as a function of the booklet aspect 
  ratio $\omega$ and several values of the inverse temperature $\beta=1/T$. 
@@ -738,8 +728,8 @@ q_{\gamma\gamma'}^{rr'}=(1-\omega)\delta_{\gamma,\gamma'}\delta_{r,r'}+
 \label{inf-t-q}
 \end{equation}
 %
-Remarkably, $q_{\gamma\gamma'}^{rr'}$ becomes diagonal in both the 
-indices $\gamma,\gamma'$ and $r,r'$, i.e., the physical and fictitious 
+Notice that $q_{\gamma\gamma'}^{rr'}$ is diagonal in both the 
+indices $\gamma,\gamma'$ and $r,r'$, i.e., the sheet and the  
 replica spaces. Using Eq.~\eqref{Z-ac} and Eq.~\eqref{replica-trick}, 
 after performing the analytic continuation $\alpha\to 0$, one obtains  
 %
@@ -794,7 +784,7 @@ the free energy $[F_{para}(\omega,n,\beta)]$ as
 \begin{figure}[t]
 \includegraphics*[width=0.9\linewidth]{./draft_figs/RSB0_saddle}
 \caption{\label{RSB0-saddle}
- The S-K model on the $2$-sheets booklet with zero magnetic field. The 
+ The S-K model on the $2$-sheets booklet. The 
  overlap tensor in the replica-symmetric (RS) approximation (see Eq.~\eqref{rs-ansatz}): 
  the solutions $q_0$ and $q_0'$ (shown as full and dotted lines, respectively) 
  of the saddle point equations~\eqref{RS-saddle-1}\eqref{RS-saddle-2} 
@@ -855,7 +845,7 @@ q_0\delta_{\gamma,\gamma'}+(1-\delta_{\gamma,\gamma'})q'_0.
 The first two terms in Eq.~\eqref{rs-ansatz} are the same as in the paramagnetic 
 phase (cf. Eq.~\eqref{high-t-q}). The last term sets $q_{\gamma\gamma'}^{rr'}=q'_0$ 
 $\forall\gamma\ne\gamma'$ and $\forall r,r'$. Clearly, $q_{\gamma\gamma'}^{rr'}$ is 
-symmetric in both the physical and fictitious replica spaces. We do not have any 
+invariant under permutations of both the booklet sheets and the replicas. We do not have any 
 rigorous argument to justify the ansatz~\eqref{rs-ansatz}, besides its simplicity. 
 However, we numerically observe that it captures quite accurately the behavior of 
 the model, at least around the paramagnetic-glassy transition (see section~\ref{mc-results} 
@@ -939,7 +929,7 @@ $q_0'-1\propto 1/\beta$.
 \caption{
  The critical temperature $\beta_c\equiv 1/T_c$ of the paramagnetic-glassy 
  transition for the S-K model on the $2$-sheets booklet (see Fig.~\ref{cartoon}) 
- with zero magnetic field from Eq.~\eqref{tc}: $\beta_c$ as a function of the booklet ratio $\omega
+ from Eq.~\eqref{tc}: $\beta_c$ as a function of the booklet ratio $\omega
  \equiv N_A/N$. Here $\beta_c$  is obtained from the replica-symmetric (RS) 
  approximation. Notice that $\beta_c=1$ and $\beta_c=1/2$ for $\omega=0$ and 
  $\omega=1$, respectively. 
@@ -1004,7 +994,7 @@ q_0' & \textrm{otherwise}\\
 where $q_0',q_1'\in{\mathbb R}$, $m_1\in{\mathbb N}$, and $\lfloor\cdot\rfloor$ 
 denotes the floor function. Notice that the off-diagonal elements of $q'$ (i.e., for 
 $\gamma\ne\gamma'$) do not depend on $r,r'$, meaning that, although the permutation 
-symmetry between the fictitious replicas is broken, the symmetry among the physical ones 
+symmetry between the replicas is broken, the symmetry among the booklet sheets  
 is preserved. The choice in Eq.~\eqref{q-rsb1a} corresponds to a simple block-diagonal 
 structure for $q'$: the matrix elements of the $m_1\times m_1$ diagonal blocks of $q'$ 
 are set to $q_1'$, whereas all the off-diagonal elements are set to $q_0'$. As for the 
@@ -1034,8 +1024,8 @@ where we defined $B_\sigma\equiv[\sigma m_1,(\sigma+1)m_1)$ with $\sigma\in\math
 \begin{figure}[t]
 \includegraphics*[width=0.93\linewidth]{./draft_figs/U_w05}
 \caption{
- The S-K model on the $2$-sheets booklet with zero magnetic field and 
- booklet ratio $\omega=1/2$ (see Fig.~\ref{cartoon}): The internal energy 
+ The S-K model on the $2$-sheets booklet with aspect ratio $\omega=1/2$ 
+ (see Fig.~\ref{cartoon}): The internal energy 
  per spin $U/N$ as a function of the inverse temperature $\beta$. The triangles, 
  squares, and rhombi, denote the Monte Carlo data for a booklet with 
  $N=32,64,128$ spins per sheet. The plus symbols are the extrapolations to the 
@@ -1095,7 +1085,7 @@ Similar to the replica-symmetric situation (see section~\ref{rs-section}),
 from Eq.~\eqref{H1} one has the constraint $0\le q_0'\le q_1'\le q_0\le 1$.
 The parameters $q_0,q_0',q_1',m_1$ are obtained by solving the saddle 
 point equations~\eqref{RSB-1-saddle-a}\eqref{RSB-1-saddle-b}\eqref{RSB-1-saddle-c}
-\eqref{RSB-1-saddle-d}. One should remark that, although formally $m_1$ is an 
+\eqref{RSB-1-saddle-d}. One should remark that, although $m_1$ is by defintion an 
 integer, one obtains $m_1\in\mathbb{R}$ from the saddle point equations. 
 Clearly, the replica-symmetric result $[F_{RS}(\omega,n,\beta)]$ (cf. 
 Eq.~\eqref{rs-F}) is recovered from Eq.~\eqref{RSB-1-logZ} in the limit 
@@ -1162,7 +1152,7 @@ numerics for $\beta\approx\beta_c$, deviations appear in the low-temperature reg
 Notice that already at $\beta\gtrsim 1$, $U_{RS}$ is incompatible with the data. 
 These deviations increase upon lowering the temperature and  have  to be attributed 
 to the replica symmetry breaking happening in the glassy phase. Finally, since in 
-the limit $\beta\to\infty$ all the physical replicas are in the same state, 
+the limit $\beta\to\infty$ all the sheets  are in the same state, 
 one should expect that $u_\infty(\omega,\beta)\to n \tilde u_\infty$ (horizontal line in 
 Fig.~\ref{U-MC}), with $\tilde u_{\infty}=-0.76321...$~\cite{parisi-1979,parisi-1983} the 
 zero-temperature internal energy density of the S-K model on the plane. 
@@ -1172,7 +1162,7 @@ zero-temperature internal energy density of the S-K model on the plane.
 \begin{figure}[t]
 \includegraphics*[width=0.93\linewidth]{./draft_figs/U_extrapolated}
 \caption{
- The S-K model on the 2-sheets booklet and zero magnetic field: 
+ The S-K model on the 2-sheets booklet: 
  The internal energy per spin $U/N$ in the thermodynamic limit. 
  The symbols are the Monte Carlo data extrapolated to the thermodynamic 
  limit $N\to\infty$, at fixed booklet ratio $\omega$ (see Fig.~\ref{cartoon}).  
@@ -1189,7 +1179,7 @@ zero-temperature internal energy density of the S-K model on the plane.
 \begin{figure}[t]
 \includegraphics*[width=0.93\linewidth]{./draft_figs/U_extrapolated_v1}
 \caption{
- The S-K model on the 2-sheets booklet with zero magnetic field: 
+ The S-K model on the 2-sheets booklet: 
  The internal energy per spin $U/N$ in the thermodynamic limit plotted 
  as a function of inverse temperature $\beta$. The plus symbols are the same 
  extrapolated Monte Carlo data as in Fig.~\ref{U-RS}. The lines denote $U/N$ 
@@ -1206,7 +1196,7 @@ zero-temperature internal energy density of the S-K model on the plane.
 \begin{figure*}[t]
 \includegraphics*[width=0.93\linewidth]{./draft_figs/Renyi_MC_v2}
 \caption{ The classical disorder-averaged R\'enyi entropy per spin $[S_2(\omega)]/N$  
- in the S-K model on the $2$-sheets booklet with zero magnetic field: 
+ in the S-K model on the $2$-sheets booklet: 
  $[S_2(\omega)]/N$ as a function of the inverse temperature $\beta$. The different panels 
  correspond to different booklet aspect ratios $\omega=3/4,1/2,1/4$ (see Fig.~\ref{cartoon}). 
  The triangles, squares and rhombi denote the Monte Carlo results for 
@@ -1284,7 +1274,7 @@ $[S_2]/N$ as the quantity of interest.
 \begin{figure*}[t]
 \includegraphics*[width=0.93\linewidth]{./draft_figs/I2_MC_v1}
 \caption{The classical disorder-averaged mutual information per spin $[{\mathcal I}_2]/N$ 
- in the S-K model on the $2$-sheets booklet with zero magnetic field: 
+ in the S-K model on the $2$-sheets booklet: 
  $[{\mathcal I}_2]/N$ versus the inverse temperature $\beta$. The 
  different panels correspond to different booklet ratios $\omega=1/2,1/4,1/8$ 
  (see Fig.~\ref{cartoon}). The same scale is used on both axes in all 
@@ -1303,10 +1293,10 @@ correspond to the booklet ratios $\omega=3/4,1/2,1/4$ (see Fig.~\ref{cartoon}). 
 panels the triangles, squares, and rhombi correspond to booklets with $N=32,64,128$ spins 
 per sheet. Clearly, finite size effects are present, which increase upon lowering 
 the temperature, as expected. In order to obtain $[S_2]/N$ in the thermodynamic limit 
-we fit the data to the ansatz $[S_2]/N=s_2(\omega)+c'(\omega)/N^{\phi}$, where 
+we fit the data to the ansatz $[S_2]/N=s_2(\omega)+c'(\omega)/N^{\phi'}$, where 
 $s_2(\omega)$ is the entropy per spin in the thermodynamic limit, $c'$ a constant, and 
-$\phi$ the exponent of the finite-size corrections. The plus symbols in Fig.~\ref{Renyi-MC} 
-are the results of the fits. We should mention that the fits give $\phi\approx 2/3$, 
+$\phi'$ the exponent of the finite-size corrections. The plus symbols in Fig.~\ref{Renyi-MC} 
+are the results of the fits. We should mention that the fits give $\phi'\approx 2/3$, 
 which is the exponent of the scaling corrections of the free energy in the standard 
 S-K model. This is not surprising, since $[S_2]$ is obtained as the difference 
 $[S_2]\equiv [F(0,2,\beta)-F(\omega,2,\beta)]$ (cf. Eq.~\eqref{renyi}). 
@@ -1410,7 +1400,7 @@ aspect ratio $\omega\equiv N_A/N$.
 \begin{figure}[t]
 \includegraphics*[width=0.93\linewidth]{./draft_figs/I2_extrapolated}
 \caption{The classical mutual information per spin $[{\mathcal I}_2]/N$ 
- in the S-K model on the $2$-sheets booklet with zero magnetic field: 
+ in the S-K model on the $2$-sheets booklet: 
  $[{\mathcal I}_2]/N$ plotted versus $\beta$. The symbols denote the 
  Monte Carlo results extrapolated to the thermodynamic limit for 
  booklet ratios $\omega=1/2,1/4,1/8$ (circles, squares, triangles). 
@@ -1674,7 +1664,7 @@ Eq.~\eqref{ratio-trick} consists of four steps:
 \begin{enumerate}
 \item Do a full Monte Carlo sweep of the system on the booklet with $A=A_i$ 
 to generate an importance sampled spin configuration. This can be done with any 
-update scheme, such as standard Metropolis or cluster updates
+update scheme, such as standard Metropolis or cluster updates. 
 \item For the spins living in the set difference $A_{i+1}\setminus A_i$ calculate 
 %
 \begin{align}
