@@ -1,0 +1,487 @@
+
+Dear Editors, 
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+RESPONSE TO THE FIRST REFEREE 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+REFEREE:
+-------
+	This paper deals with the study of entropies in classical spin models.
+	The focus is on the Sherrington-Kirkpatrick model, a simple model that
+	exhibits spin glass physics. Both analytical and numerical results are
+	presented, and compared.
+
+	Overall I found the paper interesting, and clearly written. Such
+	classical entropies had only been studied in nearest neighbor spin
+	models, so this is a useful addition to the existing literature.
+
+RESPONSE:
+========
+	We thank the referee for considering our work interesting and 
+	clearly written.  
+
+REFEREE:
+-------
+
+	There is one issue that needs to be addressed I think. In part II the
+	classical Renyi entropy is defined by Eq. (5), and this is what is
+	studied in the rest of the paper. It is not clear to me which is the
+	underlying probability distribution, i.e it is not clear to me that
+	this equals Eq. (2), because of the long-range interactions. This
+	point needs to be clarified, as using the term Renyi entropy would be
+	a slight abuse of terminology, and the reader should be made aware of
+	that.
+
+RESPONSE:
+========
+
+	We apologise for not being very clear about the equivalence between (5) 
+	and (2). Eq. (5) is equivalent to Eq. (2) even with the long range 
+	interactions. This is now clarified in the first paragraph in sec II. 
+	Notice that the only physical effect of long range interactions is that 
+	there is no area law in contrast with local models, as it is discussed 
+	extensively in the manuscript.
+
+
+REFEREE:
+-------
+
+	I also have a couple of minor remarks and suggestions, which I list
+	below:
+
+	1) In the long introduction, several values of \beta are mentioned. It
+	might be helpful to recall the values of $\beta_c(w)$.
+
+RESPONSE:
+========
+
+	In order to meet the suggestion of the second referee we moved the summary of 
+	results in the conclusions. Therefore, in the new version of the manuscript 
+	the referee suggestion is implemented in the conclusions. First, we should 
+	clarify that $\beta$ always refers to the explicit temperature in a single 
+	replica, and never to the *effective* temperature on the booklet. We thank 
+	the referee for noticing that in the introduction we do not mention  explicitly 
+	the values of the critical temperature for the model on the booklet. We now 
+	mention explicitly that the critical temperature is a decreasing function of 
+	the booklet aspect ratio $\omega$ and that $\beta_c=1,1/2$ for $\omega=0,1$. 
+	Notice that that all the  values of beta that we mention in the summary of 
+	the results (\beta=1,\beta=3) correspond to the low-temperature phase of the 
+	model on the booklet. 
+	
+REFEREE:
+-------
+
+	2) Maybe at the $\forall i \in A$ also in equation (8) ?
+
+RESPONSE:
+========
+
+	We thank the referee for noticing that. We moved the $\forall i...$  
+	in equation (8).
+
+
+3) Before (40), the sentence "..., one obtains a standard Landau
+theory" reads awkwardly.
+
+RESPONSE:
+========
+
+	We removed the sentence in question.
+
+REFEREE:
+-------
+	4) Could the authors comment somewhere on the Monte Carlo statistical
+	errors when they are not shown?
+	This is: 
+	-Fig 8 (hidden behind some of the points, so you could say smaller than 
+	point size in caption).
+	-Fig 9 (same as 8)
+	In the other figures the errors bars are fairly clear, but Fig 5 might be 
+	non-obvious at first glance
+
+RESPONSE:
+========
+
+	We thank the referee for the useful comment. In the captions of Fig 5, Fig 8, 
+	and Fig 9 we now mention explicitly that the error bars are smaller than the 
+	symbol size. 
+	
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+RESPONSE TO THE SECOND REFEREE 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+REFEREE:
+-------
+
+	In the manuscript BG13275, the authors study the Reny entropy and
+	mutual information in the Sherrington-Kirkpatrick model. Using the
+	replica method, the authors constructed the replica-symmetric solution
+	and 1-step replica-symmetry-breaking solutions. They are solved
+	numerically and are compared with the results of the Monte Carlo
+	simulations. It was shown that the one-step RSB solution is enough to
+	find a good agreement with the Monte Carlo result. The aspect-ratio
+	and temperature dependences of the entropy and mutual information are
+	analyzed in detail to see the scaling in terms of the system size and
+	the critical properties.
+
+RESPONSE:
+========
+
+	We thank the referee for the accurate summary of our results.
+
+REFEREE:
+-------
+
+	The manuscript is written very clearly and the analytical calculations
+	as well as numerical ones look reliable. The authors followed the
+	standard procedure of the replica analysis and several ansatz such as
+	(28) look reasonable.
+
+RESPONSE:
+========
+
+	We thank the referee for finding our paper well written and our analysis 
+	reliable. 
+
+
+REFEREE:
+-------
+
+	Although the analysis looks quite reasonable, the authors do not
+	discuss the results thoroughly nor their physical meaning. Therefore,
+	I can recommend the publication if the authors clarify following
+	several questions.
+
+	(1). What is the significance to treat infinite-range models in the
+	problem of mutual information? As the authors mentioned in the
+	manuscript, there is no notion of space and locality in infinite-range
+	models. It is not clear for me to consider the booklet geometry in
+	such systems. It would be helpful if the authors answer this simple
+	question in the manuscript. 
+
+RESPONSE:
+========
+
+	We thank the referee for the opportunity to clarify this point. The 
+	definition of the mutual information is based on formula (2) in the 
+	manuscript. Formula (2) is the standard definition of the classical 
+	Renyi entropy, which in the limit $n\to 1$ become the Shannon entropy. 
+	Formula (2) and the Shannon entropy can be used in systems that do not 
+	have the notion of space and locality. The two subsystems A and B 
+	appearing in (2) can be interpreted as two complementary groups of 
+	spins, without any need for an underlying spatial bipartition. Thus, 
+	the quantities that we address in our study, e.g., the mutual information, 
+	are well-grounded from an information theoretical point of view. This 
+	is now stressed in the introduction below formula (2) with the sentence 
+
+		" For local spin models the bipartition correspond to a spatial 
+		separation between the spins. However, the definition~\eqref{renyi-intro} 
+		can be used  in models with no notion of space, where it quantifies 
+		the correlation between two groups of spins rathen than two spatial 
+		regions."   
+
+	Moreover, (2) can be interpreted as ratios of partition functions defined 
+	on the booklet. This is an exact correspondence, and it is not related to 
+	any notion of locality. To clarify this point we now show explicitly the 
+	equivalence between the booklet construction and (2) in the beginning of 
+	section 2. From the derivation it is clear that the booklet construction 
+	is meaningful also in mean-field models. 
+
+	Besides its meaning from the information theory point of view, from the 
+	physics perspective the mutual information provides a lot of information 
+	about critical systems without disorder. One of the most striking example is 
+	provided by the results in Ref. [29] in the manuscript. We believe that it is 
+	a natural and interesting question to study the mutual information in 
+	disordered systems, especially in presence of glassy physics. 
+
+	(i) For instance, an interesting physics question per se it is to understand 
+	what are the fingerprints, if any, of glassy physics in the mutual 
+	information or in information-based quantities in general. 
+
+	(ii) A related question is whether 
+	information motivated quantities could provide alternative good criticality 
+	witnesses for glassy transitions. To this purpose we should stress that 
+	even in the simple S-K while it is relatively easy to determine numerically 
+	the critical point of the paramagnetic-glassy transition using standard 
+	tools from critical phenomena, such as the Binder cumulant. In presence 
+	of a transverse magnetic field the transition persists but the critical 
+	point changes as a function of the field strength (Almeida-Thouless line). 
+	In presence of a field it is however much more demanding, as it is shown 
+	numerically for instance in 
+
+		M. Picco, F. Ritort, and M. Sales, Eur. Phys. J. B 19, 565 (2001)
+
+	Even more difficult it is to clarify whether there is an Almeida-Thouless 
+	line in short-range disordered spin models. 
+
+	Our work, although for the S-K model, provides the first results in this 
+	direction. Concerning (i) for the S-K model a related question is about 
+	the effect of the replica symmetry breaking on information motivated 
+	quantities. We clarified that while in the low-temperature phase of the 
+	model the replica symmetry breaking is reflected in the mutual information. 
+
+	As correctly observed by the referee the 1RSB approximation is enough to 
+	obtain good agreement with the Monte Carlo simulations. However, we should 
+	stress that this is not true at arbitrarily low temperatures, as 
+	at some point the effects of the higher order replica symmetry breaking 
+	should become visible. 
+
+	Concerning (ii)  our work shows that for mean-field spin glasses the 
+	mutual information does not show any crossing for different system sizes 
+	at the critical point. This implies that the muutual information as defined 
+	in the manuscript cannot be used as a good indicator of glassy phase 
+	transitions. 
+
+	One interesting question would be whether this "failure" is due to the 
+	non locality of the model or to the presence of disorder. This could be 
+	investigated in disordered models exhibiting a glassy transition. This 
+	can be done only numerically as there is no exactly solvable model with 
+	spin glass transition and local interactions. Moreover, one should consider 
+	a three dimensional model. In fact, to our knowledge there are no glassy 
+	transitions at finite temperature in disordered spin models. This certainly 
+	goes beyond the scope of the present work. 
+
+	Another possibility, as observed by the referee, it is that one has to 
+	focus on the subleading corrections to the mutual information in order 
+	to obtain a clear signature of the glassy transition. In general, subleading 
+	corrections to the entropies have been investigated a lot in the literature 
+	in the context of topolocical phases of matter, systems breaking continuous 
+	symmetries and bipartitions with sharp corners. 
+
+	Figure 9 in our work provides some hints in this direction. Clearly the scaling 
+	corrections are dramatically different in the paramagnetic and in the glassy 
+	phase, decaying much more slowly in the latter. We regret we did not stress 
+	enough this point in the manuscript. We now added the sentence in the introduction 
+
+		"We numerically observede that while in the paramagnetic phase the 
+		scaling correction to the muatual information decay as 1/L, a much 
+		slower decay as 1/L^2/3 is observed in the glassy phase." 
+
+	The study of these scaling corrections, although possible using the same 
+	techniques employed for the regular S-K model, it is demanding as it requires 
+	using the corrections to the saddle point treatment presented in section II.  
+
+
+REFEREE:
+-------
+
+	Is there any other work treating the booklet geometry in mean field 
+	systems? For example, what is obtained for the simple, pure Ising model 
+	with infinite-range interaction?
+
+RESPONSE:
+========
+
+	The only study we are aware of is in 
+
+		J. Wilms, J. Vidal, F. Verstraete, S. Dusuel, J. Stat. Mech. P01023 (2012)
+
+	In this work the authors investigate the mutual information in the Lipkin-Meshkov-Glick 
+	(LMG) model. In particular, they provide results for the case with zero magnetic field, 
+	where the model becomes equivalent to a classical infinite-range Ising model. However, 
+	the authors investigate the standard mutual information which is obtained from the 
+	full reduced density matrix of the subsystem A. 
+
+	In contrast with our results the authors find that the mutual information is finite 
+	away from the critical point and diverges logarithmically at the critical point. 
+
+	In our case this logarithmic correction might be subleading to the volume law. 
+
+
+
+
+	TO BE COMPLETED
+
+	About the maximum 
+
+		J. Wilms, J. Vidal, F. Verstraete, S. Dusuel, J. Stat. Mech. P010011 (2011)
+
+
+REFEREE:
+-------
+	(2). The definition of the mutual information in the present case is
+	not clear for me. Please describe how to define and calculate S(B) and
+	S(A or B) in the SK model.
+
+RESPONSE:
+========
+
+	We thank the referee for this useful comment. 
+	Eq. (2), and later Eq. (5) via the replica trick, are both quite explicit. 
+	Combined with Eq. (4) this precisely described the mutual information in 
+	the SK model. The non-locality of the interactions does 
+	not affect the definition compared with the usual one for local models. 
+	The definition of region A is however less obvious, and in the case of 
+	this work, we simply take it as an arbitrary set of points, rather than 
+	one that is spatially connected. As it is clear from the manuscript 
+	the best way to calculate the mutual information is using (4) calculating 
+	the three different contributions S(A) S(B) and S(AUB) separately. These 
+	correspond to ratios of partition functions on the booklet with different 
+	aspect ratio omega. As this was not clearly stated in the manuscript we now 
+	have written it explicitly in section 2 
+
+		"The mutual information ${\mathcal I}_n(A,B,\beta)$ is obtained in terms of the booklet 
+		partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}. 
+		%%%
+		Clearly, $S_n(B)$ (cf. Eq.~\eqref{MI}) is obtained from~\eqref{renyi} and exchanging 
+		$A$ and $B$. Notice also that in~\eqref{renyi}  $Z(A\cup B,n,\beta)\equiv Z(n\beta)$ 
+		is the partition function of the model on the booklet with all the $n$ sheets identified, 
+		equivalently on a single sheet but at temperature $n\beta$." 
+
+	From the numerical point of view, the strategy to evaluate the ratios of partition 
+	functions in (5) is outlined Appendix B. 
+
+REFEREE:
+-------
+
+	(3). The authors summarized that the entropy is proportional to the
+	system size by using the numerical analysis. Since the entropy is
+	calculated from the logarithm of the partition function, the result
+	looks trivial for me. As far as I understand, the subleading term is
+	important to find the boundary law behavior in the local (non
+	mean-field) models. (The leading term is canceled out by the
+	definition of the mutual information). Do the authors consider that
+	the subleading term is not important in the present system? I expect
+	that some universal properties exist in the subleading terms.
+
+RESPONSE:
+========
+
+	We agree that in general the leading term is proportional to the 
+	system size is an obvious result. In the manuscript we report 
+	the entropy only as a sanity check of our calculations.  We also 
+	agree that it is likerly that the subleading terms contain 
+	more universal information. We thank the referee for raising this 
+	point. Although the calculation of the subleading corrections to 
+	the entropy and the mutual information is possible in principle, 
+	it requires going beyond the saddle point approximation described 
+	in section III C. This should be straightforward in the paramagnetic 
+	phase although it would require a considerable amount of work in 
+	below the critical point. Notice that the same problem is 
+	challenging in the regular SK model. We think that this goes 
+	beyond the scope of the paper and it is suitable for future work. 
+
+	PUT REFERENCE TO PAPERS STUDYING FINITE SIZE IN SK 
+
+
+REFEREE:
+-------
+
+	(4). The authors study the aspect-ratio dependence of the result
+	closely. It is clearly understood that the limits omega=0 and 1
+	reduces to the standard results. This means that we can find a result
+	interpolating their limits in the present problem. I do not expect any
+	interesting behavior between the limits. What did the authors expect
+	as the result and what do the authors consider the obtained results
+	interesting, other than the crossing behavior?
+
+RESPONSE:
+========
+
+	We agree that omega=0 and 1 are trivial results, at least in terms of 
+	the standard SK model, and that one would expect that the results between 
+	these two points should vary smoothly, and this is reflected in the data. 
+	What was not obvious was the form of the interpolation between these two 
+	points. The same statement of the referee would apply to local models.  
+	However, as it is clear from Ref [29], in that case the shape function of the mutual 
+	information contains universal behavior if the parent model is critical and 
+	described by a conformal field theory. In our study we investigate the 
+	shape function in a non-trivial disordered model. Notice that this functions 
+	have been also investigated in clean (withoud disorder) mean field models 
+	in 
+		O. Cohen, V. Rittenberg, T. Sadhu J Phys A 48 055002 (2015) 
+
+		J. Wilms, J. Vidal, F. Verstraete, S. Dusuel, J. Stat. Mech. P01023 (2012)
+
+
+	In that respect, 
+	we believe it was worth examining the aspect ratio behavior in the SK model. 
+	The difference of course is that since the gluing procedure is a bulk effect, 
+	the entire system may go through a phase transition as a function of omega, 
+	rather than being able to view the system as two parts in contact with each 
+	other where one part is critical. In this light, it might be some non-constant 
+	temperature cut in (omega,beta) that shows the most interesting behavior.
+
+
+REFEREE:
+-------
+
+	(5). This comment is related to the previous one (4). Strictly
+	speaking, I do not see any surprising behavior in the result. What is
+	the significance of the present study? Did the authors find anything
+	on the information properties of the SK model?
+
+RESPONSE:
+========
+
+	The non surprising result would have been if 1-RSB would have reproduced the results 
+	of the Monte Carlo simulation. The fact that 2-RSB was necessary shows the non-trivial 
+	nature of the transition in the replicated geometry, and represents an expanded set of 
+	assumptions compared to the base model. The procedure for handling disorder, usually done 
+	via integration over fictitious replicas, in the context of the replica trick, where one 
+	has physical replicas, is non-trivial, but grounding such theoretical calculations with 
+	numerics is necessary. In this respect, we see the SK model with the replica trick as a 
+	base case for studying replica models  in glassy systems, in the same way that the SK 
+	model itself is a prototype for understanding standard glassy systems.
+
+REFEREE:
+-------
+
+	(6). The authors only focused on the result at n=2. It would be
+	interesting if the authors mention the n-dependence of the result.
+	Especially, the limit n=1 would give a nontrivial result and is
+	interesting. I expect that it wouldn't be difficult to analyze the
+	replica symmetric solution.
+
+RESPONSE:
+========
+
+	TO BE DONE. 
+
+
+REFEREE:
+-------
+
+	(7). Although the manuscript is written very clearly, it is somewhat
+	too long. For example, the authors summarized the results in the
+	introduction, and they are described again in the final section. It is
+	not necessary to summarize the results in the introduction.
+
+RESPONSE:
+========
+
+	We would like to thank the referee for this useful comment. We now 
+	summarize the main results of the paper in the conclusions. 
+
+
+REFEREE:
+-------
+	(8). J_{ij} should be inserted in Eq.(10).
+
+RESPONSE:
+========
+
+	We thank the referee for spotting this. We restored the missing J_{ij} in 
+	Eq. (10). 
+
+REFEREE:
+-------
+
+	(9). I am not sure whether this manuscript is suitable to PRB. I would
+	think that PRE is more appropriate.
+
+RESPONSE:
+========
+
+	Argue that similar paper appeared in PRB. 
+
+In conclusion, the manuscript will be taken into consideration for
+publication if the authors clarify the physical significance of the
+analysis. And, I recommend the authors to reconsider the journals to
+submit the manuscript.
+

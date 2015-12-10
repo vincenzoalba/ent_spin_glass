@@ -1,0 +1,120 @@
+----------------------------------------------------------------------
+Report of the First Referee -- BG13275/Alba
+----------------------------------------------------------------------
+
+This paper deals with the study of entropies in classical spin models.
+The focus is on the Sherrington-Kirkpatrick model, a simple model that
+exhibits spin glass physics. Both analytical and numerical results are
+presented, and compared.
+
+Overall I found the paper interesting, and clearly written. Such
+classical entropies had only been studied in nearest neighbor spin
+models, so this is a useful addition to the existing literature.
+
+There is one issue that needs to be addressed I think. In part II the
+classical Renyi entropy is defined by Eq. (5), and this is what is
+studied in the rest of the paper. It is not clear to me which is the
+underlying probability distribution, i.e it is not clear to me that
+this equals Eq. (2), because of the long-range interactions. This
+point needs to be clarified, as using the term Renyi entropy would be
+a slight abuse of terminology, and the reader should be made aware of
+that.
+
+Provided this point is clarified, the paper should be publishable in
+Physical Review B.
+
+I also have a couple of minor remarks and suggestions, which I list
+below:
+
+1) In the long introduction, several values of \beta are mentioned. It
+might be helpful to recall the values of $\beta_c(w)$.
+
+2) Maybe at the $\forall i \in A$ also in equation (8) ?
+
+3) Before (40), the sentence "..., one obtains a standard Landau
+theory" reads awkwardly.
+
+4) Could the authors comment somewhere on the Monte Carlo statistical
+errors when they are not shown?
+
+----------------------------------------------------------------------
+Report of the Second Referee -- BG13275/Alba
+----------------------------------------------------------------------
+
+In the manuscript BG13275, the authors study the Reny entropy and
+mutual information in the Sherrington-Kirkpatrick model. Using the
+replica method, the authors constructed the replica-symmetric solution
+and 1-step replica-symmetry-breaking solutions. They are solved
+numerically and are compared with the results of the Monte Carlo
+simulations. It was shown that the one-step RSB solution is enough to
+find a good agreement with the Monte Carlo result. The aspect-ratio
+and temperature dependences of the entropy and mutual information are
+analyzed in detail to see the scaling in terms of the system size and
+the critical properties.
+
+The manuscript is written very clearly and the analytical calculations
+as well as numerical ones look reliable. The authors followed the
+standard procedure of the replica analysis and several ansatz such as
+(28) look reasonable.
+
+Although the analysis looks quite reasonable, the authors do not
+discuss the results thoroughly nor their physical meaning. Therefore,
+I can recommend the publication if the authors clarify following
+several questions.
+
+(1). What is the significance to treat infinite-range models in the
+problem of mutual information? As the authors mentioned in the
+manuscript, there is no notion of space and locality in infinite-range
+models. It is not clear for me to consider the booklet geometry in
+such systems. It would be helpful if the authors answer this simple
+question in the manuscript. Is there any other work treating the
+booklet geometry in mean field systems? For example, what is obtained
+for the simple, pure Ising model with infinite-range interaction?
+
+(2). The definition of the mutual information in the present case is
+not clear for me. Please describe how to define and calculate S(B) and
+S(A or B) in the SK model.
+
+(3). The authors summarized that the entropy is proportional to the
+system size by using the numerical analysis. Since the entropy is
+calculated from the logarithm of the partition function, the result
+looks trivial for me. As far as I understand, the subleading term is
+important to find the boundary law behavior in the local (non
+mean-field) models. (The leading term is canceled out by the
+definition of the mutual information). Do the authors consider that
+the subleading term is not important in the present system? I expect
+that some universal properties exist in the subleading terms.
+
+(4). The authors study the aspect-ratio dependence of the result
+closely. It is clearly understood that the limits omega=0 and 1
+reduces to the standard results. This means that we can find a result
+interpolating their limits in the present problem. I do not expect any
+interesting behavior between the limits. What did the authors expect
+as the result and what do the authors consider the obtained results
+interesting, other than the crossing behavior?
+
+(5). This comment is related to the previous one (4). Strictly
+speaking, I do not see any surprising behavior in the result. What is
+the significance of the present study? Did the authors find anything
+on the information properties of the SK model?
+
+(6). The authors only focused on the result at n=2. It would be
+interesting if the authors mention the n-dependence of the result.
+Especially, the limit n=1 would give a nontrivial result and is
+interesting. I expect that it wouldn't be difficult to analyze the
+replica symmetric solution.
+
+(7). Although the manuscript is written very clearly, it is somewhat
+too long. For example, the authors summarized the results in the
+introduction, and they are described again in the final section. It is
+not necessary to summarize the results in the introduction.
+
+(8). J_{ij} should be inserted in Eq.(10).
+
+(9). I am not sure whether this manuscript is suitable to PRB. I would
+think that PRE is more appropriate.
+
+In conclusion, the manuscript will be taken into consideration for
+publication if the authors clarify the physical significance of the
+analysis. And, I recommend the authors to reconsider the journals to
+submit the manuscript.
