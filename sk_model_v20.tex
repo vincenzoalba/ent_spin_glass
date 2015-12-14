@@ -1739,7 +1739,7 @@ Finally, one should also stress that a dramatically different behavior is observ
 in the mutual information obtained from the von Neumann entropy ${\mathcal I}\equiv 
 \lim_{n\to 1}{\mathcal I}_n$. Specifically, no volume law is present for ${\mathcal I}$, 
 which, instead, exhibits a logarithmic divergence as ${\mathcal I}=1/4\log(N)$ at the 
-critical point $\beta_c=1$ (see Ref.~\onlinecite{wilm-2012}). 
+critical point $\beta_c=1$ (see Ref.~\onlinecite{wilms-2012}). 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
@@ -1776,8 +1776,43 @@ critical point $\beta_c=1$ (see Ref.~\onlinecite{wilm-2012}).
 \subsection{R\'eny entropy and mutual information: Exact treatment}
 
 For finite number of spins $N$, $S_2$ and ${\mathcal I}_2$ can be calculated 
-exactly using the results obtained in Ref.~\onlinecite{wilm-2012}. The eigenstates 
-of~\eqref{}
+exactly using the results obtained in Ref.~\onlinecite{wilms-2012}. The eigenstates 
+of~\eqref{is-clean} are product states. They can be characterized as $|p,i\rangle$, 
+with $p$ the total number of up spins (the remaining $N-p$ being down) and $i$ 
+labelling the $B(N,p)\equiv N!/(p!(N-p)!)$ eigenstates with the same $p$. 
+
+
+The partition function of the model on a single sheet is given as 
+%
+\begin{equation}
+Z(\beta)\equiv\textrm{Tr}\rho=\sum\limits_{p=0}^NB(N,p)e^{N\beta(\frac{p}{N}-
+\frac{1}{2})^2},
+\end{equation}
+%
+where $\rho\equiv 1/Ze^{-\beta {\mathcal H}}$ is the thermal density matrix. 
+Given a bipartition of the spins into two groups $A$ and $B$ containing $N_A$ 
+and $N-N_A$ spins, respectively, the reduced density matrix for $A$ is obtained 
+as~\cite{wilms-2012} 
+%
+\begin{equation}
+\rho_A\equiv\frac{1}{Z}\textrm{Tr}_B\sum\limits_{p,i}e^{N(\beta\frac{p}{N}-
+\frac{1}{2})^2}|p,i\rangle\langle p,i|. 
+\end{equation}
+%
+By performing the trace over part $B$ one obtains 
+%
+\begin{equation}
+\rho_A=\sum\limits_{p_A,i_A}R(p_A)|p_A,i_A\rangle\langle p_A,i_A|,
+\end{equation}
+%
+where $|p_A,i_A\rangle$ form a basis for part $A$ of the system and 
+%
+\begin{equation}
+R(p_A)\equiv\frac{1}{Z}\sum\limits_{p_B=0}^{N-N_A}B(N-N_A,p_B)e^{N\beta
+(\frac{p_A}{N}+\frac{p_B}{N}-\frac{1}{2})^2}.
+\end{equation}
+%
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
@@ -2108,10 +2143,11 @@ V.~Alba, L.~Tagliacozzo, and P.~Calabrese, J.\ Stat.\ Mech.\ (2011) P06012.
 
 \bibitem{alba-2013}
 V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013. 
-\end{thebibliography}
 
-\bibitem{wilm-2012}
+\bibitem{wilms-2012}
 J.~Wilms, J.~Vidal, F.~Verstraete, and S.~Dusuel, J.\ Stat.\ Mech.\ (2012) P01023. 
+
+\end{thebibliography}
 
 \end{document}
 
