@@ -1626,8 +1626,7 @@ G_{1}(z')\Theta^{m_1}(z,z')\\
 \label{clean-is}
 
 Here we discuss the R\'enyi entropy $S_2$ and the associated mutual information 
-${\mathcal I}_2$ in the infinite-range Ising model without disorder defined by 
-the hamiltonian 
+in the infinite-range Ising model withoud disorder defined by the hamiltonian 
 %
 \begin{equation}
 \label{is-clean}
@@ -1635,14 +1634,8 @@ the hamiltonian
 \end{equation}
 %
 We consider the situation without external magnetic field, i.e., $h=0$ and 
-fix $J=1$. 
-
-
-%##########################################################################
-\subsection{Saddle point approximation}
-
-The calculation of the booklet partition function $Z(\omega,n,\beta)$ 
-(see section~\ref{booklet}) can be done using the same techniques as in 
+fix $J=1$. The calculation of the booklet partition function $Z(\omega,n,\beta)$ 
+(see section~\ref{booklet}) is done using the same techniques as in 
 section~\ref{the-model}. The result reads 
 %
 \begin{multline}
@@ -1655,7 +1648,7 @@ Z(\omega,n,\beta)=
 \Big\}.
 \end{multline}
 %
-Using the saddle point approximation, from~\eqref{clean-is-Z} one obtains 
+Using the saddle point approximation from~\eqref{clean-is-Z} one obtains 
 $F(\omega,n,\beta)\equiv\log Z(\omega,n,\beta)$ as 
 %
 \begin{multline}
@@ -1675,21 +1668,21 @@ $\{z_\delta\}_{\delta=1}^n$ are solutions of the saddle point equations
 z_\delta\big),\quad \forall\delta.
 \end{equation}
 %
-For $n=2$, the system~\eqref{clean-is-spe} becomes 
+For $n=2$, Eq.~\eqref{clean-is-spe} become 
 %
 \begin{align}
 & 0=z_1-\beta(1-\omega)\tanh z_1-\beta\omega\tanh\big(z_1+z_2\big)\\
 & 0=z_2-\beta(1-\omega)\tanh z_2-\beta\omega\tanh\big(z_1+z_2\big). 
 \end{align}
 %
-The system has the solutions $z_1=z_2=z_s=0$ for $\beta\le\beta_c=1/(1+\omega)$, 
+The system has the solution $z_1=z_2=z_s=0$ for $\beta\le\beta_c=1/(1+\omega)$, 
 and $z_1=z_2=z_s\ne 0$ for $\beta>\beta_c$. Note that $\beta_c$ is different 
 in presence of disorder (compare with~\eqref{tc}). 
 
 The solution $z_s$ of the saddle point equations~\eqref{clean-is-spe} is shown 
 in Fig.~\ref{saddle_clean} for $\omega=0,1/2,1$. The vertical-dotted line 
-is $\beta_c$ for $\omega=1/2$. Notice that at low temperatures $z_s$ is 
-independent on $\omega$, and one has $z_s\sim\beta$. 
+is $\beta_c$ for $\omega=1/2$. Notice that at low temperatures $z_s$ is independent 
+on $\omega$, and one has $z_s\sim\beta$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
 \begin{figure}[t]
@@ -1705,53 +1698,24 @@ independent on $\omega$, and one has $z_s\sim\beta$.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%##########################################################################
-\subsection{R\'enyi entropy and mutual information: saddle point results}
-
 It is straightforward to obtain the R\'enyi entropies $S_n=(F(\omega=0,n,\beta)-
 F(\omega,n,\beta))/(n-1)$ using~\eqref{clean-is-F} and~\eqref{renyi}. 
 Figure~\ref{renyi_clean} plots the entropy density $S_2/N$ versus the inverse 
 temperature $\beta$. $S_2$ exhibits a volume-law behavior $S_2\propto N$ for 
 all values of $\beta$ and $\omega$. The different curves correspond to different 
-booklet aspect ratios $\omega$. Clearly, $S_2$ exhibits the volume-law behavior 
-$S_2\propto N$ at all temperatures. For $\beta\le\beta_c$ one has the flat behavior 
-$S_2=\omega\log(2)$, whereas $S_2$ is vanishing in the low-temperature regime. 
-The full symbol (rhombi) in Figure~\ref{renyi_clean} are exact results for a 
-booklet with $N=400$ spins per sheet (see next section), and are in good 
-agreement with the saddle point approximation results.  
-
-The mutual information per spin ${\mathcal I}_2/N$ is reported in 
-Figure~\ref{mi_clean}. The lines are the analytical results for booklet aspect 
-ratios $\omega=1/20,1/4,1/2$, while the full symbols are the exact results for 
-the booklet with $N=400$ spins per sheet. Clearly, ${\mathcal I}_2/N$ is exactly zero 
-in the high-temperature region for $\beta\le1/2$, it exhibits at maximum 
-at $\beta\approx 1$, and it is vanishing in the limit $\beta\to\infty$. 
-Similar to Figure~\ref{reny_clean} the full symbols are exact results for 
-a booklet with $N=400$ spins per sheet. 
-
-Notice that similar features are observed for the S-K model (see 
-section~\ref{I2-section}). In particular, one should observe that ${\mathcal I}_2/N$ 
-does not exhibit any crossing at the critical point $\beta_c$. However, the information 
-about critical behavior is encoded in the finite-size corrections of ${\mathcal I}_2/N$ 
-(see next section), which are neglected in the saddle point treatment. 
-Finally, one should also stress that a dramatically different behavior is observed 
-in the mutual information obtained from the von Neumann entropy ${\mathcal I}\equiv 
-\lim_{n\to 1}{\mathcal I}_n$. Specifically, no volume law is present for ${\mathcal I}$, 
-which, instead, exhibits a logarithmic divergence as ${\mathcal I}=1/4\log(N)$ at the 
-critical point $\beta_c=1$ (see Ref.~\onlinecite{wilm-2012}). 
-
+booklet aspect ratios $\omega$. Clearly, for $\beta\le\beta_c$ one has a flat 
+behavior $S_2=\omega\log(2)$, whereas $S_2$ is vanishing in the low-temperature 
+regime.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
 \begin{figure}[t]
 \includegraphics*[width=0.9\linewidth]{./draft_figs/renyi_clean}
 %\includegraphics*[width=0.9\linewidth]{./renyi_clean}
-\caption{ The infinite-range Ising model on the $2$-sheets booklet in the thermodynamic 
- limit: the classical R\'enyi entropy density $S_2/N$, with $N$ the total number of spins 
- on a single sheet of the booklet. $S_2/N$ is plotted against the inverse temperature 
- $\beta$ and for booklet aspect ratio $\omega=1/4,1/2,1$. Note tht at high temperature 
- $S_2=\omega\log(2)$. The full symbols denote the exact numerical results for a finite 
- system with $N=400$. 
+\caption{ The infinite-range Ising model on the $2$-sheets booklet: the classical 
+ R\'enyi entropy density $S_2/N$, with $N$ the total number of spins on a single sheet 
+ of the booklet. $S_2/N$ is plotted against the inverse temperature $\beta$ and for 
+ booklet aspect ratio $\omega=1/4,1/2,1$. Note tht at high temperature 
+ $S_2=\omega\log(2)$.
 }
 \label{renyi_clean}
 \end{figure}
@@ -1759,56 +1723,15 @@ critical point $\beta_c=1$ (see Ref.~\onlinecite{wilm-2012}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
 \begin{figure}[t]
-\includegraphics*[width=0.9\linewidth]{./draft_figs/mi_clean}
+\includegraphics*[width=0.9\linewidth]{./draft_figs/rmi_clean}
 %\includegraphics*[width=0.9\linewidth]{./renyi_clean}
-\caption{ The infinite-range Ising model on the $2$-sheets booklet in the thermodynamic 
- limit: the classical mutual information density ${\mathcal I}_2/N$ plotted against the 
- inverse temperature $\beta$ and for booklet aspect ratio $\omega=1/4,1/2,1$. Note that  
- ${\mathcal I}_2=0$ for $\beta\le 1/2$. The full symbols are the the exact numerical 
- results for a finite system with $N=400$. 
+\caption{ The infinite-range Ising model on the $2$-sheets booklet: the classical 
+ R\'enyi entropy density $S_2/N$, with $N$ the total number of spins on a single sheet 
+ of the booklet. $S_2/N$ is plotted against the inverse temperature $\beta$ and for 
+ booklet aspect ratio $\omega=1/4,1/2,1$. Note tht at high temperature 
+ $S_2=\omega\log(2)$.
 }
-\label{mi_clean}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%##########################################################################
-\subsection{R\'eny entropy and mutual information: Exact treatment}
-
-For finite number of spins $N$, $S_2$ and ${\mathcal I}_2$ can be calculated 
-exactly using the results obtained in Ref.~\onlinecite{wilm-2012}. The eigenstates 
-of~\eqref{}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
-\begin{figure}[t]
-\includegraphics*[width=0.9\linewidth]{./draft_figs/sub_leading}
-%\includegraphics*[width=0.9\linewidth]{./renyi_clean}
-\caption{ The infinite-range Ising model on the $2$-sheets booklet: saddle point corrections. 
- The correction for the mutual information ${\mathcal I}_2-{\mathcal I}_2^{(sp)}$ are 
- plotted against the inverse temperature $\beta$. The data are for a booklet with aspect 
- ratio $\omega=1/2$. Here ${\mathcal I}_2^{(sp)}$ are the same data as in Figure~\ref{mi_clean} 
- (dotted line). The vertical lines denote the critical temperatures $\beta_c$ for $\omega=1,
- 1/2,0$ (from left to right). The horizontal dash-dotted line is $\log(2)$. Note the 
- (logarithmically) divergent behavior at $\beta_c$. 
-}
-\label{sp_corr}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
-\begin{figure}[t]
-\includegraphics*[width=0.9\linewidth]{./draft_figs/clean_log}
-%\includegraphics*[width=0.9\linewidth]{./renyi_clean}
-\caption{ The infinite-range Ising model on the $2$-sheets booklet: 
- Scaling of the corrections of the mutual information ${\mathcal I}_2$ 
- at the booklet critical points $\beta_c=1/2,2/3,1$ (see 
- vertical lines in Figure~\ref{sp_corr}). We plot $|{\mathcal I}_2-
- {\mathcal I}_2^{(sp)}|$ versus $\log(N)$, with $N$ the number of spins 
- on one sheet of the booklet. Here ${\mathcal I}_2^{(sp)}$ is the same 
- as in Figure~\ref{mi_clean} (dotted line).  
-}
-\label{clean_log}
+\label{renyi_clean}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2110,8 +2033,6 @@ V.~Alba, L.~Tagliacozzo, and P.~Calabrese, J.\ Stat.\ Mech.\ (2011) P06012.
 V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013. 
 \end{thebibliography}
 
-\bibitem{wilm-2012}
-J.~Wilms, J.~Vidal, F.~Verstraete, and S.~Dusuel, J.\ Stat.\ Mech.\ (2012) P01023. 
 
 \end{document}
 
