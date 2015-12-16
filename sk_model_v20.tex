@@ -784,7 +784,21 @@ n\log(2)-\omega(n-1)\log(2)\\+
 \end{multline}
 %
 where $q_0$ is determined by solving the saddle point condition $\partial[F_{para}
-(\omega,n,\beta)]/\partial q_0=0$. For the $2$-sheets booklet (i.e., $n=2$) this is  
+(\omega,n,\beta)]/\partial q_0=0$. The saddle point equation reads 
+%
+\begin{equation}
+\end{equation}
+%
+where we used that 
+%
+\begin{multline}
+\frac{1}{\sqrt{2\pi}}\int Dz\cosh^n(z\sqrt{q_0}\beta)= 
+\frac{1}{2}\Gamma(n,n/2)\\
++\frac{1}{2^{n-1}}\sum\limits_{k=0}^{\frac{n}{2}-1}\frac{\Gamma(n+1)}
+{\Gamma(k+1)\Gamma(n-k+1)}e^{2\beta^2 q_0 \big(\frac{n}{2}-k\big)^2}
+\end{multline}
+%
+For the $2$-sheets booklet (i.e., $n=2$) this is  
 given as   
 %
 \begin{equation}
@@ -1269,7 +1283,8 @@ $[S_2]/N$ as the quantity of interest.
  panels. The symbols are the Monte Carlo data for systems with $N=32,64,128$ 
  spins per sheet. The Monte Carlo error bars are smaller than the symbol size. 
  The dash-dotted line is the analytical result in the replica-symmetric (RS) 
- approximation.  
+ approximation. In (a) the dotted line is the result for the clean, i.e., without 
+ disorder, infinite-range Ising model. 
 }
 \label{I2-MC}
 \end{figure*}
@@ -1313,7 +1328,10 @@ symmetry breaking. The circles in Fig.~\ref{Renyi-MC} denote the one-step replic
 symmetry breaking result $[S_2^{1\textrm{-}RSB}]/N$ (see section~\ref{rsb-1-section}), 
 which is obtained from Eq.~\eqref{renyi}  and Eq.~\eqref{RSB-1-logZ}. Remarkably, 
 $[S_2^{1\textrm{-}RSB}]/N$ is in excellent agreement with the extrapolated Monte Carlo 
-data for $\beta\lesssim 2$. 
+data for $\beta\lesssim 2$. Finally, for comparison we report in panel (c) the analytical 
+result (dotted line) for $S_2/N$ for the infinite-range Ising model without 
+disorder at $\omega=1/4$ (see Appendix~\ref{clean-is}). 
+
 
 
 %##########################################################################
@@ -1347,7 +1365,9 @@ crossing at a second order phase transition. The dash-dotted line in Fig.~\ref{I
 analytical result obtained using the replica symmetric (RS) approximation (see 
 section~\ref{rs-section}). Formally, this is obtained using Eq.~\eqref{MI} and Eq.~\eqref{rs-F}, 
 and it is in perfect agreement with the MC data in the whole paramagnetic phase.  
-
+Finally, we should stress that similar qualitative behavior is observed for ${\mathcal I}_2/N$ 
+in the infinite-range Ising model without disorder. The analytical result for ${\mathcal I}_2/N$ 
+at $\omega=1/2$ in the thermodynamic limit is reported in panel (a) (dotted line). 
 
 Interestingly, at low temperatures $[{\mathcal I}_2]/N$ exhibits strong finite-size corrections, 
 and significant deviations from the RS result. In order to extract the thermodynamic behavior of 
@@ -1366,7 +1386,11 @@ In particular, the data exhibit a systematic shift of the mutual information
 peak towards lower temperatures. Much larger system sizes would be needed to clarify this 
 issue. The effect of the replica symmetry breaking, however, 
 should be negligible. For instance, at $\beta=0.6$ for $\omega=1/2$ one can estimate that 
-$|[{\mathcal I}_2^{RS}]-[{\mathcal I}_2^{1\textrm{-}RSB}]|/N\sim 2\cdot 10^{-5}$. Finally, clear deviations 
+$|[{\mathcal I}_2^{RS}]-[{\mathcal I}_2^{1\textrm{-}RSB}]|/N\sim 2\cdot 10^{-5}$. 
+Moreover, the results for the infinite-range clean Ising (see Appendix~\ref{is-clean}) suggest 
+that logarithmic scaling corrections as $\propto\log(N)/N$ could be present at criticality making 
+the extrapolation to the thermodynamic limit tricky. 
+Finally, clear deviations 
 from the RS result occur at lower temperatures. For instance, for $\omega=1/8$, the numerical results 
 exhibit deviations from the RS result already at $\beta\gtrsim 1$. 
 These deviations, however, have to be attributed to the physics of the replica symmetry breaking. 
@@ -1626,8 +1650,8 @@ G_{1}(z')\Theta^{m_1}(z,z')\\
 \label{clean-is}
 
 Here we discuss the R\'enyi entropy $S_2$ and the associated mutual information 
-${\mathcal I}_2$ in the infinite-range Ising model without disorder defined by 
-the hamiltonian 
+${\mathcal I}_2$ in the infinite-range Ising model without disorder, i.e., the 
+Curie-Weiss (CW) model, defined by the hamiltonian 
 %
 \begin{equation}
 \label{is-clean}
@@ -1635,7 +1659,31 @@ the hamiltonian
 \end{equation}
 %
 We consider the situation without external magnetic field, i.e., $h=0$ and 
-fix $J=1$. 
+fix $J=1$. The phase diagram of the model exhibits a paramagnetic phase at 
+high temperature, while at low temperatures there is ferromagnetic order. The 
+two phases are separated by a phase transition at $\beta_c=1$.
+We consider both the situations with finite $N$ as well as the 
+thermodynamic limit. For finite $N$ we provide exact numerical results for 
+$S_2$ and ${\mathcal I}_2$, while we address the thermodynamic limit using 
+the booklet construction and the saddle point approximation. 
+
+Similar to the S-K model, we find that the para-ferro transition persists on 
+the booklet, and the critical temperature depends on the booklet ratio 
+$\omega$. The R\'enyi entropy $S_2$ and the mutual information ${\mathcal 
+I}_2$ are extensive, and their densities $S_2/N,{\mathcal I}_2/N$ finite 
+and smooth at any temperature. Notice that this in constrast with what is 
+obtained for the von Neumann mutual information~\cite{wilms-2012} ${\mathcal I}$, 
+which is {\it finite} (i.e., ${\mathcal I}\sim {\mathcal O}(1)$) in the whole phase 
+diagram, except for a logarithmically divergent behavior at the critical 
+point at $\beta_c=1$. 
+
+However, information about the phase transition is encoded in the subleading, 
+i.e. $o(N)$, corrections of ${\mathcal I}_2$. Precisely, logarithmically 
+divergent corrections are present at $\beta=1/2,1$ and $\beta=\beta_c(\omega)$, 
+with $\beta_c(\omega)$ the critical temperature of the model on the booklet 
+with aspect ratio $\omega$. 
+
+
 
 
 %##########################################################################
@@ -1773,7 +1821,7 @@ critical point $\beta_c=1$ (see Ref.~\onlinecite{wilms-2012}).
 
 
 %##########################################################################
-\subsection{R\'eny entropy and mutual information: Exact treatment}
+\subsection{R\'enyi entropy and mutual information: Exact treatment}
 
 For finite number of spins $N$, $S_2$ and ${\mathcal I}_2$ can be calculated 
 exactly using the results obtained in Ref.~\onlinecite{wilms-2012}. The eigenstates 
@@ -1782,37 +1830,80 @@ with $p$ the total number of up spins (the remaining $N-p$ being down) and $i$
 labelling the $B(N,p)\equiv N!/(p!(N-p)!)$ eigenstates with the same $p$. 
 
 
-The partition function of the model on a single sheet is given as 
+The partition function of the model is given as 
 %
 \begin{equation}
-Z(\beta)\equiv\textrm{Tr}\rho=\sum\limits_{p=0}^NB(N,p)e^{N\beta(\frac{p}{N}-
+Z(\beta)\equiv\textrm{Tr}\rho=\sum\limits_{p=0}^NB(N,p)e^{2N\beta(\frac{p}{N}-
 \frac{1}{2})^2},
 \end{equation}
 %
 where $\rho\equiv 1/Ze^{-\beta {\mathcal H}}$ is the thermal density matrix. 
+Similarly, one has 
+%
+\begin{equation}
+\label{rhon}
+Z^n(\beta)\equiv\textrm{Tr}\rho^n=\sum\limits_{p=0}^NB(N,p)e^{2nN\beta(\frac{p}{N}-
+\frac{1}{2})^2}. 
+\end{equation}
+%
 Given a bipartition of the spins into two groups $A$ and $B$ containing $N_A$ 
 and $N-N_A$ spins, respectively, the reduced density matrix for $A$ is obtained 
 as~\cite{wilms-2012} 
 %
 \begin{equation}
-\rho_A\equiv\frac{1}{Z}\textrm{Tr}_B\sum\limits_{p,i}e^{N(\beta\frac{p}{N}-
+\rho_A\equiv\frac{1}{Z}\textrm{Tr}_B\sum\limits_{p,i}e^{2N\beta(\frac{p}{N}-
 \frac{1}{2})^2}|p,i\rangle\langle p,i|. 
 \end{equation}
 %
 By performing the trace over part $B$ one obtains 
 %
 \begin{equation}
+\label{rhoA}
 \rho_A=\sum\limits_{p_A,i_A}R(p_A)|p_A,i_A\rangle\langle p_A,i_A|,
 \end{equation}
 %
 where $|p_A,i_A\rangle$ form a basis for part $A$ of the system and 
 %
 \begin{equation}
-R(p_A)\equiv\frac{1}{Z}\sum\limits_{p_B=0}^{N-N_A}B(N-N_A,p_B)e^{N\beta
+R(p_A)\equiv\frac{1}{Z}\sum\limits_{p_B=0}^{N-N_A}B(N-N_A,p_B)e^{2N\beta
 (\frac{p_A}{N}+\frac{p_B}{N}-\frac{1}{2})^2}.
 \end{equation}
 %
+From~\eqref{rhoA} it is straightforward to obtain 
+%
+\begin{equation}
+\label{trrhoA}
+\textrm{Tr}\rho_A^n=\sum\limits_{p_A=0}^{N_A}B(N_A,p_A)R^n(p_A). 
+\end{equation}
+%
+Similarly, $\textrm{Tr}\rho^n_B$ is obtained from~\eqref{trrhoA} substituting 
+$A\to B$ and $N_A\to N-N_A$, while $\textrm{Tr}\rho^n_{A\cup B}\equiv\textrm{Tr}
+\rho^n$ is given in~\eqref{rhon}. The R\'enyi entropies $S_n$ and the mutual 
+informations ${\mathcal I}_n$ can be numerically constructed numerically 
+using~\eqref{trrhoA}, \eqref{rhon} and the definitions~\eqref{renyi-intro}
+\eqref{MI}. The numerical results for $S_2$ and ${\mathcal I}_2$ for a system with 
+$N=400$ spins are shown in Figure~\ref{renyi_clean} and Figure~\ref{mi_clean}, and 
+are in good agreement with the saddle point results. 
 
+Figure~\ref{sp_corr} focuses on the finite-size corrections to the saddle point 
+result for ${\mathcal I}_2$. We plot ${\mathcal I}_2-{\mathcal I}^{(sp)}_2$, with 
+${\mathcal I}_2^{(sp)}$ denoting the saddle point results (see Figure~\ref{mi_clean}), 
+versus $\beta$. We restrict ourselves to the situation with $\omega=N_A/N=1/2$, although 
+similar resutls are expected at different $\omega$. Clearly, ${\mathcal I}_2-
+{\mathcal I}_2^{(sp)}$ is vanishing at high temperature, whereas one has ${\mathcal I}_2-
+{\mathcal I}_2^{(sp)}\to\log(2)$ in the limit $\beta\to\infty$ (horizontal line). 
+Surprisingly, ${\mathcal I}_2-{\mathcal I}_2^{(sp)}$ diverges in the thermodynamic limit 
+for $\beta=1/2,2/3,1$ (vertical lines in the Figure), which are the critical 
+temperatures for the model on a booklet with $\omega=1,1/2,0$. 
+
+This divergence is logarithmic with $N$ as confirmed in Figure~\ref{clean_log} plotting 
+$|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|$ versus $\log(N)$ for fixed $\beta=1/2,2/3,1$. 
+Interestingly, the precise behavior depends on $\beta$. Specificaly, one has 
+$|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|\propto 1/4\log(N)$ for $\beta=1/2$ and 
+$|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|\propto 1/2\log(N)$ for $\beta=2/3$ and 
+$\beta=1$. Notice that this is dramatically different for the von Neumann mutual 
+information ${\mathcal I}=\lim_{n\to 1}{\mathcal I}_n$, which exhibits only one 
+divergent peak at $\beta=1$~\cite{wilms-2012}. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e

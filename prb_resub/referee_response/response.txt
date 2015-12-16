@@ -83,9 +83,11 @@ RESPONSE:
 	We thank the referee for noticing that. We moved the $\forall i...$  
 	in equation (8).
 
+REFEREE:
+-------
 
-3) Before (40), the sentence "..., one obtains a standard Landau
-theory" reads awkwardly.
+	3) Before (40), the sentence "..., one obtains a standard Landau
+	theory" reads awkwardly.
 
 RESPONSE:
 ========
@@ -187,10 +189,20 @@ RESPONSE:
 
 	Moreover, (2) can be interpreted as ratios of partition functions defined 
 	on the booklet. This is an exact correspondence, and it is not related to 
-	any notion of locality. To clarify this point we now show explicitly the 
-	equivalence between the booklet construction and (2) in the beginning of 
+	any notion of locality. To clarify this point we now demonstrate explicitly 
+	the equivalence between the booklet construction and (2) in the beginning of 
 	section 2. From the derivation it is clear that the booklet construction 
 	is meaningful also in mean-field models. 
+
+	A further direct check is provided in appendix B where we discuss (following 
+	the referee suggestion) the classical Renyi entropy and the mutual information 
+	for the infinite-range clean (i.e., without disorder) Ising model. For instance, 
+	in Figure 12 and Figure 13 the continuous lines are obtained using the booklet 
+	construction, while the symbols (rhombi) are the results using the definition 
+	of the classical Renyi entropy and mutual information (formulas (2) and (4) 
+	in the manuscript). The agreement, apart for finite-size corrections, 
+	confirms the applicability of the booklet construction for infinite-range 
+	models. 
 
 	Besides its meaning from the information theory point of view, from the 
 	physics perspective the mutual information provides a lot of information 
@@ -277,7 +289,8 @@ REFEREE:
 RESPONSE:
 ========
 
-	The only study we are aware of is in 
+	We would like to thank the referee for this very useful comment. The only study we 
+	are aware of is in 
 
 		J. Wilms, J. Vidal, F. Verstraete, S. Dusuel, J. Stat. Mech. P01023 (2012)
 
@@ -285,19 +298,48 @@ RESPONSE:
 	(LMG) model. In particular, they provide results for the case with zero magnetic field, 
 	where the model becomes equivalent to a classical infinite-range Ising model. However, 
 	the authors investigate the standard mutual information which is obtained from the 
-	full reduced density matrix of the subsystem A. 
+	Shannon entropy, instead of the classical Renyi one. 
 
-	In contrast with our results the authors find that the mutual information is finite 
-	away from the critical point and diverges logarithmically at the critical point. 
+	In contrast with our results the authors find that the Shannon mutual information is 
+	finite at any temperature except at the critical point where it diverges logarithmically. 
 
-	In our case this logarithmic correction might be subleading to the volume law. 
+	Motivated by the referee observation and the results of Wilms et al we now discuss 
+	in the new version of the manuscript the Renyi entropy and mutual information in the 
+	clean infinite-range Ising model (in appendix B). We find that, in constrast with the 
+	Shannon mutual information, the Renyi one exhibits a volume law for any temperature, 
+	similar to our result for the S-K model. Moreover, I_2 exhibits intriguing subleading 
+	(i.e., subextensive) contributions. Specifically, we numerically observe that these 
+	corrections are logarithmically divergent with system size N. Moreover, they are 
+	present at three values of the inverse temperature. Their precise behaviors is given 
+	as 
+
+		beta=1/2     ---->  1/4 log(N)
+
+		beta=1/(1+w) ---->  1/2 log(N)
+
+		beta=1	     ---->  1/2 log(N)
+
+		
+	Notice that beta=1/(1+w) corresponds to the critical temperature on the 2-sheets 
+	booklet with aspect ratio w. 
+
+	These new results raise the question whether similar subleading corrections are 
+	present in the S-K model, as also noticed by the referee. Importantly, it would be 
+	interesting to determine the prefactor of these logarithmic corrections to check 
+	whether they are affected by the disorder. However, one should notice that to 
+	investigate analytically this issue one should go beyond the saddle point 
+	approximation, which at least in the low-temperature regioon requires knowing the 
+	full replica-symmetry-broken solution of the model. 
+
+	Another possibility is to focus at beta=1/2 where, in analogy with the clean case, 
+	a logarithmic correction is expected and where the high-temperature replica symmetric 
+	result fully captures the saddle point behavior. The strategy would be to consider the 
+	deviations from the saddle point in the Monte Carlo data. However, we checked that 
+	our numerical results are not precise enough to determine the corrections and further 
+	numerical effort would be needed to clarify this point. 
 
 
 
-
-	TO BE COMPLETED
-
-	About the maximum 
 
 		J. Wilms, J. Vidal, F. Verstraete, S. Dusuel, J. Stat. Mech. P010011 (2011)
 
@@ -311,19 +353,17 @@ REFEREE:
 RESPONSE:
 ========
 
-	We thank the referee for this useful comment. 
-	Eq. (2), and later Eq. (5) via the replica trick, are both quite explicit. 
-	Combined with Eq. (4) this precisely described the mutual information in 
-	the SK model. The non-locality of the interactions does 
-	not affect the definition compared with the usual one for local models. 
-	The definition of region A is however less obvious, and in the case of 
-	this work, we simply take it as an arbitrary set of points, rather than 
-	one that is spatially connected. As it is clear from the manuscript 
-	the best way to calculate the mutual information is using (4) calculating 
-	the three different contributions S(A) S(B) and S(AUB) separately. These 
-	correspond to ratios of partition functions on the booklet with different 
-	aspect ratio omega. As this was not clearly stated in the manuscript we now 
-	have written it explicitly in section 2 
+	We thank the referee for this useful comment. Eq. (2), and later Eq. (5) via the replica 
+	trick, are both quite explicit. Combined with Eq. (4) they give the mutual information in 
+	the SK model. The non-locality of the interactions does not affect the definition compared 
+	with the usual one for local models. The definition of region A is however less obvious, 
+	and in the case of this work, we simply take it as an arbitrary set of points, rather than 
+	one that is spatially connected. As it is clear from the manuscript the best way to calculate 
+	the mutual information is using (4) calculating the three different contributions S(A) S(B) 
+	and S(AUB) separately. These correspond to ratios of partition functions on the booklet with 
+	different aspect ratio w. In particular, S(AUB) is obtained from the ratio Z(w=1)/Z(w=0). 
+	As this was not clearly stated in the manuscript we now have written it explicitly in 
+	section 2 
 
 		"The mutual information ${\mathcal I}_n(A,B,\beta)$ is obtained in terms of the booklet 
 		partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}. 
@@ -339,75 +379,55 @@ RESPONSE:
 REFEREE:
 -------
 
-	(3). The authors summarized that the entropy is proportional to the
-	system size by using the numerical analysis. Since the entropy is
-	calculated from the logarithm of the partition function, the result
-	looks trivial for me. As far as I understand, the subleading term is
-	important to find the boundary law behavior in the local (non
-	mean-field) models. (The leading term is canceled out by the
-	definition of the mutual information). Do the authors consider that
-	the subleading term is not important in the present system? I expect
-	that some universal properties exist in the subleading terms.
+	(3). The authors summarized that the entropy is proportional to the system size by using the 
+	numerical analysis. Since the entropy is calculated from the logarithm of the partition function, 
+	the result looks trivial for me. As far as I understand, the subleading term is	important to find 
+	the boundary law behavior in the local (non mean-field) models. (The leading term is canceled out 
+	by the definition of the mutual information). Do the authors consider that the subleading term is 
+	not important in the present system? I expect that some universal properties exist in the subleading 
+	terms.
 
 RESPONSE:
 ========
 
-	We agree that in general the leading term is proportional to the 
-	system size is an obvious result. In the manuscript we report 
-	the entropy only as a sanity check of our calculations.  We also 
-	agree that it is likerly that the subleading terms contain 
-	more universal information. We thank the referee for raising this 
-	point. Although the calculation of the subleading corrections to 
-	the entropy and the mutual information is possible in principle, 
-	it requires going beyond the saddle point approximation described 
-	in section III C. This should be straightforward in the paramagnetic 
-	phase although it would require a considerable amount of work in 
-	below the critical point. Notice that the same problem is 
-	challenging in the regular SK model. We think that this goes 
+	We agree that in general the leading term is proportional to the system size is an obvious result. 
+	In the manuscript we report the entropy only as a sanity check of our calculations.  We also agree 
+	that it is likely that the subleading terms contain more universal information. We thank the referee 
+	for raising this point. Although the analytical calculation of the subleading corrections to the entropy 
+	and the mutual information is possible in principle, it requires going beyond the saddle point approximation 
+	described in section III C. This should be straightforward in the paramagnetic phase although it would 
+	require a considerable amount of work below the critical point. Notice that the same problem of 
+	calculating saddle point corrections is challenging in the regular SK model. We think that this goes 
 	beyond the scope of the paper and it is suitable for future work. 
-
-	PUT REFERENCE TO PAPERS STUDYING FINITE SIZE IN SK 
 
 
 REFEREE:
 -------
 
-	(4). The authors study the aspect-ratio dependence of the result
-	closely. It is clearly understood that the limits omega=0 and 1
-	reduces to the standard results. This means that we can find a result
-	interpolating their limits in the present problem. I do not expect any
-	interesting behavior between the limits. What did the authors expect
-	as the result and what do the authors consider the obtained results
-	interesting, other than the crossing behavior?
+	(4). The authors study the aspect-ratio dependence of the result closely. It is clearly understood that 
+	the limits omega=0 and 1 reduces to the standard results. This means that we can find a result interpolating 
+	their limits in the present problem. I do not expect any interesting behavior between the limits. What 
+	did the authors expect as the result and what do the authors consider the obtained results interesting, 
+	other than the crossing behavior?
 
 RESPONSE:
 ========
 
-	We agree that omega=0 and 1 are trivial results, at least in terms of 
-	the standard SK model, and that one would expect that the results between 
-	these two points should vary smoothly, and this is reflected in the data. 
-	What was not obvious was the form of the interpolation between these two 
-	points. The same statement of the referee would apply to local models.  
-	However, as it is clear from Ref [29], in that case the shape function of the mutual 
-	information contains universal behavior if the parent model is critical and 
-	described by a conformal field theory. In our study we investigate the 
-	shape function in a non-trivial disordered model. Notice that this functions 
-	have been also investigated in clean (withoud disorder) mean field models 
-	in 
+	We agree that omega=0 and 1 are trivial results, at least in the standard SK model, and that one would 
+	expect that the results between these two points should vary smoothly, and this is reflected in our data. 
+	However, different aspect ratios omega are needed in the booklet constructions in order to construct the 
+	mutual information. We should also stress that the functional dependence of the mutual information on 
+	omega is not trivial. The same statement of the referee would apply to local models. However, as it is clear 
+	from Ref [29], the shape function of the mutual information contains universal behavior if the 
+	parent model is critical and described by a conformal field theory. In that respect, we believe it was 
+	worth examining the aspect ratio behavior in the SK model. Notice that this functions have been also 
+	investigated in clean (withoud disorder) mean field models in 
+
 		O. Cohen, V. Rittenberg, T. Sadhu J Phys A 48 055002 (2015) 
 
 		J. Wilms, J. Vidal, F. Verstraete, S. Dusuel, J. Stat. Mech. P01023 (2012)
 
-
-	In that respect, 
-	we believe it was worth examining the aspect ratio behavior in the SK model. 
-	The difference of course is that since the gluing procedure is a bulk effect, 
-	the entire system may go through a phase transition as a function of omega, 
-	rather than being able to view the system as two parts in contact with each 
-	other where one part is critical. In this light, it might be some non-constant 
-	temperature cut in (omega,beta) that shows the most interesting behavior.
-
-
+	
 REFEREE:
 -------
 
@@ -419,29 +439,62 @@ REFEREE:
 RESPONSE:
 ========
 
-	The non surprising result would have been if 1-RSB would have reproduced the results 
-	of the Monte Carlo simulation. The fact that 2-RSB was necessary shows the non-trivial 
-	nature of the transition in the replicated geometry, and represents an expanded set of 
-	assumptions compared to the base model. The procedure for handling disorder, usually done 
-	via integration over fictitious replicas, in the context of the replica trick, where one 
-	has physical replicas, is non-trivial, but grounding such theoretical calculations with 
-	numerics is necessary. In this respect, we see the SK model with the replica trick as a 
-	base case for studying replica models  in glassy systems, in the same way that the SK 
-	model itself is a prototype for understanding standard glassy systems.
+	From our answer to point 1) it should be clear now that our work is well grounded from the information 
+	point of view as we are studying the standard classical Renyi entropies and mutual information. These 
+	quantities have been shown to contain universal information for instance in local critical models described 
+	a conformal field theory (Ref. [29]). Again, we should stress that their behavior in disordered and glassy systems has 
+	not been investigated in the previous literature. We chose to focus on the SK model which is one of the few 
+	exactly solved models for spin glasses and the base case for understanding glassy behavior, and its solution, 
+	although the model is mean field, exhibits quite complex features. 
 
+	We have found that the Renyi entropy S_2 and the mutual information I_2 have a volume law and we provided analytical 
+	results using the saddle point approximation. This can be consired as a zeroth order starting point because, as 
+	correctly observed by the referee and as clear from our results on the clean infinite range Ising model (appendix B), 
+	further interesting information could be contained in the finite-size effects. However, already the saddle point 
+	results for S_2 and I_2 are non trivial since they reflect the replica symmetry breaking pattern of the solution 
+	of the SK model. We should stress that we only provided the 1-RSB approximation for these quantities. The fact that 
+	the 2-RSB is necessary at low temperatures confirms the fact that our results are interesting. 
+
+	Our results are essential in order to go beyond the saddle point, studying subextensive correctins in S_2 and I_2. 
+	This is confirmed by the results that we provide in appendix B where we show that already for the clean infinite 
+	range Ising model the mutual information contains logarithmically divergent (with system size) terms which reflect 
+	critical behaviors. Our work raises the important question as to whether such subextensive contributions are present 
+	at glassy transitions. Moreover, a related interesting question is if disorder renormalizes the prefactor of this 
+	logarithmic behavior. Additionally, for the SK model it is interesting to understand whether the replica-symmetry-breaking 
+	mechanism affects this prefactor. Besides being interesting in their own, our results are necessary in order to 
+	understand the subleading  of S_2 and I_2. 
+	 
 REFEREE:
 -------
 
-	(6). The authors only focused on the result at n=2. It would be
-	interesting if the authors mention the n-dependence of the result.
-	Especially, the limit n=1 would give a nontrivial result and is
-	interesting. I expect that it wouldn't be difficult to analyze the
-	replica symmetric solution.
+	(6). The authors only focused on the result at n=2. It would be	interesting if the authors mention the n-dependence of 
+	the result. Especially, the limit n=1 would give a nontrivial result and is interesting. I expect that it wouldn't 
+	be difficult to analyze the replica symmetric solution.
 
 RESPONSE:
 ========
 
-	TO BE DONE. 
+	We thank the referee for asking about this point. In fact we thought about investigating the analytic continuation 
+	n->1 to obtain the Shannon Renyi entropy and mutual information. The referee question is interesting especially 
+	especially in order to compare with the results for the clean infinite range Ising model obtained in Wilms et al. 
+	It has been shown in fact in ... that the Shannon mutual information is O(1) (i.e., not extensive) at any temperature 
+	except for the critical point at beta=1 whete it diverges logarithmically with system size. 
+
+	Following the referee suggestion we now provide results for the analytic continuation n->1. First, one should observe 
+	that in the limit of infinite temperature one has from formula () in our paper that 
+
+	   I_n(beta)/N = beta^2 omega(1-omega)n/2    for beta --> 0
+
+	which implies that 
+
+	   I_1/N = beta^2 omega(1-omega)/2 
+
+	i.e., the Shannon entropy obeys a volume law in the paramagnetic phase. This is in contrast with the result in the 
+	clean Ising reported in Wilms et al and it is apparently an effect of the disorder. This suggests that the subextensive 
+	behavior for I_1 found for the clean system is an effect of fine tuned cancellations that do not happen in presence of 
+	disorder. 
+
+	In the paper we now included the saddle point equation in the high-temperature phase (equation (31)). 
 
 
 REFEREE:
@@ -456,7 +509,9 @@ RESPONSE:
 ========
 
 	We would like to thank the referee for this useful comment. We now 
-	summarize the main results of the paper in the conclusions. 
+	summarize the main results of the paper in the conclusions and not in the 
+	introduction, while in the introduction we stress better the physical motivation 
+	and the results of the work.  
 
 
 REFEREE:
