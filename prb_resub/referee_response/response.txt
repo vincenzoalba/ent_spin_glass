@@ -476,16 +476,15 @@ RESPONSE:
 
 	We thank the referee for asking about this point. In fact we thought about investigating the analytic continuation 
 	n->1 to obtain the Shannon Renyi entropy and mutual information. The referee question is interesting especially 
-	especially in order to compare with the results for the clean infinite range Ising model obtained in Wilms et al. 
+	in order to compare with the results for the clean infinite range Ising model obtained in Wilms et al. 
 	It has been shown in fact in ... that the Shannon mutual information is O(1) (i.e., not extensive) at any temperature 
 	except for the critical point at beta=1 whete it diverges logarithmically with system size. 
 
-	Following the referee suggestion we now provide results for the analytic continuation n->1. First, one should observe 
-	that in the limit of infinite temperature one has from formula () in our paper that 
+	Following the referee suggestion we now provide results for the analytic continuation n->1. In the new version of 
+	the manuscript in section IV B we discuss the analytic continuation for the paramagnetic replica symmetric case, 
+	although this could be done as well in the replica symmetry broken region of the phase diagram. 
 
-	   I_n(beta)/N = beta^2 omega(1-omega)n/2    for beta --> 0
-
-	which implies that 
+	From the solution we observe that in the limit of infinite temperature one has 
 
 	   I_1/N = beta^2 omega(1-omega)/2 
 
@@ -493,8 +492,6 @@ RESPONSE:
 	clean Ising reported in Wilms et al and it is apparently an effect of the disorder. This suggests that the subextensive 
 	behavior for I_1 found for the clean system is an effect of fine tuned cancellations that do not happen in presence of 
 	disorder. 
-
-	In the paper we now included the saddle point equation in the high-temperature phase (equation (31)). 
 
 
 REFEREE:

@@ -651,9 +651,7 @@ the replica symmetric (RS) approximation. In subsection~\ref{para-section} we fo
 on the high temperature phase, where this approximation is exact, and the 
 behavior of the model is fully determined by the diagonal part of the overlap 
 tensor $q_{\gamma\gamma'}^{rr'}$ (see section~\ref{replica-sec} for its 
-definition). In~\ref{shannon} we perform the analytic continuation $n\to 1$, 
-which allows to obtain the Shannon mutual information $[{\mathcal I}_1]$. 
-The generic structure of $q_{\gamma\gamma'}^{rr'}$ 
+definition). The generic structure of $q_{\gamma\gamma'}^{rr'}$ 
 within the RS ansatz  is discussed in subsection~\ref{rs-section}. This allows us 
 to determine the critical temperature of the paramagnetic-glassy transition. 
 For simplicity, here and in the following sections we restrict ourselves to zero 
@@ -778,32 +776,26 @@ the free energy $[F_{para}(\omega,n,\beta)]$ as
 \begin{multline}
 [F_{para}(\omega,n,\beta)]=N\Big\{
 n\log(2)-\omega(n-1)\log(2)\\+
-\frac{\beta^2}{2}\Big(\frac{n}{2}-\frac{q_0^2}{2}(n^2-n)
-+\omega q_0n^2-q_0n\Big)\\
+\beta^2\Big(\frac{n}{4}-\frac{q_0^2}{4}(n^2-n)
++\frac{\omega}{2}q_0n^2-q_0n\Big)\\
 +(1-\omega)\log\int Dz\cosh^n(z\sqrt{q_0}\beta)
 \Big\},
 \label{ht-logZ}
 \end{multline}
 %
 where $q_0$ is determined by solving the saddle point condition $\partial[F_{para}
-(\omega,n,\beta)]/\partial q_0=0$. $[F_{para}(\omega,n,\beta)]$ can be written in 
-terms of simple functions using that 
+(\omega,n,\beta)]/\partial q_0=0$. The saddle point equation reads 
+%
+\begin{equation}
+\end{equation}
+%
+where we used that 
 %
 \begin{multline}
-\frac{1}{\sqrt{2\pi}}\int Dz\cosh^n(z\sqrt{q_0}\beta)=\\
-\frac{1}{2^{n-1}}\sum\limits_{k=0}^{\lfloor n/2\rfloor-1}\frac{\Gamma(n+1)}
-{\Gamma(k+1)\Gamma(n-k+1)}e^{2\beta^2 q_0(n/2-k)^2}\\
-+\frac{2^{-2\left\lfloor n/2\right\rfloor}\Gamma(n+1)}{\Gamma(n-\lfloor n/2\rfloor+1)
-\Gamma(\lfloor n/2\rfloor+1)}e^{2\beta^2q_0(n/2-\lfloor n/2\rfloor)^2}. 
-\end{multline}
-%
-The saddle point equation for $q_0$ reads 
-%
-\begin{multline}
-\label{sp-g}
-0=\beta\big(\omega n-1-q_0(n-1)\big)\\
-+(1-\omega)\frac{\int Dz\cosh^{n-1}(z\sqrt{q_0}\beta)\sinh(z\sqrt{q_0}\beta)z}
-{\sqrt{q_0}\int Dz\cosh^n(z\sqrt{q_0}\beta)}. 
+\frac{1}{\sqrt{2\pi}}\int Dz\cosh^n(z\sqrt{q_0}\beta)= 
+2^{-\left\lfloorn/2\right\rfloor}\frac{\Gamma(n+1)}{\Gamma^2\big(\frac{n}{2}+1\big)}\\
++\frac{1}{2^{n-1}}\sum\limits_{k=0}^{\frac{n}{2}-1}\frac{\Gamma(n+1)}
+{\Gamma(k+1)\Gamma(n-k+1)}e^{2\beta^2 q_0 \big(\frac{n}{2}-k\big)^2}
 \end{multline}
 %
 For the $2$-sheets booklet (i.e., $n=2$) this is  
@@ -816,6 +808,7 @@ q_0=\omega+(1-\omega)\tanh(\beta^2 q_0).
 %
 Alternatively, Eq.~\eqref{saddle-high-t} can be obtained by substituting the 
 ansatz~\eqref{high-t-q} in Eqs.~\eqref{saddle-final}~\eqref{saddle-final-a}. 
+
 Clearly, for two independent copies of the S-K model, i.e., $\omega=0$,  
 Eq.~\eqref{saddle-high-t} gives $q_0=0$ for $\beta\le1$, whereas 
 one has $q_0\ne0$ for $\beta>1$. On the other hand, for $\omega=1$ 
@@ -824,45 +817,6 @@ is plotted as a function of $\omega$ in Fig.~\ref{RSB0_saddle_ht}. For $\beta=0$
 is $q_0=\omega$ (straight line in the Figure). In the low-temperature limit 
 one has $q_0\to 1$, for any $\omega$. In particular, it is straightforward 
 to check that  $q_0\approx 1-2(1-\omega)\exp(-2\beta^2)$ for $\beta\to\infty$. 
-
-
-%##########################################################################
-\subsection{The analytic continuation $n\to 1$}
-\label{shannon}
-
-It is interesting to consider the analytic continuation $\lim_{n\to 1} [S_n]$ 
-and $\lim_{n\to 1}[{\mathcal I}_n]$ to obtain the Shannon entropy and mutual 
-information. In the limit $n\to 1$, $F_{para}(\omega,n,\beta)$ (see~\eqref{ht-logZ}) 
-does not depend on $q_0$ and $\omega$,  as expected. This holds for any 
-$\beta$ even including the effects of the replica symmetry breaking. However, 
-the Shannon entropy $S_1(A)$ (and the mutual information ${\mathcal I}_1$ thereof) 
-is non trivial due to the prefactor $1/(1-n)$ in~\eqref{renyi}. In order to 
-obtain $S_1(A)$ one should consider $1/(1-n)[F_{para}(\omega,n,\beta)]$ 
-performing carefully the limit $n\to 1$. The result reads 
-%
-\begin{multline}
-\label{sh-F}
-\frac{[F_{para}(\omega,1,\beta)]}{N(1-n)}=
-\omega\log(2)+
-\frac{\beta^2}{2}\Big(\frac{q_0^2}{2}n
--\omega q_0(n+1)+q_0\Big)\\
--(1-\omega)\frac{\int Dz\cosh(z\sqrt{q_0}\beta)
-\log\cosh(z\sqrt{q_0}\beta)}{\int Dz\cosh(z\sqrt{q_0\beta})}. 
-\end{multline}
-%
-The saddle point equation~\eqref{sp-g} for $q_0$ now becomes  
-%
-\begin{multline}
-(\omega-q_0)\exp\big(\beta^2\frac{q_0}{2}\big)
-+(1-\omega)\int Dz\Big(\frac{z}{\beta\sqrt{q_0}}\sinh(z\sqrt{q_0}\beta)\\
--\cosh(z\sqrt{q_0}\beta)\Big)\log\cosh(z\sqrt{q_0}\beta)=0. 
-\end{multline}
-%
-Notice that in the limit $\beta\to 0$ one has $q_0\to\omega$, which implies,   
-using~\eqref{sh-F} and~\eqref{MI}, the volume-law behavior $[{\mathcal I}_1]
-\to\beta^2/2\omega(1-\omega)N$. This in constrast with the clean 
-case~\cite{wilms-2012}, where ${\mathcal I}_1={\mathcal O}(1)$ for any 
-$\beta$ away from the critical point at $\beta_c=1$. 
 
 
 %##########################################################################
@@ -1696,8 +1650,8 @@ G_{1}(z')\Theta^{m_1}(z,z')\\
 \label{clean-is}
 
 Here we discuss the R\'enyi entropy $S_2$ and the associated mutual information 
-${\mathcal I}_2$ in the infinite-range Ising model without disorder, defined by 
-the hamiltonian 
+${\mathcal I}_2$ in the infinite-range Ising model without disorder, i.e., the 
+Curie-Weiss (CW) model, defined by the hamiltonian 
 %
 \begin{equation}
 \label{is-clean}
@@ -1711,24 +1665,23 @@ two phases are separated by a phase transition at $\beta_c=1$.
 We consider both the situations with finite $N$ as well as the 
 thermodynamic limit. For finite $N$ we provide exact numerical results for 
 $S_2$ and ${\mathcal I}_2$, while we address the thermodynamic limit using 
-the booklet construction (see~\ref{booklet}) and the saddle point 
-approximation. 
+the booklet construction and the saddle point approximation. 
 
 Similar to the S-K model, we find that the para-ferro transition persists on 
 the booklet, and the critical temperature depends on the booklet ratio 
 $\omega$. The R\'enyi entropy $S_2$ and the mutual information ${\mathcal 
 I}_2$ are extensive, and their densities $S_2/N,{\mathcal I}_2/N$ finite 
-and smooth at any temperature. Notice that this different for the Shannon 
-mutual information~\cite{wilms-2012} ${\mathcal I}$, which is {\it finite} 
-(i.e., ${\mathcal I}\sim {\mathcal O}(1)$) in the whole phase diagram, 
-except for a logarithmically divergent behavior (with system size) at the 
-critical point $\beta_c=1$. 
+and smooth at any temperature. Notice that this in constrast with what is 
+obtained for the von Neumann mutual information~\cite{wilms-2012} ${\mathcal I}$, 
+which is {\it finite} (i.e., ${\mathcal I}\sim {\mathcal O}(1)$) in the whole phase 
+diagram, except for a logarithmically divergent behavior at the critical 
+point at $\beta_c=1$. 
 
-Finally, we show that the information about the phase transition is encoded in 
-the subleading, i.e. $o(N)$, corrections of ${\mathcal I}_2$. Precisely, 
-logarithmically divergent contributions are present at $\beta=1/2,1$ and 
-$\beta=\beta_c(\omega)$, with $\beta_c(\omega)$ the critical temperature of the 
-model on the booklet at fixed aspect ratio $\omega$. 
+However, information about the phase transition is encoded in the subleading, 
+i.e. $o(N)$, corrections of ${\mathcal I}_2$. Precisely, logarithmically 
+divergent corrections are present at $\beta=1/2,1$ and $\beta=\beta_c(\omega)$, 
+with $\beta_c(\omega)$ the critical temperature of the model on the booklet 
+with aspect ratio $\omega$. 
 
 
 
@@ -1736,9 +1689,9 @@ model on the booklet at fixed aspect ratio $\omega$.
 %##########################################################################
 \subsection{Saddle point approximation}
 
-We first discuss the thermodynamic limit. The calculation of the booklet partition 
-function $Z(\omega,n,\beta)$ (see section~\ref{booklet}) can be done using the same 
-techniques as in section~\ref{the-model}. The result reads 
+The calculation of the booklet partition function $Z(\omega,n,\beta)$ 
+(see section~\ref{booklet}) can be done using the same techniques as in 
+section~\ref{the-model}. The result reads 
 %
 \begin{multline}
 \label{clean-is-Z}
@@ -1747,11 +1700,11 @@ Z(\omega,n,\beta)=
 \int\prod_{\delta}dz_\delta\exp N\Big\{\\
 -\sum_\delta\Big[\frac{z^2_\delta}{2\beta}
 -(1-\omega)\log(2\cosh z_\delta)\Big]+\omega\log(2\cosh\sum_\delta z_\delta)
-\Big\}, 
+\Big\}.
 \end{multline}
 %
-with $\delta=1,\dots,n$. Using the saddle point approximation, from~\eqref{clean-is-Z} 
-one obtains $F(\omega,n,\beta)\equiv\log Z(\omega,n,\beta)$ as 
+Using the saddle point approximation, from~\eqref{clean-is-Z} one obtains 
+$F(\omega,n,\beta)\equiv\log Z(\omega,n,\beta)$ as 
 %
 \begin{multline}
 \label{clean-is-F}
@@ -1779,12 +1732,12 @@ For $n=2$, the system~\eqref{clean-is-spe} becomes
 %
 The system has the solutions $z_1=z_2=z_s=0$ for $\beta\le\beta_c=1/(1+\omega)$, 
 and $z_1=z_2=z_s\ne 0$ for $\beta>\beta_c$. Note that $\beta_c$ is different 
-in presence of disorder (see~\eqref{tc}). 
+in presence of disorder (compare with~\eqref{tc}). 
 
 The solution $z_s$ of the saddle point equations~\eqref{clean-is-spe} is shown 
-in Fig.~\ref{saddle_clean} as a function of $\beta$ for $\omega=0,1/2,1$. 
-The vertical-dotted line is $\beta_c$ for $\omega=1/2$. Notice that at low 
-temperatures $z_s$ is independent on $\omega$, and one has $z_s\sim\beta$. 
+in Fig.~\ref{saddle_clean} for $\omega=0,1/2,1$. The vertical-dotted line 
+is $\beta_c$ for $\omega=1/2$. Notice that at low temperatures $z_s$ is 
+independent on $\omega$, and one has $z_s\sim\beta$. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
 \begin{figure}[t]
@@ -1845,8 +1798,8 @@ critical point $\beta_c=1$ (see Ref.~\onlinecite{wilms-2012}).
  limit: the classical R\'enyi entropy density $S_2/N$, with $N$ the total number of spins 
  on a single sheet of the booklet. $S_2/N$ is plotted against the inverse temperature 
  $\beta$ and for booklet aspect ratio $\omega=1/4,1/2,1$. Note tht at high temperature 
- $S_2=\omega\log(2)$. The lines are obtained using the saddle point approximation, while 
- the full symbols denote the exact numerical results for a finite system with $N=400$. 
+ $S_2=\omega\log(2)$. The full symbols denote the exact numerical results for a finite 
+ system with $N=400$. 
 }
 \label{renyi_clean}
 \end{figure}
