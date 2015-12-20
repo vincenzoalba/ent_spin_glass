@@ -291,11 +291,12 @@ Clearly, one has $S_n(A)\equiv1/(n-1)(\log(F(A,n,\beta))-n\log(F(\beta)))$, wher
 $-1/\beta$) to the free energy of the model on the booklet and on the plane, respectively.
 
 The mutual information ${\mathcal I}_n(A,B,\beta)$ is obtained in terms of the booklet 
-partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}, where $S_n(B)$ is 
-obtained from~\eqref{renyi} by exchanging $A$ and $B$. Notice also that in~\eqref{renyi}  
-$Z(A\cup B,n,\beta)\equiv Z(n\beta)$ is the partition function of the model on the booklet 
-with all the $n$ sheets identified, equivalently on a single sheet but at temperature 
-$n\beta$. 
+partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}. 
+%%%
+Clearly, $S_n(B)$ (cf. Eq.~\eqref{MI}) is obtained from~\eqref{renyi} and exchanging 
+$A$ and $B$. Notice also that in~\eqref{renyi}  $Z(A\cup B,n,\beta)\equiv Z(n\beta)$ 
+is the partition function of the model on the booklet with all the $n$ sheets identified, 
+equivalently on a single sheet but at temperature $n\beta$. 
 %%%
 Notice that the disorder-averaged 
 mutual information $[{\mathcal I}_n]$ and the R\'enyi entropy $[S_n]$ are directly related to 
@@ -793,10 +794,9 @@ terms of simple functions using that
 \frac{1}{2^{n-1}}\sum\limits_{k=0}^{\lfloor n/2\rfloor-1}\frac{\Gamma(n+1)}
 {\Gamma(k+1)\Gamma(n-k+1)}e^{2\beta^2 q_0(n/2-k)^2}\\
 +\frac{2^{-2\left\lfloor n/2\right\rfloor}\Gamma(n+1)}{\Gamma(n-\lfloor n/2\rfloor+1)
-\Gamma(\lfloor n/2\rfloor+1)}e^{2\beta^2q_0(n/2-\lfloor n/2\rfloor)^2}, 
+\Gamma(\lfloor n/2\rfloor+1)}e^{2\beta^2q_0(n/2-\lfloor n/2\rfloor)^2}. 
 \end{multline}
 %
-where $\Gamma(x)$ denotes the Euler Gamma function. 
 The saddle point equation for $q_0$ reads 
 %
 \begin{multline}
@@ -1311,9 +1311,7 @@ is in good agreement with the Monte Carlo data, at least up to $\beta\approx 2$.
 
 We now turn to discuss the behavior of the classical R\'enyi entropies 
 (cf. Eq.~\eqref{renyi}). Here we restrict ourselves to the second R\'enyi 
-entropy $[S_2]$, which is obtained in terms of the booklet partition function 
-$Z(\omega,2,\beta)$ (see section~\ref{booklet}) as $-\log(Z(\omega,2,\beta)/Z(0,2,\beta))$. 
-Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
+entropy $[S_2]$. Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
 there is no well defined boundary between the two parts $A$ and $B$ of the system 
 (unlike in local spin models). With this in mind we assume that we will find volume law 
 behavior $[S_2]\propto N$, and consider the entropy per spin 
@@ -1721,8 +1719,8 @@ the booklet, and the critical temperature depends on the booklet ratio
 $\omega$. The R\'enyi entropy $S_2$ and the mutual information ${\mathcal 
 I}_2$ are extensive, and their densities $S_2/N,{\mathcal I}_2/N$ finite 
 and smooth at any temperature. Notice that this different for the Shannon 
-mutual information~\cite{wilms-2012} ${\mathcal I}_1$, which is {\it finite} 
-(i.e., ${\mathcal I}_1\sim {\mathcal O}(1)$) in the whole phase diagram, 
+mutual information~\cite{wilms-2012} ${\mathcal I}$, which is {\it finite} 
+(i.e., ${\mathcal I}\sim {\mathcal O}(1)$) in the whole phase diagram, 
 except for a logarithmically divergent behavior (with system size) at the 
 critical point $\beta_c=1$. 
 
@@ -1811,7 +1809,8 @@ F(\omega,n,\beta))/(n-1)$ using~\eqref{clean-is-F} and~\eqref{renyi}.
 Figure~\ref{renyi_clean} plots the entropy density $S_2/N$ versus the inverse 
 temperature $\beta$. $S_2$ exhibits a volume-law behavior $S_2\propto N$ for 
 all values of $\beta$ and $\omega$. The different curves correspond to different 
-booklet aspect ratios $\omega$. For $\beta\le\beta_c$ one has the flat behavior 
+booklet aspect ratios $\omega$. Clearly, $S_2$ exhibits the volume-law behavior 
+$S_2\propto N$ at all temperatures. For $\beta\le\beta_c$ one has the flat behavior 
 $S_2=\omega\log(2)$, whereas $S_2$ is vanishing in the low-temperature regime. 
 The full symbol (rhombi) in Figure~\ref{renyi_clean} are exact results for a 
 booklet with $N=400$ spins per sheet (see next section), and are in good 
@@ -1823,11 +1822,18 @@ ratios $\omega=1/20,1/4,1/2$, while the full symbols are the exact results for
 the booklet with $N=400$ spins per sheet. Clearly, ${\mathcal I}_2/N$ is exactly zero 
 in the high-temperature region for $\beta\le1/2$, it exhibits at maximum 
 at $\beta\approx 1$, and it is vanishing in the limit $\beta\to\infty$. 
+Similar to Figure~\ref{reny_clean} the full symbols are exact results for 
+a booklet with $N=400$ spins per sheet. 
 
-Finally, one should stress that a dramatically different behavior is observed 
-in the Shannon mutual information ${\mathcal I}_1\equiv \lim_{n\to 1}{\mathcal I}_n$. 
-Specifically, ${\mathcal I}_1$ is finite in the thermodynamic limit, and it only 
-exhibits a logarithmic divergence as ${\mathcal I}=1/4\log(N)$ at the 
+Notice that similar features are observed for the S-K model (see 
+section~\ref{I2-section}). In particular, one should observe that ${\mathcal I}_2/N$ 
+does not exhibit any crossing at the critical point $\beta_c$. However, the information 
+about critical behavior is encoded in the finite-size corrections of ${\mathcal I}_2/N$ 
+(see next section), which are neglected in the saddle point treatment. 
+Finally, one should also stress that a dramatically different behavior is observed 
+in the mutual information obtained from the von Neumann entropy ${\mathcal I}\equiv 
+\lim_{n\to 1}{\mathcal I}_n$. Specifically, no volume law is present for ${\mathcal I}$, 
+which, instead, exhibits a logarithmic divergence as ${\mathcal I}=1/4\log(N)$ at the 
 critical point $\beta_c=1$ (see Ref.~\onlinecite{wilms-2012}). 
 
 
@@ -1864,27 +1870,29 @@ critical point $\beta_c=1$ (see Ref.~\onlinecite{wilms-2012}).
 %##########################################################################
 \subsection{R\'enyi entropy and mutual information: Exact treatment}
 
-For finite $N$, $S_2$ and ${\mathcal I}_2$ can be calculated exactly using the 
-results obtained in Ref.~\onlinecite{wilms-2012}. The eigenstates 
+For finite number of spins $N$, $S_2$ and ${\mathcal I}_2$ can be calculated 
+exactly using the results obtained in Ref.~\onlinecite{wilms-2012}. The eigenstates 
 of~\eqref{is-clean} are product states. They can be characterized as $|p,i\rangle$, 
-with $p$ the total number of up spins (the remaining $N-p$ being down spins) and $i$ 
+with $p$ the total number of up spins (the remaining $N-p$ being down) and $i$ 
 labelling the $B(N,p)\equiv N!/(p!(N-p)!)$ eigenstates with the same $p$. 
-The partition function of~\eqref{is-clean} is given as 
+
+
+The partition function of the model is given as 
 %
 \begin{equation}
 Z(\beta)\equiv\textrm{Tr}\rho=\sum\limits_{p=0}^NB(N,p)e^{2N\beta(\frac{p}{N}-
-\frac{1}{2})^2}.
+\frac{1}{2})^2},
 \end{equation}
 %
+where $\rho\equiv 1/Ze^{-\beta {\mathcal H}}$ is the thermal density matrix. 
 Similarly, one has 
 %
 \begin{equation}
 \label{rhon}
-Z^n(\beta)\equiv\textrm{Tr}\sum\limits_{p=0}^NB(N,p)e^{2nN\beta(\frac{p}{N}-
+Z^n(\beta)\equiv\textrm{Tr}\rho^n=\sum\limits_{p=0}^NB(N,p)e^{2nN\beta(\frac{p}{N}-
 \frac{1}{2})^2}. 
 \end{equation}
 %
-The thermal density matrix $\rho$ is defined as $\rho\equiv 1/Ze^{-\beta{\mathcal H}}$. 
 Given a bipartition of the spins into two groups $A$ and $B$ containing $N_A$ 
 and $N-N_A$ spins, respectively, the reduced density matrix for $A$ is obtained 
 as~\cite{wilms-2012} 
@@ -1917,31 +1925,32 @@ From~\eqref{rhoA} it is straightforward to obtain
 %
 Similarly, $\textrm{Tr}\rho^n_B$ is obtained from~\eqref{trrhoA} substituting 
 $A\to B$ and $N_A\to N-N_A$, while $\textrm{Tr}\rho^n_{A\cup B}\equiv\textrm{Tr}
-\rho^n$. The R\'enyi entropies $S_n$ and the mutual 
-informations ${\mathcal I}_n$ can be calculated numerically 
+\rho^n$ is given in~\eqref{rhon}. The R\'enyi entropies $S_n$ and the mutual 
+informations ${\mathcal I}_n$ can be numerically constructed numerically 
 using~\eqref{trrhoA}, \eqref{rhon} and the definitions~\eqref{renyi-intro}
 \eqref{MI}. The numerical results for $S_2$ and ${\mathcal I}_2$ for a system with 
 $N=400$ spins are shown in Figure~\ref{renyi_clean} and Figure~\ref{mi_clean}, and 
-are in good agreement with the results in the thermodynamic limit. 
+are in good agreement with the saddle point results. 
 
-Figure~\ref{sp_corr} focuses on the finite-size subextensive corrections for 
-${\mathcal I}_2$. We plot ${\mathcal I}_2-{\mathcal I}^{(sp)}_2$, with ${\mathcal I}_2^{(sp)}$ 
-denoting the saddle point extensive part of ${\mathcal I}_2$. We restrict ourselves to 
-$\omega=N_A/N=1/2$, although similar results have to be expected at different $\omega$. 
-Clearly, ${\mathcal I}_2-{\mathcal I}_2^{(sp)}$ is vanishing at high temperatures, 
-whereas one has ${\mathcal I}_2-{\mathcal I}_2^{(sp)}\to\log(2)$ in the limit 
-$\beta\to\infty$ (horizontal line). Surprisingly, ${\mathcal I}_2-{\mathcal I}_2^{(sp)}$ 
-diverges in the thermodynamic limit for $\beta=1/2,2/3,1$ (vertical lines in the 
-Figure), which are the critical temperatures for the model on a booklet with 
-$\omega=1,1/2,0$. 
-This divergence is logarithmic as a function of $N$, as confirmed in Figure~\ref{clean_log} 
-plotting $|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|$ versus $\log(N)$ for fixed $\beta=1/2,2/3,1$. 
-Interestingly, the precise behavior depends on $\beta$. One has 
+Figure~\ref{sp_corr} focuses on the finite-size corrections to the saddle point 
+result for ${\mathcal I}_2$. We plot ${\mathcal I}_2-{\mathcal I}^{(sp)}_2$, with 
+${\mathcal I}_2^{(sp)}$ denoting the saddle point results (see Figure~\ref{mi_clean}), 
+versus $\beta$. We restrict ourselves to the situation with $\omega=N_A/N=1/2$, although 
+similar resutls are expected at different $\omega$. Clearly, ${\mathcal I}_2-
+{\mathcal I}_2^{(sp)}$ is vanishing at high temperature, whereas one has ${\mathcal I}_2-
+{\mathcal I}_2^{(sp)}\to\log(2)$ in the limit $\beta\to\infty$ (horizontal line). 
+Surprisingly, ${\mathcal I}_2-{\mathcal I}_2^{(sp)}$ diverges in the thermodynamic limit 
+for $\beta=1/2,2/3,1$ (vertical lines in the Figure), which are the critical 
+temperatures for the model on a booklet with $\omega=1,1/2,0$. 
+
+This divergence is logarithmic with $N$ as confirmed in Figure~\ref{clean_log} plotting 
+$|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|$ versus $\log(N)$ for fixed $\beta=1/2,2/3,1$. 
+Interestingly, the precise behavior depends on $\beta$. Specificaly, one has 
 $|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|\propto 1/4\log(N)$ for $\beta=1/2$ and 
 $|{\mathcal I}_2-{\mathcal I}_2^{(sp)}|\propto 1/2\log(N)$ for $\beta=2/3$ and 
-$\beta=1$. Again, this is dramatically different for the von Neumann mutual 
-information ${\mathcal I}_1=\lim_{n\to 1}{\mathcal I}_n$, which exhibits only one 
-divergent peak~\cite{wilms-2012} at $\beta=1$. 
+$\beta=1$. Notice that this is dramatically different for the von Neumann mutual 
+information ${\mathcal I}=\lim_{n\to 1}{\mathcal I}_n$, which exhibits only one 
+divergent peak at $\beta=1$~\cite{wilms-2012}. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%e
@@ -2275,7 +2284,6 @@ V.~Alba, L.~Tagliacozzo, and P.~Calabrese, J.\ Stat.\ Mech.\ (2011) P06012.
 
 \bibitem{alba-2013}
 V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013. 
-
 
 
 \end{thebibliography}
