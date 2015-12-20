@@ -291,11 +291,12 @@ Clearly, one has $S_n(A)\equiv1/(n-1)(\log(F(A,n,\beta))-n\log(F(\beta)))$, wher
 $-1/\beta$) to the free energy of the model on the booklet and on the plane, respectively.
 
 The mutual information ${\mathcal I}_n(A,B,\beta)$ is obtained in terms of the booklet 
-partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}, where $S_n(B)$ is 
-obtained from~\eqref{renyi} by exchanging $A$ and $B$. Notice also that in~\eqref{renyi}  
-$Z(A\cup B,n,\beta)\equiv Z(n\beta)$ is the partition function of the model on the booklet 
-with all the $n$ sheets identified, equivalently on a single sheet but at temperature 
-$n\beta$. 
+partition functions using Eq.~\eqref{renyi} and Eq.~\eqref{MI}. 
+%%%
+Clearly, $S_n(B)$ (cf. Eq.~\eqref{MI}) is obtained from~\eqref{renyi} and exchanging 
+$A$ and $B$. Notice also that in~\eqref{renyi}  $Z(A\cup B,n,\beta)\equiv Z(n\beta)$ 
+is the partition function of the model on the booklet with all the $n$ sheets identified, 
+equivalently on a single sheet but at temperature $n\beta$. 
 %%%
 Notice that the disorder-averaged 
 mutual information $[{\mathcal I}_n]$ and the R\'enyi entropy $[S_n]$ are directly related to 
@@ -1310,9 +1311,7 @@ is in good agreement with the Monte Carlo data, at least up to $\beta\approx 2$.
 
 We now turn to discuss the behavior of the classical R\'enyi entropies 
 (cf. Eq.~\eqref{renyi}). Here we restrict ourselves to the second R\'enyi 
-entropy $[S_2]$, which is obtained in terms of the booklet partition function 
-$Z(\omega,2,\beta)$ (see section~\ref{booklet}) as $-\log(Z(\omega,2,\beta)/Z(0,2,\beta))$. 
-Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
+entropy $[S_2]$. Due to the mean-field nature of the S-K model (cf. Eq.~\eqref{SK-ham}), 
 there is no well defined boundary between the two parts $A$ and $B$ of the system 
 (unlike in local spin models). With this in mind we assume that we will find volume law 
 behavior $[S_2]\propto N$, and consider the entropy per spin 
@@ -2285,7 +2284,6 @@ V.~Alba, L.~Tagliacozzo, and P.~Calabrese, J.\ Stat.\ Mech.\ (2011) P06012.
 
 \bibitem{alba-2013}
 V.~Alba, J.\ Stat.\ Mech.\ (2013) P05013. 
-
 
 
 \end{thebibliography}
