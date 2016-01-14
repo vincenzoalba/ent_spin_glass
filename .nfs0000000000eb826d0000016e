@@ -206,8 +206,8 @@
 \newlabel{RS-saddle-2}{{A2}{13}{\relax }{equation.A2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2}The one-step replica symmetry breaking ($1$-RSB) approximation}{13}{section*.22}}
 \newlabel{RSB-1-saddle-a}{{A7}{13}{\relax }{equation.A7}{}}
+\newlabel{RSB-1-saddle-b}{{A8}{13}{\relax }{equation.A8}{}}
 \citation{wilms-2012}
-\newlabel{RSB-1-saddle-b}{{A8}{14}{\relax }{equation.A8}{}}
 \newlabel{RSB-1-saddle-c}{{A9}{14}{\relax }{equation.A9}{}}
 \newlabel{RSB-1-saddle-d}{{A10}{14}{\relax }{equation.A10}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Mutual information in the infinite-range clean Ising model}{14}{section*.23}}
@@ -217,29 +217,29 @@
 \newlabel{clean-is-Z}{{B2}{14}{\relax }{equation.B2}{}}
 \newlabel{clean-is-F}{{B3}{14}{\relax }{equation.B3}{}}
 \newlabel{clean-is-spe}{{B4}{14}{\relax }{equation.B4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2}R\'enyi entropy and mutual information: saddle point results}{14}{section*.25}}
+\citation{wilms-2012}
 \citation{wilms-2012}
 \citation{wilms-2012}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  The infinite-range Ising model on the $2$-sheets booklet: saddle point approximation. The solution $z_s$ of the saddle point equations\nobreakspace  {}\textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {clean-is-spe}\unskip \@@italiccorr )}} plotted as a function of the inverse temperature $\beta $ and for booklet aspect ratio $\omega =0,1/2,1$. The vertical dotted line denotes the critical inverse temperature for $\omega =1/2$. }}{15}{figure.11}}
 \newlabel{saddle_clean}{{11}{15}{ The infinite-range Ising model on the $2$-sheets booklet: saddle point approximation. The solution $z_s$ of the saddle point equations~\eqref {clean-is-spe} plotted as a function of the inverse temperature $\beta $ and for booklet aspect ratio $\omega =0,1/2,1$. The vertical dotted line denotes the critical inverse temperature for $\omega =1/2$. \relax }{figure.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2}R\'enyi entropy and mutual information: saddle point results}{15}{section*.25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3}R\'enyi entropy and mutual information: Exact treatment}{15}{section*.26}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces  The infinite-range Ising model on the $2$-sheets booklet in the thermodynamic limit: the classical R\'enyi entropy density $S_2/N$, with $N$ the total number of spins on a single sheet of the booklet. $S_2/N$ is plotted against the inverse temperature $\beta $ and for booklet aspect ratio $\omega =1/4,1/2,1$. Note tht at high temperature $S_2=\omega \qopname  \relax o{log}(2)$. The lines are obtained using the saddle point approximation, while the full symbols denote the exact numerical results for a finite system with $N=400$. }}{15}{figure.12}}
 \newlabel{renyi_clean}{{12}{15}{ The infinite-range Ising model on the $2$-sheets booklet in the thermodynamic limit: the classical R\'enyi entropy density $S_2/N$, with $N$ the total number of spins on a single sheet of the booklet. $S_2/N$ is plotted against the inverse temperature $\beta $ and for booklet aspect ratio $\omega =1/4,1/2,1$. Note tht at high temperature $S_2=\omega \log (2)$. The lines are obtained using the saddle point approximation, while the full symbols denote the exact numerical results for a finite system with $N=400$. \relax }{figure.12}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces  The infinite-range Ising model on the $2$-sheets booklet in the thermodynamic limit: the classical mutual information density ${\mathcal  I}_2/N$ plotted against the inverse temperature $\beta $ and for booklet aspect ratio $\omega =1/4,1/2,1$. Note that ${\mathcal  I}_2=0$ for $\beta \le 1/2$. The full symbols are the the exact numerical results for a finite system with $N=400$. }}{15}{figure.13}}
 \newlabel{mi_clean}{{13}{15}{ The infinite-range Ising model on the $2$-sheets booklet in the thermodynamic limit: the classical mutual information density ${\mathcal I}_2/N$ plotted against the inverse temperature $\beta $ and for booklet aspect ratio $\omega =1/4,1/2,1$. Note that ${\mathcal I}_2=0$ for $\beta \le 1/2$. The full symbols are the the exact numerical results for a finite system with $N=400$. \relax }{figure.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3}R\'enyi entropy and mutual information: Exact treatment}{15}{section*.26}}
-\citation{wilms-2012}
+\newlabel{rhon}{{B8}{15}{\relax }{equation.B8}{}}
 \citation{wilms-2012}
 \citation{jaconis-2013}
-\newlabel{rhon}{{B8}{16}{\relax }{equation.B8}{}}
 \newlabel{rhoA}{{B10}{16}{\relax }{equation.B10}{}}
 \newlabel{trrhoA}{{B12}{16}{\relax }{equation.B12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Monte Carlo method to calculate the classical R\'enyi entropies}{16}{section*.27}}
+\newlabel{mc-method}{{C}{16}{\relax }{section*.27}{}}
+\newlabel{renyi-app}{{C1}{16}{\relax }{equation.C1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  The infinite-range Ising model on the $2$-sheets booklet: saddle point corrections. The correction for the mutual information ${\mathcal  I}_2-{\mathcal  I}_2^{(sp)}$ are plotted against the inverse temperature $\beta $. The data are for a booklet with aspect ratio $\omega =1/2$. Here ${\mathcal  I}_2^{(sp)}$ are the same data as in Figure\nobreakspace  {}\ref  {mi_clean} (dotted line). The vertical lines denote the critical temperatures $\beta _c$ for $\omega =1, 1/2,0$ (from left to right). The horizontal dash-dotted line is $\qopname  \relax o{log}(2)$. Note the (logarithmically) divergent behavior at $\beta _c$. }}{16}{figure.14}}
 \newlabel{sp_corr}{{14}{16}{ The infinite-range Ising model on the $2$-sheets booklet: saddle point corrections. The correction for the mutual information ${\mathcal I}_2-{\mathcal I}_2^{(sp)}$ are plotted against the inverse temperature $\beta $. The data are for a booklet with aspect ratio $\omega =1/2$. Here ${\mathcal I}_2^{(sp)}$ are the same data as in Figure~\ref {mi_clean} (dotted line). The vertical lines denote the critical temperatures $\beta _c$ for $\omega =1, 1/2,0$ (from left to right). The horizontal dash-dotted line is $\log (2)$. Note the (logarithmically) divergent behavior at $\beta _c$. \relax }{figure.14}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces  The infinite-range Ising model on the $2$-sheets booklet: Scaling of the corrections of the mutual information ${\mathcal  I}_2$ at the booklet critical points $\beta _c=1/2,2/3,1$ (see vertical lines in Figure\nobreakspace  {}\ref  {sp_corr}). We plot $|{\mathcal  I}_2- {\mathcal  I}_2^{(sp)}|$ versus $\qopname  \relax o{log}(N)$, with $N$ the number of spins on one sheet of the booklet. Here ${\mathcal  I}_2^{(sp)}$ is the same as in Figure\nobreakspace  {}\ref  {mi_clean} (dotted line). }}{16}{figure.15}}
 \newlabel{clean_log}{{15}{16}{ The infinite-range Ising model on the $2$-sheets booklet: Scaling of the corrections of the mutual information ${\mathcal I}_2$ at the booklet critical points $\beta _c=1/2,2/3,1$ (see vertical lines in Figure~\ref {sp_corr}). We plot $|{\mathcal I}_2- {\mathcal I}_2^{(sp)}|$ versus $\log (N)$, with $N$ the number of spins on one sheet of the booklet. Here ${\mathcal I}_2^{(sp)}$ is the same as in Figure~\ref {mi_clean} (dotted line). \relax }{figure.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C}Monte Carlo method to calculate the classical R\'enyi entropies}{16}{section*.27}}
-\newlabel{mc-method}{{C}{16}{\relax }{section*.27}{}}
-\newlabel{renyi-app}{{C1}{16}{\relax }{equation.C1}{}}
 \citation{stephan-2014}
 \citation{alba-2010}
 \citation{alba-2011}
@@ -263,14 +263,14 @@
 \bibcite{morrison-2008}{{17}{}{{}}{{}}}
 \bibcite{rotondo-2015}{{18}{}{{}}{{}}}
 \bibcite{ghofraniha-2015}{{19}{}{{}}{{}}}
-\newlabel{ratio-trick}{{C2}{17}{\relax }{equation.C2}{}}
-\newlabel{sub-choice}{{C3}{17}{\relax }{equation.C3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {}References}{17}{section*.28}}
 \bibcite{amico-2008}{{20}{}{{}}{{}}}
 \bibcite{eisert-2009}{{21}{}{{}}{{}}}
 \bibcite{calabrese-2009}{{22}{}{{}}{{}}}
 \bibcite{cc-rev}{{23}{}{{}}{{}}}
 \bibcite{holzhey-1994}{{24}{}{{}}{{}}}
+\newlabel{ratio-trick}{{C2}{17}{\relax }{equation.C2}{}}
+\newlabel{sub-choice}{{C3}{17}{\relax }{equation.C3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}References}{17}{section*.28}}
 \bibcite{vidal-2003}{{25}{}{{}}{{}}}
 \bibcite{calabrese-2004}{{26}{}{{}}{{}}}
 \bibcite{calabrese-2012}{{27}{}{{}}{{}}}

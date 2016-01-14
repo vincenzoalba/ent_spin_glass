@@ -9,7 +9,7 @@ their useful comments and suggestions.
 
 We remind that the first referee considered our work interesting and clearly 
 written and recommended it for publication in its present form. The second 
-referee cosidered our results reliable and the paper very clearly written.
+referee considered our results reliable and the paper very clearly written.
 However, he expressed some criticisms especially focusing on the physical 
 significance of considering the mutual information and the booklet 
 construction in models with infinite range interactions. 
@@ -17,8 +17,7 @@ construction in models with infinite range interactions.
 We believe that we thoroughly addressed all the criticisms and suggestions of 
 the referees in the new version of the manuscript.
 
-Moreover, here below we provide a detailed answer to all the criticisms of the 
-referees.
+Here below we provide a detailed answer to all the criticisms of the referees.
 
 Sincerely,
 
@@ -146,7 +145,7 @@ RESPONSE TO THE SECOND REFEREE
 REFEREE:
 -------
 
-	In the manuscript BG13275, the authors study the Reny entropy and
+	In the manuscript BG13275, the authors study the Renyi entropy and
 	mutual information in the Sherrington-Kirkpatrick model. Using the
 	replica method, the authors constructed the replica-symmetric solution
 	and 1-step replica-symmetry-breaking solutions. They are solved
@@ -478,7 +477,7 @@ RESPONSE:
 	We believe that after our detailed answer to the referee points it is clear that our work addresses the issue of how 
 	standard information-theory motivated quantities such as entropies and mutual information are affected by disorder and 
 	glassy criticality. Disordered magnetic systems and glassy phase transitions are traditionally topics of PRB, as 
-	well as (especially in recenty years) entanglement and phase transitions. Therefore we believe that our paper 
+	well as (especially in recent years) entanglement and phase transitions. Therefore we believe that our paper 
 	is appropriate for PRB. 
 	
 
